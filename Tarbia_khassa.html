@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دبلوم التربية الخاصة</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2;
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">دبلوم التربية الخاصة</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>التخاطب واضطرابات النطق والكلام</h2>
+      <p>يتناول هذا المحور فهم طبيعة اضطرابات النطق والكلام عند الأطفال، مثل التأتأة، صعوبات التعبير، أو تأخر النطق، إضافة إلى تقنيات التخاطب وأساليب التقييم والعلاج.</p>
+
+      <h2>الصحة النفسية لذوي الاحتياجات الخاصة</h2>
+      <p>يركز على الجوانب النفسية التي تؤثر على الأفراد من ذوي الاحتياجات الخاصة، وكيفية دعمهم نفسيًا لتحسين جودة حياتهم والتعامل مع الضغوط والتحديات.</p>
+
+      <h2>الصعوبات التعلمية</h2>
+      <p>يتناول أنواع الصعوبات مثل عسر القراءة (الديسلكسيا)، عسر الكتابة، واضطرابات الانتباه والتركيز، مع تقديم استراتيجيات تعليمية للتعامل مع هذه الحالات.</p>
+
+      <h2>أسباب اضطراب التوحد</h2>
+      <p>يشرح هذا الجزء أبرز الأسباب البيولوجية والنفسية التي قد تؤدي إلى اضطراب التوحد، إلى جانب السمات الرئيسية التي تميّز هذه الحالة.</p>
+
+      <h2>التوجيه والإرشاد النفسي لذوي الاحتياجات الخاصة</h2>
+      <p>يُعنى بكيفية تقديم الدعم النفسي والتربوي للأشخاص ذوي الاحتياجات الخاصة ولمقدمي الرعاية لهم، بهدف تعزيز استقلاليتهم وتطورهم.</p>
+
+      <h2>مونتيسوري</h2>
+      <p>يتناول فلسفة المونتيسوري في التعليم والتي تعتمد على التعلم الذاتي والتفاعل مع البيئة، مع التركيز على كيفية تطبيق هذا الأسلوب مع الأطفال ذوي الاحتياجات الخاصة.</p>
+
+      <h2>تعديل السلوك</h2>
+      <p>يركز على استخدام استراتيجيات وأساليب سلوكية لمساعدة الأطفال على التخلص من السلوكيات السلبية وتعزيز السلوكيات الإيجابية من خلال برامج فردية فعالة</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دبلوم%20التربية%20الخاصة" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

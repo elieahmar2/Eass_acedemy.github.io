@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>الطهي النباتي</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">الطهي النباتي</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة عن الطهي النباتي</h2>
+      <p>التعريف بالطهي النباتي وأهمية التحول إلى الأطعمة النباتية.</p>
+      <p>استكشاف الفوائد الصحية للطعام النباتي مثل تحسين الهضم، وزيادة مستويات الطاقة.</p>
+      <p>التعرف على أنواع الحميات النباتية مثل النباتية الصرفة (vegan) والنباتية المعتدلة (vegetarian).</p>
+
+      <h2>2. أساسيات الطهي النباتي</h2>
+      <p>تعلم المكونات الأساسية للطعام النباتي مثل الحبوب، الخضراوات، الفواكه، المكسرات، والبذور.</p>
+      <p>استكشاف البروتينات النباتية مثل العدس، الفاصولياء، التوفو، والتمبيه وكيفية دمجها في الأطباق اليومية.</p>
+      <p>تعلم كيفية استخدام الزيوت النباتية والأعشاب والتوابل لإضافة نكهات مميزة.</p>
+
+      <h2>3. إعداد وجبات نباتية رئيسية</h2>
+      <p>تعلم كيفية تحضير أطباق نباتية رئيسية مثل الكاري، الحساء، اليخنات، والمعكرونة.</p>
+      <p>استكشاف طرق الطهي المختلفة مثل الطهي بالبخار، الشوي، التحميص، والطهي في الفرن.</p>
+      <p>تعلم كيفية تحضير وجبات غنية بالبروتينات النباتية مثل البرغر النباتي، والكوفتة النباتية.</p>
+
+      <h2>4. إعداد المقبلات والسلطات النباتية</h2>
+      <p>تعلم كيفية تحضير مقبلات نباتية لذيذة مثل الحمص، الطحينة، والمقبلات المشوية.</p>
+      <p>تعلم كيفية إعداد سلطات مبتكرة ومتنوعة باستخدام المكونات الطازجة مثل الخضروات الورقية، الحبوب، والمكسرات.</p>
+
+      <h2>5. الحلويات النباتية</h2>
+      <p>تعلم كيفية تحضير حلويات نباتية خالية من البيض واللبن مثل الكيكات، التيراميسو، والبودينغ.</p>
+      <p>استكشاف طرق استخدام بدائل السكر الطبيعية مثل العسل، أو شراب القيقب أو التمر.</p>
+      <p>تعلم كيفية تحضير الشوكولاتة النباتية والحلويات المجمدة مثل الآيس كريم النباتي.</p>
+
+      <h2>6. الطهي النباتي في المناسبات الخاصة</h2>
+      <p>تعلم كيفية تحضير أطباق نباتية تناسب المناسبات الخاصة مثل حفلات العشاء، أعياد الميلاد، والحفلات.</p>
+      <p>تعلم كيفية تقديم الطعام النباتي بطرق مبتكرة تجذب ضيوفك وتعكس الفخامة.</p>
+
+      <h2>7. تحضير الأطعمة الخالية من الغلوتين</h2>
+      <p>تعلم كيفية تحضير أطباق نباتية خالية من الغلوتين مثل الخبز النباتي، الكعك، والمعكرونة.</p>
+      <p>استكشاف بدائل الدقيق التقليدي مثل دقيق الأرز، دقيق اللوز، ودقيق جوز الهند.</p>
+
+      <h2>8. تقنيات الطهي الصحي</h2>
+      <p>تعلم كيفية تحضير أطباق نباتية صحية ومتوازنة تحتوي على الفيتامينات والمعادن.</p>
+      <p>استكشاف كيفية الحفاظ على العناصر الغذائية في الأطعمة أثناء الطهي مثل الخضروات والفواكه.</p>
+      <p>تعلم أساليب الطهي التي تحافظ على النكهات الطبيعية دون إضافة مواد صناعية أو إضافات.</p>
+
+      <h2>9. الطهي النباتي للضيافة</h2>
+      <p>تعلم كيفية تحضير وجبات نباتية مميزة للضيوف من خلال تقديم أطباق مبتكرة وفاخرة.</p>
+      <p>استكشاف كيفية تنظيم وجبة نباتية تشمل المقبلات، الأطباق الرئيسية، والحلويات بطريقة جذابة.</p>
+
+      <h2>10. إعداد العصائر والمشروبات النباتية</h2>
+      <p>تعلم كيفية تحضير عصائر وفواكه طازجة ومشروبات نباتية مثل العصائر الخضراء، الشاي المثلج، والميلك شيك النباتي.</p>
+      <p>استكشاف طرق تحضير حليب النبات مثل حليب اللوز، حليب جوز الهند، وحليب الشوفان.</p>
+
+      <h2>خلاصة الدورة</h2>
+      <p>دورة "الطهي النباتي" تقدم لك المعرفة والمهارات اللازمة لتحضير وجبات نباتية صحية ولذيذة تلبي احتياجات النباتيين وغير النباتيين على حد سواء. ستتعلم كيفية تحضير أطباق رئيسية، مقبلات، وحلويات نباتية متنوعة تساهم في تحسين نمط حياتك الغذائي وتوفر خيارات نباتية مبتكرة يمكن تقديمها في أي مناسبة.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20الطهي%20النباتي" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

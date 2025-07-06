@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>دوراتنا</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo {
+      width: 80px;
+      height: auto;
+      animation: logoZoom 1s ease-in-out;
+    }
+
+    @keyframes logoZoom {
+      0% {
+        transform: scale(0.3);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      margin: 10px 0 0 0;
+      font-size: 24px;
+      text-decoration: none;
+      color: black; /* اللون الأسود */
+    }
+
+    .courses-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .course {
+      width: 48%;
+      text-align: center;
+      border: 1px solid #000;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    .course img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 5px;
+    }
+
+    .course h3 {
+      font-size: 14px;
+      margin: 5px 0 0 0;
+      color: black; /* اللون الأسود */
+    }
+
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInUp {
+      from {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInDown {
+      from {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .img-left {
+      animation: slideInLeft 1.2s ease;
+    }
+
+    .img-right {
+      animation: slideInRight 1.2s ease;
+    }
+
+    .img-up {
+      animation: slideInUp 1.2s ease;
+    }
+
+    .img-down {
+      animation: slideInDown 1.2s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img class="logo" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/Picsart_25-04-13_02-17-26-498.png?v=1744499882658" alt="Logo" />
+    <h1>دوراتنا في التصميم والفن</h1>
+  </header>
+
+  <div class="courses-container">
+    <div class="course">
+      <a href="التصميم_الجرافيكي.html">
+        <img class="img-left" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/d3d5a3e259ee8ca212d85f07e92c16cd.jpg?v=1744506535711" alt="التصميم الجرافيكي">
+        <h3>التصميم الجرافيكي</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="تصميم_الأزياء.html">
+        <img class="img-right" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/5ed2d6b43248dbaf22e7eabc773c7a14.jpg?v=1744506541159" alt="تصميم الأزياء">
+        <h3>تصميم الأزياء</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="تنسيق_الديكور_الداخلي.html">
+        <img class="img-up" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/593da92955e52048bab7f9f51e7ecbd5.jpg?v=1744506547638" alt="تنسيق الديكور الداخلي">
+        <h3>تنسيق الديكور الداخلي</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="تصميم_المجوهرات.html">
+        <img class="img-down" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/53397e2ea52c6d6ab86b359354883fec.jpg?v=1744506553301" alt="تصميم المجوهرات">
+        <h3>تصميم المجوهرات</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="الرسوم_المتحركة_(أنيميشن).html">
+        <img class="img-left" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/5e07e308979a37d024ce06ded72cc047.jpg?v=1744506555075" alt="الرسوم المتحركة (أنيميشن)">
+        <h3>الرسوم المتحركة (أنيميشن)</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="تنسيق_الزهور.html">
+        <img class="img-right" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/d2c3597691ad8d455487197b7f503830.jpg?v=1744506559682" alt="تنسيق الزهور">
+        <h3>تنسيق الزهور</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="الخط_العربي.html">
+        <img class="img-up" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/135de0ab98c6b05beef50cc4d3467b1c.jpg?v=1744506564479" alt="الخط العربي">
+        <h3>الخط العربي</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="تصميم_و_تنسيق_مناسبات.html">
+        <img class="img-down" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/8ddfba6d355403b682752104659a0f0d.jpg?v=1744506567844" alt="تصميم وتنسيق مناسبات">
+        <h3>تصميم و تنسيق مناسبات</h3>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

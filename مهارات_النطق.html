@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>مهارات النطق</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">مهارات النطق</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة عن أهمية مهارات النطق</h2>
+      <p>فهم تأثير النطق الصحيح في تحسين التواصل</p>
+      <p>الفرق بين النطق الصحيح والنطق غير الواضح وأثره على التواصل الفعّال</p>
+      <p>أهمية تحسين النطق في الحياة اليومية، في العمل، وفي المناسبات الاجتماعية</p>
+
+      <h2>2. تحسين النطق في اللغة</h2>
+      <p>تعلم كيفية النطق السليم للكلمات باللغة المستهدفة</p>
+      <p>التدرب على نطق الحروف والمقاطع الصوتية التي قد تسبب صعوبة للمتحدثين</p>
+      <p>تكرار النطق الصحيح للكلمات الصعبة ومعرفة الأخطاء الشائعة لتجنبها</p>
+      <p>تحديد الأصوات التي يصعب نطقها وتصحيحها تدريجيًا</p>
+
+      <h2>3. تقنيات لتحسين الوضوح والسرعة</h2>
+      <p>تدريبات على تحسين وضوح النطق أثناء الكلام السريع والمحادثات اليومية</p>
+      <p>طرق للتقليل من التوقفات والتردد أثناء التحدث</p>
+      <p>تدريبات للحديث بشكل مريح وطبيعي دون انقطاع أو إجهاد في الصوت</p>
+
+      <h2>4. التنغيم والإيقاع الصوتي</h2>
+      <p>فهم دور التنغيم والإيقاع في النطق وتأثيرهما على معاني الكلمات والجمل</p>
+      <p>التدرب على التحكم في نغمة الصوت واستخدامها بشكل مناسب في المحادثات اليومية</p>
+      <p>كيفية إبراز الجمل المهمة أو التعبير عن العواطف من خلال التغييرات في الإيقاع والتنغيم</p>
+
+      <h2>5. تحسين النطق في الحروف المتشابهة</h2>
+      <p>التدرب على التفريق بين الحروف المتشابهة التي قد تكون صعبة في النطق مثل (ص، س) أو (ت، د)</p>
+      <p>تقنيات لتفادي التداخل بين الحروف المتشابهة أثناء التحدث</p>
+      <p>تحسين النطق على أساس لهجات وأصوات اللغة المستهدفة</p>
+
+      <h2>6. تدريب على نطق الحروف الساكنة والمتحركة</h2>
+      <p>تدريبات على كيفية نطق الحروف الساكنة بشكل واضح ودقيق</p>
+      <p>تمارين لتحسين نطق الحروف المتحركة بشكل صحيح لتجنب الأخطاء الشائعة</p>
+
+      <h2>7. نطق الكلمات والجمل الطويلة</h2>
+      <p>تدريبات على نطق الكلمات والجمل الطويلة أو المعقدة بطريقة سلسة وطبيعية</p>
+      <p>استراتيجيات لتحسين نطق الكلمات ذات المقاطع المتعددة بشكل متسلسل</p>
+
+      <h2>8. تقنيات التنفس السليم</h2>
+      <p>تعلم كيفية التنفس بشكل صحيح أثناء الحديث لزيادة القدرة على النطق الواضح</p>
+      <p>تدريبات على تحسين التحكم في النفس أثناء التحدث لتفادي التوتر أو انقطاع الصوت</p>
+
+      <h2>9. التعامل مع التوتر والتردد في النطق</h2>
+      <p>كيفية التعامل مع القلق والتوتر أثناء التحدث أمام جمهور أو في مواقف غير مألوفة</p>
+      <p>استراتيجيات لتحسين الثقة بالنفس والتخلص من التردد أثناء النطق</p>
+
+      <h2>10. محاكاة مواقف حياتية</h2>
+      <p>تمارين محاكاة لمحاكاة مواقف حياتية تركز على تحسين النطق، مثل مقابلات العمل، المكالمات الهاتفية، التحدث مع الآخرين في الأماكن العامة</p>
+      <p>تدريبات على محاكاة الحوار مع زملاء الدورة لتشجيع الممارسة الفعلية والتفاعل</p>
+
+      <h2>11. التدريب الصوتي</h2>
+      <p>جلسات تدريب على الصوت (مثل: تدريبات التنفس، التدريبات الصوتية اليومية) لتحسين جودة الصوت وقوته</p>
+      <p>استخدام أجهزة الميكروفون أو التسجيلات الصوتية لتقييم وتحليل النطق بشكل أفضل</p>
+
+      <h2>12. المراجعة النهائية</h2>
+      <p>مراجعة شاملة للنطق والتقنيات التي تم تعلمها خلال الدورة</p>
+      <p>تقييم التقدم المحرز في النطق وتحديد المجالات التي تحتاج إلى مزيد من العمل</p>
+      <p>نصائح للمحافظة على التقدم وتحقيق تحسن مستمر بعد الدورة</p>
+
+      <h2>ملاحظة</h2>
+      <p>الدورة مصممة للمشاركة مع كافة الأعمار ومستويات الخبرة، سواء كنت مبتدئًا أو لديك خبرة سابقة في تحسين النطق. تهدف الدورة إلى مساعدة المتدربين على النطق بشكل أكثر وضوحًا واحترافية في كافة المواقف الاجتماعية والمهنية.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20مهارات%20النطق" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

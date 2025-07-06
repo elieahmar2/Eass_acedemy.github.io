@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تصنيع الأغذية والمشروبات المنزلية</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">تصنيع الأغذية والمشروبات المنزلية</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة عن تصنيع الأغذية والمشروبات المنزلية</h2>
+      <p>التعريف بمفهوم تصنيع الأغذية والمشروبات في المنزل وأهمية القيام بذلك لتحسين جودة الطعام وتوفير المال.</p>
+      <p>استعراض الفوائد الصحية لتصنيع الطعام في المنزل مقارنة بالأطعمة الجاهزة.</p>
+      <p>أهمية اتباع معايير السلامة الغذائية خلال تصنيع الطعام والمشروبات في المنزل.</p>
+
+      <h2>2. المكونات الأساسية للأغذية والمشروبات</h2>
+      <p>التعرف على المكونات الأساسية التي تدخل في تصنيع الأغذية والمشروبات مثل الحبوب، السكر، الزيوت، الفواكه، الخضروات، والبهارات.</p>
+      <p>تعلم كيفية اختيار المكونات عالية الجودة التي تساعد في تحسين الطعم والقيمة الغذائية.</p>
+      <p>أهمية مكونات إضافية مثل المنكهات، المكملات الغذائية، وألوان الطعام الطبيعية.</p>
+
+      <h2>3. تقنيات تصنيع الأغذية المنزلية</h2>
+      <p>تعلم كيفية تحضير المأكولات المنزلية مثل المربيات، المخللات، الصلصات، والزيوت المنكهة.</p>
+      <p>تعلم كيفية صنع الأطعمة المعلبة بطريقة منزلية باستخدام تقنيات الحفظ مثل التعليب، التجفيف، والتخزين في الفريزر.</p>
+      <p>تعلم كيفية إعداد وجبات غذائية صحية مثل الحساء، الأطباق الرئيسية، والعصائر.</p>
+      <p>استعراض تقنيات الطهي المختلفة مثل الغلي، السلق، التحميص، والشوي.</p>
+
+      <h2>4. تصنيع المشروبات المنزلية</h2>
+      <p>تعلم كيفية تحضير المشروبات الطبيعية مثل العصائر الطازجة، الشاي، القهوة، والمشروبات الغازية المحضرة منزليًا.</p>
+      <p>تعلم كيفية تحضير مشروبات الطاقة والعصائر الصحية باستخدام الفواكه والخضروات.</p>
+      <p>تعلم كيفية تحضير مشروبات مثل الحليب المخفوق (سموذي) والمشروبات الصحية للأعمار المختلفة.</p>
+
+      <h2>5. التخزين والتغليف</h2>
+      <p>استعراض طرق التخزين الصحيحة للأطعمة والمشروبات مثل حفظ الطعام في البراد أو الفريزر بشكل آمن.</p>
+      <p>تعلم كيفية تغليف الأغذية والمشروبات بطريقة صحية وجذابة، سواء للاستخدام الشخصي أو لبيع المنتجات.</p>
+      <p>تعلم كيفية اختيار العبوات المناسبة التي تحافظ على جودة المنتج وتزيد من جاذبيته.</p>
+
+      <h2>6. إعداد الأغذية الصحية والمنزلية</h2>
+      <p>تعلم كيفية تحضير أطعمة خفيفة وصحية مثل الوجبات الخفيفة، السندويشات، والمقبلات.</p>
+      <p>استعراض كيفية إعداد وجبات لذوي الاحتياجات الغذائية الخاصة مثل الأطعمة الخالية من الغلوتين أو اللاكتوز.</p>
+      <p>تعلم كيفية تحضير أغذية للريجيم أو الأنظمة الغذائية الخاصة مثل الأطعمة منخفضة السعرات الحرارية، أطعمة منخفضة الدهون، وأطعمة نباتية.</p>
+
+      <h2>7. الابتكار في الأغذية والمشروبات</h2>
+      <p>تعلم كيفية ابتكار وصفات جديدة للأطعمة والمشروبات باستخدام مكونات محلية أو مكونات جديدة.</p>
+      <p>استكشاف طرق تطوير وصفات مبتكرة لمنتجات غذائية جديدة أو مشروبات.</p>
+      <p>تعلم كيفية إضافة لمسات شخصية للمشروبات مثل تحضير عصائر مميزة أو خلطات الشاي المبتكرة.</p>
+
+      <h2>8. التسويق للأغذية والمشروبات المنزلية</h2>
+      <p>تعلم كيفية تسويق المنتجات المنزلية مثل المربيات، العصائر، أو الحلويات باستخدام منصات الإنترنت أو الأسواق المحلية.</p>
+      <p>نصائح حول كيفية تعبئة المنتجات بشكل احترافي لجذب العملاء وإعطاء انطباع بالجودة.</p>
+      <p>تعلم كيفية تحديد أسعار المنتجات بشكل مناسب مع مراعاة تكاليف الإنتاج.</p>
+
+      <h2>9. معايير السلامة الغذائية</h2>
+      <p>تعلم كيفية الحفاظ على معايير السلامة عند التعامل مع المكونات الغذائية لضمان عدم التلوث.</p>
+      <p>استعراض أساليب التبريد والتخزين الصحيحة لمنع نمو البكتيريا والميكروبات.</p>
+      <p>تعلم طرق تعقيم الأدوات والأواني المستخدمة في تحضير الطعام لضمان نظافتها.</p>
+
+      <h2>10. التنظيم وإدارة الوقت</h2>
+      <p>تعلم كيفية تنظيم عملية إعداد الطعام والمشروبات بشكل فعال لتقليل الوقت المستهلك.</p>
+      <p>نصائح حول كيفية إدارة الوقت بشكل صحيح أثناء تصنيع الأغذية والمشروبات.</p>
+      <p>تعلم كيفية تخطيط الوجبات والمشروبات مسبقًا لتوفير الجهد والوقت.</p>
+
+      <h2>خلاصة الدورة</h2>
+      <p>دورة "تصنيع الأغذية والمشروبات المنزلية" توفر لك المهارات الأساسية لإعداد أطعمة ومشروبات صحية ولذيذة في المنزل. من خلال تعلم تقنيات التحضير، التخزين، والتسويق، ستتمكن من صناعة منتجات غذائية لذيذة وآمنة وصحية باستخدام مكونات بسيطة ومتوفرة. الدورة مثالية لمن يرغب في تعلم كيفية صنع الطعام والمشروبات في المنزل للأغراض الشخصية أو التجارية، مع التركيز على الجودة والسلامة.</p>
+      
+      <a href="https://wa.me/96181566203?text=انا%20مهتم%20بتصنيع%20الأغذية%20والمشروبات%20المنزلية" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

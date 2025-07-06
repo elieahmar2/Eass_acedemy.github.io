@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>الاتصال بين الثقافات</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">الاتصال بين الثقافات</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة عن الاتصال بين الثقافات</h2>
+      <p>تعريف الاتصال بين الثقافات وأهميته في العالم المعاصر</p>
+      <p>كيف يؤثر الاتصال بين الثقافات على النجاح المهني والشخصي</p>
+      <p>فهم الفرق بين الثقافات وكيفية بناء جسر للتفاهم بينها</p>
+
+      <h2>2. تحديد المفاهيم الثقافية المختلفة</h2>
+      <p>استكشاف مفهوم الثقافة وكيفية تأثيرها على سلوك الأفراد</p>
+      <p>فهم الأسس الثقافية: القيم، العادات، المعتقدات، والتقاليد</p>
+      <p>كيف تحدد الثقافة أساليب التواصل المختلفة: اللغة، الإيماءات، والتواصل غير اللفظي</p>
+
+      <h2>3. أهمية الوعي الثقافي</h2>
+      <p>تعزيز الوعي الثقافي لتحسين التفاعل مع الأشخاص من خلفيات متنوعة</p>
+      <p>فهم كيفية تأثير الخلفية الثقافية على الطريقة التي يتم بها تفسير الرسائل</p>
+      <p>أهمية الحذر عند التعامل مع الاختلافات الثقافية لتجنب سوء الفهم أو الإساءة</p>
+
+      <h2>4. التحديات في الاتصال بين الثقافات</h2>
+      <p>استعراض التحديات الشائعة في التواصل بين الثقافات مثل الفروق في أساليب التعبير، اللغة، وتوقعات التواصل</p>
+      <p>كيف يمكن أن تؤدي الاختلافات الثقافية إلى تصورات خاطئة أو تضارب في التوقعات</p>
+
+      <h2>5. أساليب تحسين التواصل بين الثقافات</h2>
+      <p>تقنيات للاستماع الفعّال واحترام الفروق الثقافية في التواصل</p>
+      <p>كيفية التكيف مع أساليب التواصل المختلفة بين الثقافات</p>
+      <p>تقنيات بناء الثقة والاحترام في بيئات متنوعة ثقافيًا</p>
+
+      <h2>6. أهمية اللغة في الاتصال بين الثقافات</h2>
+      <p>كيف تؤثر اللغة على التواصل بين الثقافات وكيفية تجاوز الحواجز اللغوية</p>
+      <p>تحسين مهارات الاستماع والفهم عند التواصل مع أشخاص من ثقافات مختلفة</p>
+      <p>دور اللغة غير اللفظية (الإيماءات، تعابير الوجه، لغة الجسد) في تعزيز أو إعاقة الفهم بين الثقافات</p>
+
+      <h2>7. حل النزاعات الثقافية</h2>
+      <p>استراتيجيات لحل النزاعات الثقافية بشكل دبلوماسي وفعّال</p>
+      <p>كيفية معالجة المواقف الصعبة الناشئة بسبب الاختلافات الثقافية</p>
+      <p>كيفية توظيف مهارات التواصل لحل سوء الفهم وتعزيز التفاهم المتبادل</p>
+
+      <h2>8. الأمثلة التطبيقية من الحياة العملية</h2>
+      <p>دراسة حالات واقعية وطرق معالجة التحديات التي تظهر في بيئات عمل أو اجتماعية ذات خلفيات ثقافية متنوعة</p>
+      <p>التفاعل مع أمثلة من قطاعات مختلفة مثل الأعمال الدولية، السياحة، والتعليم</p>
+
+      <h2>9. تطوير مهارات التواصل الشخصي والمهني</h2>
+      <p>كيفية التواصل بفعالية في بيئات متنوعة ثقافيًا</p>
+      <p>تطبيق مهارات الاتصال الثقافي في العمل الجماعي، الاجتماعات الدولية، والاتصال مع العملاء من ثقافات مختلفة</p>
+      <p>كيف يمكن للمشاركين التأثير بشكل إيجابي في بيئات العمل المتنوعة</p>
+
+      <h2>10. تطبيقات عملية</h2>
+      <p>محاكاة حالات تواصل بين ثقافات مختلفة وتدريبات عملية لتحسين التواصل الفعّال</p>
+      <p>ورش عمل تركز على التغلب على الحواجز الثقافية وتحقيق نتائج إيجابية في المواقف المعقدة</p>
+      <p>التعرف على أدوات وموارد لمواصلة التعلم والبحث في مجال الاتصال بين الثقافات</p>
+
+      <h2>ملاحظة</h2>
+      <p>الدورة مثالية لكل من يرغب في تعزيز مهاراته في التواصل عبر الثقافات المختلفة، سواء في بيئات عمل دولية أو اجتماعية متعددة. تساهم الدورة في بناء الوعي الثقافي، زيادة التفاهم بين الأفراد من خلفيات ثقافية متنوعة، وتحقيق نتائج إيجابية من خلال تواصل فعّال.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20الاتصال%20بين%20الثقافات" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تنسيق الأطباق</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">تنسيق الأطباق</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة عن تنسيق الأطباق</h2>
+      <p>التعريف بمفهوم تنسيق الأطباق وأهمية تقديم الطعام بطريقة جميلة.</p>
+      <p>التعرف على تاريخ فن تنسيق الأطباق وكيف تطور مع مرور الزمن في الثقافات المختلفة.</p>
+      <p>استكشاف التأثير النفسي للتقديم الجذاب على تناول الطعام.</p>
+
+      <h2>2. أساسيات تنسيق الأطباق</h2>
+      <p>تعلم كيفية اختيار الأطباق المناسبة لكل نوع من الطعام (أطباق رئيسية، مقبلات، حلويات).</p>
+      <p>التعرف على الأدوات الأساسية التي تُستخدم في تنسيق الأطباق مثل الملاعق، السكاكين، الأطواق، والأكواب.</p>
+      <p>استكشاف مفهوم الألوان والتنسيق بين الألوان المختلفة للأطعمة لجعل الطبق أكثر جاذبية.</p>
+
+      <h2>3. الترتيب الجمالي للأطعمة</h2>
+      <p>تعلم كيفية ترتيب الأطعمة على الأطباق بشكل يشد الانتباه، مع الحفاظ على توازن المكونات.</p>
+      <p>استكشاف طرق استخدام الطبقات والارتفاعات في تنسيق الأطباق مثل إضافة المكونات فوق بعضها البعض.</p>
+      <p>تعلم فن استخدام المساحات الفارغة على الطبق لإعطاء توازن بصري.</p>
+
+      <h2>4. التنسيق باستخدام الأعشاب والتوابل</h2>
+      <p>تعلم كيفية إضافة الأعشاب الطازجة (مثل البقدونس، النعناع، الزعتر) والتوابل بشكل جمالي.</p>
+      <p>استكشاف كيفية استخدام الزهور الصالحة للأكل والشرائح الصغيرة من الفواكه لإضافة لمسات جمالية على الأطباق.</p>
+
+      <h2>5. التنسيق في المناسبات المختلفة</h2>
+      <p>تعلم كيفية تنسيق الأطباق للمناسبات الخاصة مثل حفلات العشاء، الأعراس، والفعاليات الكبيرة.</p>
+      <p>استكشاف طرق تقديم الطعام المبتكرة مثل التقديم في أوعية غير تقليدية أو تقديم الطعام بطريقة مخصصة (مثل تقديم أطعمة فردية في أكواب صغيرة أو صحون فردية).</p>
+
+      <h2>6. تنسيق الأطباق للضيافة اليومية</h2>
+      <p>تعلم كيفية تنسيق الأطباق التي يتم تقديمها في الوجبات اليومية مثل العشاء العائلي أو الوجبات السريعة.</p>
+      <p>استكشاف أساليب تقديم الطعام الجذابة التي توفر الوقت وتناسب المواقف اليومية.</p>
+
+      <h2>7. التنسيق باستخدام أدوات المائدة</h2>
+      <p>تعلم كيفية استخدام أدوات المائدة بشكل صحيح في تنسيق الأطباق، مثل اختيار الأطباق الصحيحة، استخدام الأواني الفاخرة أو البسيطة.</p>
+      <p>استكشاف كيفية ترتيب الأطباق وأدوات المائدة بطريقة تزيد من جمال العرض بشكل عام.</p>
+
+      <h2>8. الأساليب الحديثة في تنسيق الأطباق</h2>
+      <p>تعلم كيفية استخدام أساليب جديدة في تنسيق الأطباق مثل تقنية التنقيط أو الرسم بالصلصات.</p>
+      <p>استكشاف تقنيات جديدة مثل تقديم الطعام في أوعية شفافة أو استخدام الألواح الخشبية لتقديم الطعام بطريقة عصرية.</p>
+
+      <h2>9. التنسيق في الطهي الصحي</h2>
+      <p>تعلم كيفية تنسيق الأطباق الصحية باستخدام الخضروات والفواكه الطازجة بطريقة جذابة.</p>
+      <p>استكشاف أساليب تقديم الطعام التي تركز على الصحة دون التضحية بالجمال.</p>
+
+      <h2>10. تنسيق الحلويات والعصائر</h2>
+      <p>تعلم كيفية تنسيق الحلويات مثل الكيك، الكوكيز، والموس بشكل فني.</p>
+      <p>تعلم كيفية تنسيق العصائر والمشروبات باستخدام أكواب ملونة، إضافة الثلج أو الفواكه.</p>
+
+      <h2>خلاصة الدورة</h2>
+      <p>دورة "تنسيق الأطباق" تمنحك الأدوات والمعرفة اللازمة لتصبح خبيرًا في فن تنسيق الأطباق بطريقة مبتكرة وجذابة. سواء كنت تحضر حفلة عشاء خاصة أو تقدم وجبة يومية، ستتعلم كيفية تقديم الطعام بشكل يعكس الذوق الرفيع ويساهم في تحسين تجربة تناول الطعام. ستكتسب مهارات تنسيق الطعام التي تناسب جميع المناسبات والمواقف، مما يجعل كل طبق قطعة فنية فريدة.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20تنسيق%20الأطباق" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

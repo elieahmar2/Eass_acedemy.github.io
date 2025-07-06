@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>الموسيقى والفنون الأدائية</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo {
+      width: 80px;
+      height: auto;
+      animation: logoZoom 1s ease-in-out;
+    }
+
+    @keyframes logoZoom {
+      0% {
+        transform: scale(0.3);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      margin: 10px 0 0 0;
+      font-size: 24px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .courses-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .course {
+      width: 48%;
+      text-align: center;
+      border: 1px solid #000;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    .course img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 5px;
+    }
+
+    .course h3 {
+      font-size: 14px;
+      margin: 5px 0 0 0;
+      color: black;
+    }
+
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInUp {
+      from {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInDown {
+      from {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .img-left {
+      animation: slideInLeft 1.2s ease;
+    }
+
+    .img-right {
+      animation: slideInRight 1.2s ease;
+    }
+
+    .img-up {
+      animation: slideInUp 1.2s ease;
+    }
+
+    .img-down {
+      animation: slideInDown 1.2s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img class="logo" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/Picsart_25-04-13_02-17-26-498.png?v=1744499882658" alt="Logo" />
+    <h1>الموسيقى والفنون الأدائية</h1>
+  </header>
+
+  <div class="courses-container">
+    <div class="course">
+      <a href="Al3azef.html">
+        <img class="img-left" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/f030451eeca193ac04e7f299a5291c3e.jpg?v=1744514045062" alt="العزف على الآلات">
+        <h3>العزف على الآلات (بيانو، كمان…)</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="Entej.html">
+        <img class="img-right" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/d60ac16d1a3e532fb8c7c2ef5433aec7.jpg?v=1744514051104" alt="إنتاج الموسيقى">
+        <h3>إنتاج الموسيقى</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="Ta2lif.html">
+        <img class="img-up" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/0e536cf1b2ed68bcde06bbff08da10b2.jpg?v=1744514059266" alt="التأليف الموسيقي">
+        <h3>التأليف الموسيقي</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="Temsil.html">
+        <img class="img-down" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/28b235fe62be6a0e71ea82368f8e2fc2.jpg?v=1744514066697" alt="التمثيل المسرحي">
+        <h3>التمثيل المسرحي</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="Ekhraj.html">
+        <img class="img-left" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/bce349338e8b453c1f27070135c9b195.jpg?v=1744514072946" alt="الإخراج المسرحي">
+        <h3>الإخراج المسرحي</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="3orod.html">
+        <img class="img-right" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/77d15325f9d27c5ed40b2cd82ba819f3.jpg?v=1744514075995" alt="إعداد العروض التقديمية">
+        <h3>إعداد العروض التقديمية</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="Sawt.html">
+        <img class="img-up" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/003adb78ffec8101663179ce1c0bc698.jpg?v=1744514079630" alt="الأداء الصوتي">
+        <h3>الأداء الصوتي</h3>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دبلوم القيادة التربويّة</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2;
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">دبلوم القيادة التربويّة</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>تطوير مهارات القيادة والإدارة بفعالية</h2>
+      <p>يهدف هذا القسم إلى تنمية قدرات المشاركين في مجالات القيادة التربوية والإدارية من خلال التعرف على أساليب التحفيز، اتخاذ القرار، حل المشكلات، وبناء فرق العمل داخل المؤسسات التعليمية.</p>
+
+      <h2>تعلم مهارات المعلم المربي</h2>
+      <p>يركز على الأدوار الشاملة للمعلم، ليس فقط كمُعلم بل كمربٍ قادر على التأثير التربوي، بناء القيم، وإقامة علاقات إيجابية مع الطلاب داخل بيئة تعليمية متوازنة.</p>
+
+      <h2>أساسيات التخطيط التربوي</h2>
+      <p>يتناول خطوات إعداد الخطط التعليمية والتربوية على المدى القصير والطويل، مع فهم أهمية التخطيط في تطوير الأداء وتحقيق الأهداف داخل المؤسسات التربوية.</p>
+
+      <h2>مشكلات تربوية معاصرة</h2>
+      <p>يناقش أبرز التحديات التربوية التي تواجه المؤسسات حالياً، مثل التنمر المدرسي، ضعف التحصيل، الفجوة الرقمية، ويقدم حلولًا واستراتيجيات علمية للتعامل معها.</p>
+
+      <h2>مفهوم القيادة والقائد</h2>
+      <p>يُعرف المشاركين بمفهوم القيادة التربوية وصفات القائد الناجح، ويعرض الفروق بين القيادة والإدارة ودور كل منهما في بيئة العمل التربوي.</p>
+
+      <h2>السلوك التنظيمي في المؤسسات التربوية</h2>
+      <p>يعالج هذا المحور العلاقة بين الأفراد ضمن المؤسسة، وكيفية التعامل مع التحديات السلوكية، وتحقيق بيئة عمل منسجمة وفعالة من خلال فهم الديناميكيات التنظيمية.</p>
+
+      <h2>الاتجاهات الحديثة في الإدارة التربوية</h2>
+      <p>يركز على الأساليب الحديثة في الإدارة، مثل الإدارة بالنتائج، الجودة الشاملة، التحول الرقمي في التعليم، وكيفية توظيفها في تطوير الأداء التربوي والإداري.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دبلوم%20القيادة%20التربويّة" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

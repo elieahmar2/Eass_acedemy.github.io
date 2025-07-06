@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>التحضير لإمتحانات اللغة</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">التحضير لإمتحانات اللغة</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة عن امتحانات اللغة</h2>
+      <p>نظرة عامة على أنواع امتحانات اللغة (مثل TOEFL، IELTS، SAT، DELF، TCF) ومتطلباتها</p>
+      <p>الفروق بين أنواع الاختبارات المختلفة وأهدافها (إمتحانات أكاديمية، مهنية، أو لتحديد مستوى اللغة)</p>
+      <p>فهم بنية الامتحان: الأقسام المختلفة مثل القراءة، الكتابة، الاستماع، والمحادثة</p>
+
+      <h2>2. مهارات الاستماع</h2>
+      <p>استراتيجيات تحسين مهارة الاستماع لتكون قادرًا على فهم المحادثات والنصوص الصوتية</p>
+      <p>تقنيات الاستماع الفعّال مثل التنبؤ بالمحتوى والاستماع للأفكار الرئيسية</p>
+      <p>تمارين تطبيقية على الاستماع لآراء، قصص، أو محادثات في سياقات مختلفة</p>
+
+      <h2>3. مهارات القراءة</h2>
+      <p>تقنيات القراءة الفعّالة: كيفية قراءة النصوص بسرعة وفهم الأفكار الرئيسية</p>
+      <p>كيفية التعامل مع أنواع مختلفة من النصوص (أكاديمية، أدبية، إخبارية، إلخ)</p>
+      <p>استراتيجيات لتحديد المعلومات الدقيقة والإجابة على أسئلة الفهم القرائي بشكل صحيح</p>
+      <p>تدريبات عملية على فقرات قرائية وتحليل أسئلة الفهم المرتبطة بها</p>
+
+      <h2>4. مهارات الكتابة</h2>
+      <p>كيفية كتابة مقالات بشكل منظم ودقيق (مقدمة، جسم المقال، خاتمة)</p>
+      <p>بناء جمل وتراكيب لغوية صحيحة تعكس مستوى عالٍ من المهارة الكتابية</p>
+      <p>استراتيجيات التعامل مع أسئلة الكتابة المختلفة مثل المقالات الجدلية، الوصفية أو التحليلية</p>
+      <p>تمارين كتابية لتحسين الإملاء، القواعد اللغوية، والقدرة على التعبير عن الأفكار بوضوح</p>
+
+      <h2>5. مهارات المحادثة</h2>
+      <p>استراتيجيات لتحسين مهارات المحادثة مثل النطق الصحيح، طلاقة الكلام، والتفاعل بشكل طبيعي مع الممتحن</p>
+      <p>التدريب على محاكاة المحادثات اليومية والأكاديمية مع التركيز على المفردات المناسبة والمواقف المختلفة</p>
+      <p>تمارين تمثيلية للمحادثات في الامتحانات الواقعية مثل اختبار المحادثة (Speaking Test)</p>
+      <p>تقنيات التفاعل والتعبير عن الآراء الشخصية والرد على الأسئلة بطريقة منظمة</p>
+
+      <h2>6. التحضير للقواعد اللغوية</h2>
+      <p>مراجعة القواعد اللغوية الأساسية مثل الأزمنة، الضمائر، الجمل الشرطية، التراكيب النحوية المعقدة</p>
+      <p>شرح الأخطاء الشائعة في اللغة وكيفية تجنبها</p>
+      <p>تمارين تطبيقية على القواعد اللغوية في سياقات مختلفة</p>
+
+      <h2>7. استراتيجيات إدارة الوقت في الامتحانات</h2>
+      <p>تقنيات تقسيم الوقت بفعالية أثناء الامتحان لضمان إتمام جميع الأقسام بشكل مناسب</p>
+      <p>كيفية تحديد الوقت المناسب لكل قسم من الامتحان (القراءة، الكتابة، الاستماع، المحادثة)</p>
+      <p>استراتيجيات للإجابة على الأسئلة بشكل سريع ودقيق تحت ضغط الوقت</p>
+
+      <h2>8. تقنيات تقليل التوتر وزيادة الثقة بالنفس</h2>
+      <p>تمارين تنفس واسترخاء لتقليل التوتر قبل وأثناء الامتحان</p>
+      <p>نصائح نفسية لزيادة الثقة بالنفس والتغلب على القلق</p>
+      <p>كيفية التعامل مع الأسئلة الصعبة في الامتحان وعدم الشعور بالارتباك</p>
+
+      <h2>9. التدريبات النموذجية</h2>
+      <p>محاكاة لامتحانات حقيقية مع نماذج اختبار متكاملة من القراءة، الاستماع، الكتابة، والمحادثة</p>
+      <p>تحليل نتائج التدريبات وتقديم ملاحظات لتحسين الأداء في الاختبار الحقيقي</p>
+      <p>اختبار مستوى لغة قبل وبعد الدورة لقياس التقدم والتحسن في المهارات</p>
+
+      <h2>10. المراجعة النهائية</h2>
+      <p>مراجعة شاملة للمهارات التي تم تعلمها خلال الدورة</p>
+      <p>التركيز على نقاط الضعف والعمل على تعزيزها من خلال تمارين إضافية</p>
+      <p>تقديم نصائح عملية للمشاركة في الامتحان بشكل إيجابي ومرتاح</p>
+
+      <h2>ملاحظة</h2>
+      <p>الدورة مصممة لتغطية كل جوانب التحضير لإمتحانات اللغة، مما يضمن أن المشاركين سيكونون مستعدين بشكل كامل للامتحان، مع تعزيز ثقتهم في قدرتهم على اجتيازه بنجاح.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20التحضير%20لامتحانات%20اللغة" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

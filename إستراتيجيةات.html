@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>استراتيجيات التعليم عن بعد</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">استراتيجيات التعليم عن بعد</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة في التعليم عن بعد</h2>
+      <p>تعريف التعليم عن بعد وأهمية استخدامه في العصر الحديث</p>
+      <p>الفرق بين التعليم التقليدي والتعليم عن بعد</p>
+      <p>التحديات والفرص التي يقدمها التعليم عن بعد للطلاب والمعلمين على حد سواء</p>
+
+      <h2>2. منصات وأدوات التعليم عن بعد</h2>
+      <p>التعريف بأهم منصات التعليم عن بعد (مثل Moodle، Google Classroom، Zoom)</p>
+      <p>كيفية استخدام أدوات إدارة التعلم (LMS) لتوزيع المحتوى وتنظيم الدورات</p>
+      <p>أدوات التفاعل والمشاركة (مثل المنتديات، الدردشات، والمجموعات الدراسية)</p>
+
+      <h2>3. تصميم المحتوى التعليمي الرقمي</h2>
+      <p>كيفية تصميم محتوى تفاعلي وجذاب (مثل المحاضرات المصوّرة، المستندات، البودكاست)</p>
+      <p>استخدام الوسائط المتعددة (الفيديو، الصوت، الرسوم المتحركة) لتعزيز تجربة التعلم</p>
+      <p>استخدام الاختبارات والواجبات لتقييم أداء الطلاب بشكل فعّال</p>
+
+      <h2>4. استراتيجيات تحفيز المتعلمين عن بعد</h2>
+      <p>كيفية الحفاظ على تفاعل الطلاب وتحفيزهم خلال الدروس عن بعد</p>
+      <p>استخدام الألعاب التعليمية، الاختبارات التفاعلية، والتحديات لتشجيع المشاركة</p>
+      <p>أهمية التواصل المستمر والتغذية الراجعة لتحفيز الطلاب</p>
+
+      <h2>5. إدارة الفصول الدراسية عن بعد</h2>
+      <p>استراتيجيات إدارة الفصل الافتراضي وجعل البيئة التعليمية مثمرة</p>
+      <p>تقنيات لإدارة الوقت وتنظيم الجلسات الدراسية عن بعد</p>
+      <p>تقنيات للتعامل مع التحديات المتعلقة بالطلاب ذوي الاحتياجات الخاصة في البيئة الرقمية</p>
+
+      <h2>6. تقييم الأداء وقياس النجاح</h2>
+      <p>كيفية تقييم الطلاب باستخدام الاختبارات الإلكترونية، المشاريع، والمناقشات</p>
+      <p>استخدام البيانات والتحليلات لتقييم فعالية التعليم عن بعد</p>
+      <p>أدوات لقياس التفاعل، والإنجازات، والاستجابة للمواد التعليمية</p>
+
+      <h2>7. استراتيجيات التطوير المستمر في التعليم عن بعد</h2>
+      <p>تحسين تجربة التعلم بناءً على الملاحظات والتغذية الراجعة</p>
+      <p>تطوير المهارات التعليمية والتقنية للمعلمين</p>
+      <p>الابتكار في استخدام الأدوات والتقنيات الحديثة في التعليم عن بعد</p>
+
+      <h2>أنشطة تطبيقية خلال الدورة</h2>
+      <p>تصميم دورة تعليمية عن بعد باستخدام منصة مثل Google Classroom أو Moodle</p>
+      <p>تنفيذ اختبار أو استبيان باستخدام أدوات عبر الإنترنت</p>
+      <p>محاكاة دروس تفاعلية وجلسات تعليمية باستخدام منصات مؤتمرات الفيديو</p>
+
+      <h2>ملاحظة</h2>
+      <p>هذه الدورة ستساعد المتدرّب على بناء وتنفيذ برامج تعليمية فعّالة عن بعد، ولكنها تتطلب أيضًا التفاعل المستمر مع الطلاب واستخدام التكنولوجيا بشكل مبتكر لضمان تجربة تعليمية مميزة وناجحة.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20استراتيجيات%20التعليم%20عن%20بعد" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

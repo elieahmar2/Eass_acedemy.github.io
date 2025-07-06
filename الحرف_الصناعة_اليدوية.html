@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>دوراتنا</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo {
+      width: 80px;
+      height: auto;
+      animation: logoZoom 1s ease-in-out;
+    }
+
+    @keyframes logoZoom {
+      0% {
+        transform: scale(0.3);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      margin: 10px 0 0 0;
+      font-size: 24px;
+    }
+
+    .courses-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .course {
+      width: 48%;
+      text-align: center;
+      border: 1px solid #000;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    .course img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 5px;
+    }
+
+    .course h3 {
+      font-size: 14px;
+      margin: 5px 0 0 0;
+    }
+
+    a {
+      text-decoration: none; /* إزالة الخط تحت الرابط */
+      color: black; /* جعل اللون أسود */
+    }
+
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInUp {
+      from {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInDown {
+      from {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .img-left {
+      animation: slideInLeft 1.2s ease;
+    }
+
+    .img-right {
+      animation: slideInRight 1.2s ease;
+    }
+
+    .img-up {
+      animation: slideInUp 1.2s ease;
+    }
+
+    .img-down {
+      animation: slideInDown 1.2s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img class="logo" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/Picsart_25-04-13_02-17-26-498.png?v=1744499882658" alt="Logo" />
+    <h1>الحرف و الصناعة اليدوية</h1>
+  </header>
+
+  <div class="courses-container">
+    <div class="course">
+      <a href="صناعة_الصابون.html">
+        <img class="img-left" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/savon_nablous%20(2).jpg?v=1744500404318" alt="صناعة الصابون">
+        <h3>صناعة الصابون</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="صناعة_العطور.html">
+        <img class="img-right" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/694ed874-cbf7-4063-9a85-5ae13bbfd285-1000x667-jmS6WgcrHGvyRPBOkTXMO61qKusXlgddN7JPA1Gi.jpg?v=1744500518206" alt="صناعة العطور">
+        <h3>صناعة العطور</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="صناعة_الشموع.html">
+        <img class="img-up" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/f65f8b2de2212f9bbf6cd6ff7e20f89f.jpg?v=1744503439787" alt="صناعة الشموع">
+        <h3>صناعة الشموع</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="فن_الريزن.html">
+        <img class="img-down" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/8d89f82ea71bab6a671056f93271758f.jpg?v=1744503445840" alt="فن الريزن">
+        <h3>فن الريزن</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="كروشيه_و_تطريز.html">
+        <img class="img-left" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/0c4d501e2a00759a83f4648e9b68da5f.jpg?v=1744503452834" alt="كروشيه وتطريز">
+        <h3>كروشيه وتطريز</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="مستحضرات_التجميل_الطبيعية.html">
+        <img class="img-right" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/d7ff45a9a8232ffe35152d9f85f779c1.jpg?v=1744503456798" alt="مستحضرات التجميل الطبيعية">
+        <h3>مستحضرات التجميل الطبيعية</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="اعادة_التدوير.html">
+        <img class="img-up" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/fb118e148378c52027364cb47e9f67b0.jpg?v=1744503460081" alt="اعادة التدوير">
+        <h3>اعادة التدوير</h3>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

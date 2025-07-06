@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تنسيق الزهور</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">تنسيق الزهور</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة عن تنسيق الزهور</h2>
+      <p>التعريف بتنسيق الزهور كفن يدمج بين الجمال والطبيعة، واستكشاف تاريخه وأثره في الثقافات المختلفة.</p>
+      <p>استعراض الأنواع المختلفة للزهور وأهمية اختيار النوع المناسب لكل مناسبة.</p>
+      <p>تعلم الأساسيات مثل طريقة التعامل مع الزهور والحفاظ عليها.</p>
+
+      <h2>2. تعريف أنواع الزهور وأدوات التنسيق</h2>
+      <p>دراسة أنواع الزهور المختلفة، مثل الزهور الموسمية، الاستوائية، والزهور البرية، ومعرفة كيفية اختيارها بناءً على الشكل، اللون، والرائحة.</p>
+      <p>التعرف على الأدوات الأساسية لتنفيذ التنسيقات، مثل المقصات، الأوعية، الأسلاك، الشريط اللاصق، ومواد الزينة الأخرى.</p>
+      <p>تعلم كيفية تحضير الزهور للاستخدام، بما في ذلك تقنيات القص والحفاظ على الزهور في أفضل حالاتها.</p>
+
+      <h2>3. تقنيات تنسيق الزهور الأساسية</h2>
+      <p>تعلم كيفية إنشاء التنسيقات الأساسية مثل باقات اليد، الأوعية الزهرية، والديكورات الطاولة.</p>
+      <p>استكشاف أساليب التنسيق المختلفة مثل التنسيق الكلاسيكي، التنسيق العصري، وتنسيق الزهور بتقنيات مبتكرة.</p>
+      <p>تعلم كيفية ترتيب الزهور في أوعية بطرق مبدعة بحيث تكون جذابة بصريًا ومستدامة.</p>
+
+      <h2>4. تكوين الأسس الفنية لتنسيق الزهور</h2>
+      <p>تعلم تقنيات التوازن والتوزيع، وكيفية تنسيق الألوان والأنماط لإنشاء تنسيقات زهرية متناسقة.</p>
+      <p>فهم مفهوم "الارتفاع" و"العمق" وكيفية خلق تأثيرات ثلاثية الأبعاد باستخدام الزهور.</p>
+      <p>تعلم كيفية استخدام أنواع مختلفة من الأزهار (الزهور الطازجة، الزهور المجففة، الخضروات، الأوراق) في تنسيق واحد.</p>
+
+      <h2>5. تصميم باقات الزفاف والمناسبات الخاصة</h2>
+      <p>تعلم كيفية تصميم باقات زفاف رائعة باستخدام تقنيات التنسيق المتقدمة، وكذلك تنسيقات الزهور لمناسبات مثل الحفلات والمهرجانات.</p>
+      <p>استكشاف الأساليب التي تتناسب مع تنسيقات الطاولات، الزينة المتنقلة، وأعمدة الزهور التي تزين أماكن الاحتفالات.</p>
+      <p>تعلم كيفية اختيار الزهور المتوافقة مع الألوان السائدة في المناسبة وأسلوب التصميم العام.</p>
+
+      <h2>6. تنسيق الزهور للديكورات الداخلية والخارجية</h2>
+      <p>تعلم كيفية تنسيق الزهور لتزيين المنازل، المكاتب، والمتاجر بطرق تتناسب مع المساحة والديكور الداخلي.</p>
+      <p>استكشاف تنسيق الزهور للحدائق الخارجية، الفناءات، والمناطق المفتوحة.</p>
+      <p>تعلم تقنيات التنسيق المتقدم لاستخدام الزهور في تنسيق الحدائق المنزلية والزخارف الموسمية.</p>
+
+      <h2>7. استخدام المواد الإضافية في التنسيق</h2>
+      <p>تعلم كيفية دمج عناصر إضافية مثل الشموع، الأشرطة، الأصداف، الريش، الأحجار، وغيرها من الزينة مع الزهور لإعطاء لمسات جمالية إضافية.</p>
+      <p>استكشاف طرق مبتكرة لاستخدام المواد المختلفة لإضفاء تنوع وأبعاد إضافية على التنسيق.</p>
+
+      <h2>8. المبادئ والأنماط في تنسيق الزهور</h2>
+      <p>دراسة المبادئ الفنية لتنسيق الزهور مثل التوازن، التباين، التناغم، والوحدة.</p>
+      <p>تعلم كيفية دمج الأنماط المختلفة مثل الأشكال المستديرة، المثلثة، والمنحنية لتصميم ترتيبات فنية.</p>
+      <p>التعرف على أنماط التنسيق الشهيرة مثل "التنسيق الخطي"، "التنسيق المفتوح"، و"التنسيق المكثف".</p>
+
+      <h2>9. العناية بالزهور</h2>
+      <p>تعلم تقنيات العناية بالزهور المختلفة لضمان أن تبقى الطاقات الزهرية طازجة لأطول فترة ممكنة.</p>
+      <p>استكشاف كيفية حفظ الزهور في الماء بشكل صحيح وكيفية إعادة قص السيقان.</p>
+      <p>معرفة الطرق الصحيحة لتخزين الزهور المجففة والعناية بها.</p>
+
+      <h2>10. إنشاء مشروع شخصي</h2>
+      <p>العمل على مشروع تنسيق زهور خاص بك، بدءًا من اختيار الزهور وصولاً إلى ترتيبها في تنسيق مبتكر.</p>
+      <p>تلقي ملاحظات من المدرب لتحسين مهاراتك وتطويرها.</p>
+      <p>تعلم كيفية تقديم العمل النهائي بشكل احترافي، سواء في المهرجانات أو للأغراض التجارية.</p>
+
+      <h2>11. التسويق والترويج لأعمال تنسيق الزهور</h2>
+      <p>تعلم كيفية تسويق مهاراتك في تنسيق الزهور، سواء من خلال الوسائل الاجتماعية أو من خلال إنشاء مشروع تجاري.</p>
+      <p>استكشاف كيفية بناء قاعدة عملاء، وكيفية الترويج لمنتجاتك بطريقة جذابة.</p>
+      <p>تعلم كيفية استخدام الصور والتصاميم الجذابة لعرض أعمالك في معارض أو عبر الإنترنت.</p>
+
+      <h2>خلاصة الدورة</h2>
+      <p>دورة "تنسيق الزهور" توفر لك الأدوات والمعرفة اللازمة لإتقان فن تنسيق الزهور بطرق مبتكرة وجمالية. ستتعلم كيفية تصميم ترتيبات زهرية مميزة للمناسبات المختلفة وتزيين الأماكن باستخدام الأزهار والمواد الطبيعية بطريقة فنية. سواء كنت ترغب في بدء عملك الخاص أو تحسين مهاراتك في هذا المجال، هذه الدورة ستعطيك الخبرة العملية والتقنية اللازمة لنجاحك.</p>
+      
+      <a href="https://wa.me/96181566203?text=انا%20مهتم%20بدورة%20تنسيق%20الزهور" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

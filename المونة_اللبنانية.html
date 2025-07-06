@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>المونة اللبنانية</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">المونة اللبنانية</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة عن المونة اللبنانية</h2>
+      <p>التعريف بأهمية المونة في الثقافة اللبنانية، ودورها في الحفاظ على الطعام المحلي والموسمي.</p>
+      <p>استعراض الأطعمة والمشروبات التي تُعتبر جزءًا من المونة اللبنانية التقليدية مثل المربى، المخللات، السمن، الزيتون، وغيرها.</p>
+      <p>فوائد المونة من حيث حفظ الأطعمة لفترات طويلة وتوفير الغذاء الطبيعي والصحي خلال فصول السنة المختلفة.</p>
+
+      <h2>2. التحضير التقليدي للمونة اللبنانية</h2>
+      <p>تعلم الأساليب التقليدية في تحضير المونة مثل التخمير، التجفيف، والتمليح.</p>
+      <p>استعراض طرق استخدام المكونات الطبيعية والموسمية في تحضير المونة.</p>
+      <p>تعلم كيفية استخدام المكونات المتاحة في كل موسم لتخزينها بشكل مثالي لاستخدامها في باقي السنة.</p>
+
+      <h2>3. تحضير المربى والمعلبات</h2>
+      <p>تعلم كيفية تحضير المربى من الفواكه المحلية مثل التين، البرتقال، المشمش، وغيرها.</p>
+      <p>استعراض طرق تحضير المربى بشكل صحيح لتخزينه لفترات طويلة دون فقدان النكهة أو القيمة الغذائية.</p>
+      <p>تعلم كيفية تحضير المعلبات مثل الطماطم المعلبة أو الصلصات التي يمكن استخدامها طوال العام.</p>
+
+      <h2>4. إعداد المخللات</h2>
+      <p>تعلم كيفية تحضير المخللات اللبنانية بأنواعها المختلفة مثل مخلل الخيار، الزيتون، الباذنجان، الجزر.</p>
+      <p>استعراض طرق التمليح والتخمير المناسبة للحفاظ على الخضروات بشكل طبيعي دون إضافة مواد حافظة.</p>
+      <p>تعلم كيفية إعداد مخللات محضرة بنكهات متنوعة مثل الثوم، الفلفل، الأعشاب.</p>
+
+      <h2>5. صناعة الزيتون والصلصات</h2>
+      <p>تعلم كيفية تحضير الزيتون الأسود والأخضر، وكيفية تخزينه في الزيت أو الملح.</p>
+      <p>استعراض طرق تحضير الصلصات اللبنانية مثل صلصة الطماطم، صلصة الفلفل الحار، والصلصات المصنوعة من الأعشاب المحلية.</p>
+
+      <h2>6. تحضير السمن واللبن</h2>
+      <p>تعلم كيفية تحضير السمن البلدي من الزبدة اللبنانية التقليدية.</p>
+      <p>استعراض طرق تحضير اللبن ومشتقاته مثل الجبن واللبنة.</p>
+      <p>تعلم أساليب تخزين السمن واللبن في المنزل بشكل آمن وصحي.</p>
+
+      <h2>7. إعداد العصائر والمشروبات</h2>
+      <p>تعلم كيفية تحضير العصائر الطبيعية والمشروبات اللبنانية التقليدية مثل عصير التوت، الخروب، والشراب من الأعشاب.</p>
+      <p>استعراض طرق تخزين العصائر والمشروبات لإبقائها طازجة طوال السنة.</p>
+
+      <h2>8. الزيت والحبوب</h2>
+      <p>تعلم كيفية تحضير الزيت العربي التقليدي من الزيتون والسمسم.</p>
+      <p>استعراض طرق تخزين الحبوب والبقوليات مثل العدس والفاصوليا والحمص، وأفضل طرق الاحتفاظ بها لفترات طويلة.</p>
+
+      <h2>9. الطبيعة الموسمية في المونة</h2>
+      <p>تعلم كيفية تحديد الأطعمة والمكونات الموسمية المتوفرة خلال العام، واستخدامها بشكل صحيح في تحضير المونة.</p>
+      <p>استعراض كيفية العمل مع المحاصيل المحلية واستخدامها بما يتناسب مع وقت حصادها.</p>
+
+      <h2>10. التخزين الآمن للمونة</h2>
+      <p>تعلم أفضل الطرق لتخزين المونة لضمان جودتها وسلامتها طوال فترة التخزين.</p>
+      <p>استعراض أساليب الحفظ مثل التعقيم، استخدام الزجاجات المفرغة من الهواء، وأهمية الحفاظ على النظافة في كل مراحل التحضير.</p>
+      <p>تعلم كيفية تخزين المونة في أماكن باردة وجافة بعيدة عن الضوء.</p>
+
+      <h2>11. التسويق للمونة اللبنانية</h2>
+      <p>تعلم كيفية تسويق المونة اللبنانية محليًا أو عبر الإنترنت كمنتجات غذائية تقليدية.</p>
+      <p>استعراض طرق التعبئة الجذابة والمناسبة لبيع المونة اللبنانية بشكل احترافي.</p>
+      <p>تعلم كيفية استخدام المونة كهدية أو منتج ثقافي يروج للتراث اللبناني.</p>
+
+      <h2>خلاصة الدورة</h2>
+      <p>دورة "المونة اللبنانية" توفر لك المهارات اللازمة لتحضير المونة اللبنانية التقليدية بشكل يدوي وآمن، وتساعدك في الحفاظ على الطعام المحلي وصحته طوال العام. سيتعلم المشاركون كيفية إعداد مجموعة من المأكولات اللبنانية الشهية مثل المربى، المخللات، الزيتون، السمن، والعصائر، بالإضافة إلى تعلم تقنيات التخزين الجيدة لضمان جودتها. الدورة مثالية لمن يرغب في تعلم كيفية الحفاظ على التراث الغذائي اللبناني وتحضيره بشكل منزلي ومهني.</p>
+      
+      <a href="https://wa.me/96181566203?text=انا%20مهتم%20بالمونة%20اللبنانية" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

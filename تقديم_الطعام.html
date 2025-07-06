@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تقديم الطعام الراقي</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">تقديم الطعام الراقي</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة عن فن تقديم الطعام الراقي</h2>
+      <p>التعريف بأهمية فن تقديم الطعام في السياقات المختلفة مثل الفنادق الفاخرة، المطاعم الراقية، والمناسبات الرسمية.</p>
+      <p>استكشاف تأثير تقديم الطعام على تجربة العملاء وكيف يمكن أن يرفع من مستوى الرفاهية والاحترافية.</p>
+      <p>التعرف على تاريخ وتطور فن تقديم الطعام وكيف أصبح جزءًا أساسيًا من ثقافة الطعام العالمية.</p>
+
+      <h2>2. أساسيات إعداد طاولة راقية</h2>
+      <p>تعلم كيفية ترتيب الطاولة بشكل أنيق باستخدام الأدوات المناسبة مثل الأطباق، الكؤوس، الشوك والسكاكين.</p>
+      <p>دراسة اختيار المفارش، الأقمشة، وأدوات المائدة التي تعكس الفخامة والأناقة.</p>
+      <p>تعلم ترتيب الأطعمة على الطاولة لتسهيل الوصول إليها وجعلها تبدو مميزة.</p>
+
+      <h2>3. تقنيات تقديم الأطباق بطرق راقية</h2>
+      <p>تعلم كيفية تقديم الأطباق الرئيسية، المقبلات، والحلويات بطريقة جذابة وأنيقة.</p>
+      <p>تعلم تقنيات ترتيب الأطعمة على الأطباق بطرق مبتكرة، بما في ذلك استخدام صوصات التزيين، الألوان الطبيعية، والأشكال المميزة.</p>
+      <p>استكشاف كيفية تقديم الأطعمة بأحجام وتصاميم تجعل الطعام يبدو أكثر فخامة وجاذبية.</p>
+
+      <h2>4. تقديم المشروبات</h2>
+      <p>تعلم كيفية تقديم المشروبات الكحولية وغير الكحولية بشكل راقٍ، مثل النبيذ، الكوكتيلات، والمشروبات الفاخرة.</p>
+      <p>استكشاف تقنيات تحضير المشروبات بطريقة جذابة واحترافية.</p>
+      <p>تعلم كيفية استخدام أدوات مثل المراوح والثلج بشكل أنيق لجعل المشروبات أكثر تأثيرًا.</p>
+
+      <h2>5. فن استخدام الألوان والتصميم</h2>
+      <p>دراسة استخدام الألوان بشكل مبدع على الطاولة وفي الطعام لتتناسب مع الأجواء العامة للمناسبة.</p>
+      <p>تعلم كيفية تنسيق الألوان بين الأطباق والأدوات لتقديم طاولة مميزة ومتناسقة.</p>
+      <p>استكشاف كيفية اختيار الأطباق والأواني التي تعكس الرقي وتكمل باقي تفاصيل المكان.</p>
+
+      <h2>6. فن التقديم في المناسبات الخاصة</h2>
+      <p>تعلم تقنيات تقديم الطعام في حفلات الزفاف، الحفلات الخاصة، والمناسبات الرسمية، بما في ذلك تقديم المأكولات المتنوعة بطريقة راقية.</p>
+      <p>استكشاف استراتيجيات تقديم الطعام للمجموعات الكبيرة والمتنوعة، وضمان توفير تجربة طعام فاخرة لجميع الحضور.</p>
+      <p>تعلم كيفية التعامل مع تقديم الطعام للأشخاص ذوي المتطلبات الخاصة مثل النباتيين أو الحساسيات الغذائية.</p>
+
+      <h2>7. التفاعل مع الضيوف</h2>
+      <p>تعلم أسس التفاعل مع الضيوف أثناء تقديم الطعام، بما في ذلك كيفية الإجابة على الأسئلة حول الأطباق والمشروبات.</p>
+      <p>استكشاف سبل تقديم الطعام بشكل يضمن الراحة التامة للضيوف دون مقاطعة تجربتهم.</p>
+      <p>تعلم كيفية التعامل مع المشكلات الطارئة أثناء تقديم الطعام مثل الحروق أو الأخطاء في ترتيب الطعام.</p>
+
+      <h2>8. التقديم في أجواء متعددة</h2>
+      <p>تعلم كيفية تقديم الطعام في أجواء متنوعة مثل المطاعم، الفنادق، والمناسبات الكبيرة مع الحفاظ على الأسلوب الراقي.</p>
+      <p>استكشاف كيفية تقديم الطعام في مناسبات فاخرة ذات طابع رسمي وغير رسمي، مع مراعاة التفاصيل الدقيقة لكل مناسبة.</p>
+
+      <h2>9. الاهتمام بالتفاصيل الصغيرة</h2>
+      <p>دراسة أهمية التفاصيل الصغيرة في تقديم الطعام مثل التنظيف المستمر للأدوات، ترتيب الأطعمة بدقة، واختيار الزهور أو الزينة على الطاولة.</p>
+      <p>تعلم كيفية استخدام الأدوات التكنولوجية مثل الأطباق الحرارية والرافعات الخاصة لتقديم الطعام الساخن.</p>
+
+      <h2>10. التفاعل مع الذوق الشخصي للضيوف</h2>
+      <p>تعلم كيفية تلبية الاحتياجات الخاصة للضيوف من حيث الأذواق والاختيارات الغذائية.</p>
+      <p>استكشاف كيفية تقديم المأكولات التي ترضي الأذواق المختلفة وتعكس تنوع الطهي العالمي.</p>
+
+      <h2>خلاصة الدورة</h2>
+      <p>دورة "تقديم الطعام الراقي" تقدم لك المهارات التي تحتاجها لتصبح خبيرًا في فنون تقديم الطعام بشكل راقٍ، سواء كنت تقدم الطعام في مطعم فاخر أو في مناسبة خاصة. ستتعلم كيفية اختيار الأطباق المناسبة، ترتيب الطاولة بشكل أنيق، استخدام التقنيات الحديثة في تقديم الطعام، بالإضافة إلى تعلم فن التعامل مع الضيوف لضمان تجربة طعام لا تُنسى.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20تقديم%20الطعام%20الراقي" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>برمجة المواقع والتطبيقات</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">برمجة المواقع والتطبيقات</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة عن البرمجة</h2>
+      <p>التعريف بالبرمجة وأهميتها في إنشاء المواقع والتطبيقات.</p>
+      <p>استعراض أدوات البرمجة الأساسية المستخدمة في تصميم المواقع والتطبيقات.</p>
+      <p>التعرف على بيئات التطوير وبرامج الكتابة مثل VS Code، Xcode، وAndroid Studio.</p>
+
+      <h2>2. أساسيات تصميم وبرمجة المواقع</h2>
+      <p>تعلم أساسيات HTML وCSS لإنشاء وتصميم الصفحات الرئيسية.</p>
+      <p>استخدام JavaScript لتحسين التفاعل والوظائف على صفحات الويب.</p>
+      <p>تعلم مفاهيم الـ Responsive Design لجعل المواقع متوافقة مع مختلف الأجهزة والشاشات.</p>
+      <p>التعرف على تقنيات مثل jQuery وBootstrap لتسريع عملية التصميم.</p>
+
+      <h2>3. إدارة قواعد البيانات للمواقع</h2>
+      <p>تعلم كيفية إعداد قواعد البيانات باستخدام MySQL أو MongoDB.</p>
+      <p>تعلم كيفية ربط المواقع مع قواعد البيانات لتخزين واسترجاع البيانات.</p>
+      <p>استكشاف كيفية إنشاء استعلامات SQL وتحسين أداء قواعد البيانات.</p>
+
+      <h2>4. تقنيات التطوير الخلفي (Back-End)</h2>
+      <p>التعرف على اللغات المستخدمة في البرمجة الخلفية مثل PHP، Node.js، وPython.</p>
+      <p>تعلم كيفية بناء أنظمة تسجيل دخول وتسجيل للمستخدمين.</p>
+      <p>استكشاف مفاهيم RESTful APIs وكيفية استخدامها في الاتصال بين الواجهة الأمامية والخلفية للموقع.</p>
+
+      <h2>5. تطوير التطبيقات للهواتف الذكية</h2>
+      <p>تعلم كيفية تطوير تطبيقات الهواتف باستخدام لغات البرمجة مثل Java (لأندرويد) أو Swift (لـiOS).</p>
+      <p>التعرف على أدوات التطوير مثل Android Studio وXcode وكيفية استخدامها.</p>
+      <p>تعلم كيفية بناء واجهات المستخدم للتطبيقات وتطوير ميزات متعددة مثل التفاعل مع الكاميرا، الميكروفون، والموقع الجغرافي.</p>
+
+      <h2>6. تقنيات واجهات المستخدم (UI) وتجربة المستخدم (UX)</h2>
+      <p>تعلم كيفية تصميم واجهات المستخدم التي تتميز بالبساطة والجاذبية.</p>
+      <p>استكشاف مبادئ تصميم تجربة المستخدم لتحسين التنقل والتفاعل داخل المواقع والتطبيقات.</p>
+      <p>استخدام أدوات التصميم مثل Adobe XD وFigma لإنشاء نماذج أولية لتطبيقات ومواقع.</p>
+
+      <h2>7. إدارة مشروعات البرمجة</h2>
+      <p>تعلم كيفية إدارة مشروعات البرمجة باستخدام أدوات التحكم في الإصدارات مثل Git وGitHub.</p>
+      <p>استكشاف طريقة استخدام Trello وJira لتنظيم وإدارة مراحل تطوير المشروع.</p>
+
+      <h2>8. الاختبار والتحسين</h2>
+      <p>تعلم كيفية اختبار المواقع والتطبيقات للتأكد من عملها بشكل صحيح.</p>
+      <p>استكشاف تقنيات التحسين مثل تحسين السرعة وتحسين محركات البحث (SEO).</p>
+      <p>تعلم كيفية اختبار الأداء والأمان للمواقع والتطبيقات لضمان أقصى مستوى من الكفاءة.</p>
+
+      <h2>9. نشر المواقع والتطبيقات</h2>
+      <p>تعلم كيفية نشر المواقع على الإنترنت باستخدام خدمات مثل GitHub Pages، cPanel، أو خدمات الاستضافة السحابية مثل AWS وHeroku.</p>
+      <p>استكشاف كيفية نشر تطبيقات الهواتف الذكية على متاجر التطبيقات مثل Google Play وApp Store.</p>
+      <p>تعلم استراتيجيات الصيانة والتحديث المستمر للمواقع والتطبيقات بعد إطلاقها.</p>
+
+      <h2>10. تطوير المشاريع الخاصة</h2>
+      <p>تطبيق ما تم تعلمه في الدورة من خلال تطوير مشروع موقع ويب أو تطبيق شخصي.</p>
+      <p>تعلم كيفية التعامل مع التحديات والمشاكل التي قد تظهر أثناء تطوير المواقع والتطبيقات.</p>
+      <p>استكشاف كيفية تحسين وتحليل أداء المشروع بعد الانتهاء من تطويره.</p>
+
+      <h2>خلاصة الدورة</h2>
+      <p>دورة "برمجة المواقع والتطبيقات" توفر لك جميع المهارات اللازمة لتصبح مطور ويب أو تطبيقات محترف. سوف تتعلم أساسيات البرمجة، تطوير المواقع التفاعلية، بناء تطبيقات الهواتف الذكية، والتعامل مع أدوات التطوير الحديثة. مع هذه الدورة، ستكون قادرًا على تحويل أفكارك إلى مواقع وتطبيقات عملية وجذابة، مما يفتح أمامك فرصًا واسعة في مجال البرمجة وتطوير البرمجيات.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20برمجة%20المواقع%20والتطبيقات" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

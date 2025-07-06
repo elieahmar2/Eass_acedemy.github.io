@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دوراتنا</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #003366;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+
+        header {
+            background-color: #4B7F4D;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .logo {
+            animation: zoomAndFlip 1s ease-out forwards;
+            margin-bottom: 20px;
+        }
+
+        @keyframes zoomAndFlip {
+            0% {
+                transform: perspective(600px) rotateY(0deg) translateY(-50px) scale(0.5);
+            }
+            50% {
+                transform: perspective(600px) rotateY(180deg) translateY(0) scale(1);
+            }
+            100% {
+                transform: perspective(600px) rotateY(0deg) translateY(50px) scale(0.8);
+            }
+        }
+
+        .logo img {
+            width: 120px;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 1.7rem;
+            margin-top: 10px;
+        }
+
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .course {
+            border: 2px solid #D32F2F;
+            border-radius: 10px;
+            background-color: #f0f8ff;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .course:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .course a {
+            text-decoration: none; /* إزالة الخط */
+            color: inherit; /* نفس لون النص */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .course img {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 10px;
+        }
+
+        .course h3 {
+            font-size: 1rem;
+            white-space: nowrap;
+            overflow: visible;
+            text-overflow: unset;
+        }
+
+        footer {
+            background-color: #4B7F4D;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">
+                <img src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/Picsart_25-04-13_02-02-56-526.png?v=1744499425853" alt="شعار المؤسسة">
+            </a>
+        </div>
+        <h1>قسم الدورات و الدبلومات</h1>
+    </header>
+
+    <main>
+        <section class="courses">
+            <div class="course">
+                <a href="الحرف_الصناعة_اليدوية.html">
+                    <img src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/1744500122028.jpg?v=1744500156450" alt="دورة 1">
+                    <h3>الحرف والصناعات اليدوية </h3>
+                </a>
+            </div>
+            <div class="course">
+                <a href="الصناعات_الغذائية_و_الزراعة.html">
+                    <img src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D8%BA%D8%B0%D8%A7%D8%A6%D9%8A%D8%A9.jpg?v=1744501380338" alt="الصناعات الغذائية و الزراعة">
+                    <h3>الصناعات الغذائية و الزراعية</h3>
+                </a>
+            </div>
+            <div class="course">
+                <a href="الفنون_و_التصميم.html">
+                    <img src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/aws_Jts1WqZDGVgRuVNPIktiM9vbBehoGMkf_sm_2x.png?v=1744501454877" alt="الفنون و التصميم">
+                    <h3>الفنون و التصميم</h3>
+                </a>
+            </div>
+            <div class="course">
+                <a href="الطهي_و_فنون_المائدة.html">
+                    <img src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/l-art-de-mettre-a-table.jpg.webp?v=1744501541269" alt="الطهي و فنون المائدة">
+                    <h3>المائدة و فنون الطهي</h3>
+                </a>
+            </div>
+            <div class="course">
+                <a href="دعم_نفسي.html">
+                    <img src="https://cdn.glitch.global/93907291-9ee2-43c5-8ac1-547b2ec53940/20e4108cd29a9bf3a5a9605b1d58712d.jpg?v=1744666172590" alt="دبلوم دعم النفسي والاجتماعي">
+                    <h3>دبلوم دعم النفسي والاجتماعي</h3>
+                </a>
+            </div>
+            <div class="course">
+                <a href="البرمجة_و_التكنولوجيا.html">
+                    <img src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/%D8%A8%D8%B1%D9%85%D8%AC%D8%A9-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%82%D8%B9.webp?v=1744501599168" alt="البرمجة و التكنولوجيا">
+                    <h3>البرمجة و التكنولوجيا</h3>
+                </a>
+            </div>
+            <div class="course">
+                <a href="Qesm_tarbawi.html">
+                    <img src="https://cdn.glitch.global/830e39b8-fbd8-49fd-bf1d-80a27dd76c5e/Educational-Media%20(1).jpg?v=1744758021479" alt="القسم التربوي">
+                    <h3>القسم التربوي</h3>
+                </a>
+            </div>
+            <div class="course">
+                <a href="Tazyin.html">
+                    <img src="https://cdn.glitch.global/830e39b8-fbd8-49fd-bf1d-80a27dd76c5e/Picsart_25-04-16_01-57-52-111.jpg?v=1744757984556" alt="تزيين نسائي و رجالي">
+                    <h3>تزيين نسائي و رجالي</h3>
+                </a>
+            </div>
+            <div class="course">
+                <a href="الادارة_و_التسويق.html">
+                    <img src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/%D9%85%D8%A7-%D8%A7%D9%84%D9%85%D9%82%D8%B5%D9%88%D8%AF-%D8%A8%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%AA%D8%B3%D9%88%D9%8A%D9%82.jpg?v=1744501672857" alt="الإدارة و التسويق">
+                    <h3>الإدارة و التسويق</h3>
+                </a>
+            </div>
+            <div class="course">
+                <a href="التعليم_و_التدريب.html">
+                    <img src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/%D8%A7%D9%84%D8%BA%D9%84%D8%A7%D9%811-4.jpg?v=1744501792940" alt="التعليم و التدريب">
+                    <h3>التعليم و التدريب</h3>
+                </a>
+            </div>
+            <div class="course">
+                <a href="الصحة_و_اللياقة_و_العناية_الشخصية.html">
+                    <img src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/ba2d86b8648b54742cb5d69769f14ed3.png.webp?v=1744501914910" alt="الصحة و اللياقة و العناية الشخصية">
+                    <h3>الصحة و اللياقة و العناية الشخصية</h3>
+                </a>
+            </div>
+            <div class="course">
+                <a href="اللغات_و_الثقافات.html">
+                    <img src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/%D9%85%D9%82%D8%A7%D9%84-%D8%A7%D9%84%D9%84%D8%BA%D8%A7%D8%AA.webp?v=1744501959608" alt="اللغات و الثقافات">
+                    <h3>اللغات و الثقافات</h3>
+                </a>
+            </div>
+            <div class="course">
+                <a href="الموسيقى_و_الفنون_الأدائية.html">
+                    <img src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/article-DXBKdhkx76pT.jpg_729x410.jpg?v=1744502165514" alt="الموسيقى و الفنون الأدائية">
+                    <h3>الموسيقى و الفنون الأدائية</h3>
+                </a>
+            </div>
+            <div class="course">
+                <a href="القانون_و_المجتمع.html">
+                    <img src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/pngtree-law-and-justice-conceptgavel-concept-wood-judgment-photo-image_8236228%20(1).jpg?v=1744502263244" alt="القانون و المجتمع">
+                    <h3>القانون و المجتمع</h3>
+                </a>
+            </div>
+            <div class="course">
+                <a href="الزراعة_و_السياحة_و_الضيافة.html">
+                    <img src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/ApTS8l4AbhIFZtePeuQyVqp9yBXTVFKBFnrjRcim.png?v=1744502472578" alt="الزراعة و السياحة و الضيافة">
+                    <h3>الزراعة و السياحة و الضيافة</h3>
+                </a>
+            </div>
+            <!-- كرر باقي الدورات بنفس الشكل -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 جميع الحقوق محفوظة EASS</p>
+    </footer>
+</body>
+</html>

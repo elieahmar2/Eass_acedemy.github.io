@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تصميم وتنظيم المناسبات</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">تصميم وتنظيم المناسبات</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة عن تنظيم المناسبات</h2>
+      <p>التعريف بمفهوم تنظيم المناسبات وأهمية هذا المجال في العالم الحديث.</p>
+      <p>التعرف على الأنواع المختلفة من المناسبات التي يمكن تنظيمها مثل حفلات الزفاف، الحفلات الخاصة، المؤتمرات، المعارض، والمهرجانات.</p>
+      <p>دراسة تأثير المناسبات على الأفراد والمجتمعات وأهمية التنظيم الجيد في نجاح الحدث.</p>
+
+      <h2>2. مراحل التخطيط للمناسبات</h2>
+      <p>تعلم كيفية تحديد الهدف والرؤية العامة للمناسبة واختيار الموضوع المناسب.</p>
+      <p>دراسة كيفية تحديد الميزانية المتاحة وكيفية إدارتها لضمان تلبية جميع احتياجات الحدث.</p>
+      <p>استكشاف كيفية اختيار المكان المناسب للمناسبة وفقًا لنوع الحدث وعدد المدعوين.</p>
+      <p>تعلم كيفية وضع جدول زمني شامل لتنظيم الحدث والالتزام بالمواعيد الدقيقة.</p>
+
+      <h2>3. التنسيق مع الموردين والمقاولين</h2>
+      <p>تعلم كيفية التواصل مع مزودي الخدمات مثل شركات التأثيث، شركات الزهور، شركات الصوت والإضاءة، وشركات الطعام والشراب.</p>
+      <p>كيفية اختيار الموردين المناسبين بناءً على سمعتهم وجودتهم، والتفاوض على الأسعار.</p>
+      <p>استكشاف كيفية تنسيق جميع هذه العناصر لضمان أن كل شيء يسير بسلاسة في يوم الحدث.</p>
+
+      <h2>4. تصميم الديكور وتنسيق المساحات</h2>
+      <p>تعلم كيفية تصميم ديكورات المناسبات مثل الزهور، الأضواء، المفروشات، واللوحات الإرشادية.</p>
+      <p>دراسة كيفية استخدام الألوان والأنماط في الديكور لتحقيق التناغم بين كافة العناصر.</p>
+      <p>تعلم كيفية استخدام المساحات بشكل مناسب، مع مراعاة توزيع الضيوف والأثاث لتوفير الراحة والمرونة.</p>
+
+      <h2>5. تنسيق الأطعمة والمشروبات</h2>
+      <p>تعلم كيفية تحديد قائمة الطعام والمشروبات المناسبة للحدث، بما في ذلك الوجبات الرئيسية والحلويات والمشروبات.</p>
+      <p>استكشاف كيفية التنسيق مع شركات الطعام لضمان تقديم الطعام في الوقت المناسب وبالشكل المناسب.</p>
+      <p>دراسة كيفية إعداد وتنظيم محطة تقديم الطعام أو بوفيه بطريقة مبتكرة وجذابة.</p>
+
+      <h2>6. التخطيط لجدول الأعمال والتوقيت</h2>
+      <p>تعلم كيفية تنظيم جدول الأعمال للحدث، بما في ذلك ترتيب الفقرات، العروض، الموسيقى، والخطب.</p>
+      <p>استكشاف كيفية ترتيب التوقيت بشكل مرن لضمان سير الحدث بشكل متناسق، دون أي تأخير أو ازدحام.</p>
+      <p>تعلم كيفية التعامل مع الطوارئ والتغييرات غير المتوقعة أثناء الحدث.</p>
+
+      <h2>7. تنسيق الحضور والضيوف</h2>
+      <p>تعلم كيفية إرسال الدعوات وتنظيم الحضور، سواء كان ذلك عبر البريد الإلكتروني أو الدعوات الورقية.</p>
+      <p>دراسة كيفية تنسيق استقبال الضيوف، بما في ذلك توجيههم إلى الأماكن المناسبة، وتوفير المساحة اللازمة لهم.</p>
+      <p>استكشاف كيفية التعامل مع فئات مختلفة من الضيوف، مثل VIP أو الضيوف العاديين، لضمان تقديم أفضل تجربة لهم.</p>
+
+      <h2>8. التسويق والدعاية للمناسبات</h2>
+      <p>تعلم كيفية استخدام وسائل التواصل الاجتماعي والإعلانات للترويج للحدث وجذب الحضور.</p>
+      <p>استكشاف طرق مبتكرة لزيادة الوعي بالحدث وجذب أكبر عدد من الجمهور.</p>
+      <p>دراسة كيفية بناء حملات دعائية فعالة على الإنترنت وفي وسائل الإعلام التقليدية.</p>
+
+      <h2>9. الرقابة والمتابعة في يوم الحدث</h2>
+      <p>تعلم كيفية إدارة الحدث في يومه من خلال متابعة كافة التفاصيل والأنشطة.</p>
+      <p>استكشاف كيفية التنسيق بين الفرق المختلفة للتأكد من أن كل شيء يسير وفقًا للخطة.</p>
+      <p>تعلم كيفية مراقبة التفاعل مع الضيوف وتقديم حلول سريعة لأي مشكلات قد تظهر.</p>
+
+      <h2>10. إغلاق الحدث وتقديم الشكر</h2>
+      <p>تعلم كيفية إنهاء الحدث بطريقة احترافية، بدءًا من وداع الضيوف إلى تنظيم شكرهم.</p>
+      <p>استكشاف كيفية تقديم تقارير تفصيلية للعملاء حول سير الحدث وتقديم التوصيات للتحسين في المستقبل.</p>
+      <p>تعلم كيفية جمع الملاحظات من المشاركين لضمان تحسين أداءك في المناسبات القادمة.</p>
+
+      <h2>11. إدارة الأعمال والتسويق الشخصي في تنظيم المناسبات</h2>
+      <p>تعلم كيفية بناء اسمك في السوق والعمل على تطوير علامتك التجارية كمنظم فعال للمناسبات.</p>
+      <p>استكشاف طرق الترويج لخدماتك وتنظيم فعاليات صغيرة للتسويق لعملك.</p>
+      <p>التعرف على كيفية التعامل مع العملاء بشكل احترافي، من تقديم العروض إلى إغلاق العقود وتنفيذها.</p>
+
+      <h2>خلاصة الدورة</h2>
+      <p>دورة "تصميم وتنظيم المناسبات" تتيح لك تعلم كافة المهارات اللازمة لتخطيط وتنفيذ وتنظيم المناسبات بنجاح، بدءًا من تحديد الهدف والتخطيط للحدث، إلى تنسيق الخدمات المختلفة في يوم الحدث. ستحصل على الخبرة العملية والنظريات المتعلقة بكيفية إدارة مناسبات متنوعة واحترافية. سواء كنت ترغب في العمل في هذا المجال أو بدء مشروعك الخاص، هذه الدورة ستزودك بكل الأدوات التي تحتاجها لتحقيق النجاح في مجال تنظيم المناسبات.</p>
+      
+      <a href="https://wa.me/96181566203?text=انا%20مهتم%20بدورة%20تصميم%20وتنظيم%20المناسبات" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>التطوير الشخصي والقيادة</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">التطوير الشخصي والقيادة</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة في التطوير الشخصي</h2>
+      <p>التعرف على الذات: نقاط القوة والضعف</p>
+      <p>كيفية وضع أهداف شخصية ومهنية واقعية</p>
+      <p>أهمية الانضباط الذاتي وبناء العادات الإيجابية</p>
+
+      <h2>2. مهارات التواصل الفعّال</h2>
+      <p>فن الاستماع والحديث بثقة</p>
+      <p>لغة الجسد وتأثيرها في القيادة</p>
+      <p>التواصل في بيئات العمل وحل النزاعات بذكاء</p>
+
+      <h2>3. إدارة الوقت وتنظيم الأولويات</h2>
+      <p>تقنيات لتحديد الأولويات (مثل مصفوفة أيزنهاور)</p>
+      <p>أدوات لتنظيم المهام اليومية والأسبوعية</p>
+      <p>التخلص من التسويف وزيادة الإنتاجية</p>
+
+      <h2>4. الذكاء العاطفي</h2>
+      <p>فهم المشاعر الشخصية ومشاعر الآخرين</p>
+      <p>التحكم في ردود الفعل والانفعالات</p>
+      <p>استخدام الذكاء العاطفي في قيادة الفرق والتفاعل الإنساني</p>
+
+      <h2>5. المهارات القيادية الأساسية</h2>
+      <p>ما هي القيادة؟ ومتى تبدأ؟</p>
+      <p>الفرق بين القائد والمدير</p>
+      <p>أساليب القيادة المختلفة (التشاركية – التحفيزية – الحازمة...)</p>
+
+      <h2>6. بناء الفريق وتحفيز الأفراد</h2>
+      <p>كيف تشكّل فريق عمل فعّال؟</p>
+      <p>تحفيز الفريق نحو الإنجاز وتحقيق الأهداف</p>
+      <p>التعامل مع الاختلافات داخل الفريق وإدارة التحديات</p>
+
+      <h2>7. اتخاذ القرارات وحل المشكلات</h2>
+      <p>خطوات اتخاذ قرارات صحيحة</p>
+      <p>التفكير النقدي والإبداعي</p>
+      <p>إدارة الأزمات والتصرف تحت الضغط</p>
+
+      <h2>أنشطة تطبيقية في الدورة</h2>
+      <p>تمارين لاكتشاف الذات وتحديد الأهداف</p>
+      <p>محاكاة مواقف قيادية وحل مشكلات جماعية</p>
+      <p>تقييم شخصي وتغذية راجعة لتحسين الأداء</p>
+
+      <h2>ملاحظة</h2>
+      <p>هذه الدورة تساعد على بناء شخصية متوازنة وقيادية، وتشكّل أساسًا لأي شخص يسعى لتطوير ذاته أو استلام مناصب قيادية، لكنها لا تعني أن المتدرّب سيصبح قائدًا مثاليًا 100% فوراً، بل تضعه على الطريق الصحيح مع إمكانية التطوير المستمر.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20التطوير%20الشخصي%20والقيادة" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

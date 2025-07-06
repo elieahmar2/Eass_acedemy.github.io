@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>البرمجة والتكنولوجيا</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo {
+      width: 80px;
+      height: auto;
+      animation: logoZoom 1s ease-in-out;
+    }
+
+    @keyframes logoZoom {
+      0% {
+        transform: scale(0.3);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      margin: 10px 0 0 0;
+      font-size: 24px;
+      text-decoration: none;
+      color: black; /* اللون الأسود */
+    }
+
+    .courses-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .course {
+      width: 48%;
+      text-align: center;
+      border: 1px solid #000;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    .course img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 5px;
+    }
+
+    .course h3 {
+      font-size: 14px;
+      margin: 5px 0 0 0;
+      color: black; /* اللون الأسود */
+    }
+
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInUp {
+      from {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInDown {
+      from {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .img-left {
+      animation: slideInLeft 1.2s ease;
+    }
+
+    .img-right {
+      animation: slideInRight 1.2s ease;
+    }
+
+    .img-up {
+      animation: slideInUp 1.2s ease;
+    }
+
+    .img-down {
+      animation: slideInDown 1.2s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img class="logo" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/Picsart_25-04-13_02-17-26-498.png?v=1744499882658" alt="Logo" />
+    <h1>البرمجة والتكنولوجيا</h1>
+  </header>
+
+  <div class="courses-container">
+    <div class="course">
+      <a href="برمجة_تطبيقات.html">
+        <img class="img-left" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/8e132fbd58fe46d4b224c088afd9b5b3.jpg?v=1744510448714" alt="برمجة المواقع والتطبيقات">
+        <h3>برمجة المواقع والتطبيقات</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="تطوير_هاتف.html">
+        <img class="img-right" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/9ba3a039c2bef5ceb03fa132a89ccbb1.jpg?v=1744510454943" alt="تطوير تطبيقات الهاتف">
+        <h3>تطوير تطبيقات الهاتف</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="ذكاء_اصتناعي.html">
+        <img class="img-up" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/97e8ddb09a792b66c7853a9fa8c92806.jpg?v=1744510460392" alt="الذكاء الاصطناعي">
+        <h3>الذكاء الاصطناعي</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="الأمن_السيبراني.html">
+        <img class="img-down" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/54db72ef69430b825d6b43ae2208a5a2.jpg?v=1744510466458" alt="الأمن السيبراني">
+        <h3>الأمن السيبراني</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="تحليل_بيانات.html">
+        <img class="img-left" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/41130dd428ebf1d39c7a6dee1f08774a.jpg?v=1744510478667" alt="تحليل البيانات">
+        <h3>تحليل البيانات</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="انتاج_فيديو.html">
+        <img class="img-right" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/94f6bb1b9838863e82b63f23c589a39d.jpg?v=1744510487190" alt="إنتاج الفيديو">
+        <h3>إنتاج الفيديو</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="تصميمxu.html">
+        <img class="img-up" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/cbf680881c304f4e757819cf756cac72.jpg?v=1744510495415" alt="تصميم UX/UI">
+        <h3>تصميم UX/UI</h3>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

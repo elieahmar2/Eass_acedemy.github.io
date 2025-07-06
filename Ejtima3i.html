@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دورة العمل الاجتماعي</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2;
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">دورة العمل الاجتماعي</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة في العمل الاجتماعي</h2>
+      <p>تعريف العمل الاجتماعي وأهدافه</p>
+      <p>أهمية العمل الاجتماعي في بناء المجتمعات</p>
+      <p>أدوار الأخصائي الاجتماعي ومجالات عمله</p>
+
+      <h2>2. المبادئ والقيم الأساسية للعمل الاجتماعي</h2>
+      <p>احترام الكرامة الإنسانية</p>
+      <p>العدالة الاجتماعية والمساواة</p>
+      <p>الحفاظ على السرية والخصوصية</p>
+      <p>التعاطف والحياد</p>
+
+      <h2>3. مهارات التواصل الفعّال</h2>
+      <p>فن الإنصات والتواصل غير اللفظي</p>
+      <p>كيفية بناء الثقة مع الأفراد والأسر</p>
+      <p>التعامل مع الفئات الضعيفة والهشة (أطفال – مسنون – ذوي احتياجات خاصة)</p>
+
+      <h2>4. دراسة الحالات الاجتماعية</h2>
+      <p>كيفية دراسة الحالة وتحليلها</p>
+      <p>أدوات تقييم الحالة (مقابلات، استمارات، ملاحظة...)</p>
+      <p>إعداد تقارير اجتماعية بشكل مهني</p>
+
+      <h2>5. التدخل الاجتماعي</h2>
+      <p>تخطيط وتنفيذ برامج دعم الأفراد</p>
+      <p>العمل ضمن فريق متعدد الاختصاصات</p>
+      <p>إدارة الأزمات والمواقف الطارئة</p>
+
+      <h2>6. العمل مع الجماعات والمجتمع</h2>
+      <p>تنظيم حملات توعية مجتمعية</p>
+      <p>العمل مع جمعيات ومنظمات المجتمع المدني</p>
+      <p>المبادرات المجتمعية والتطوع</p>
+
+      <h2>مخرجات الدورة</h2>
+      <p>فهم شامل لدور الأخصائي الاجتماعي</p>
+      <p>مهارات مهنية في التقييم والتدخل</p>
+      <p>القدرة على المساهمة في تنمية المجتمع ومعالجة مشكلاته</p>
+      <p>التحضير للعمل في المؤسسات الاجتماعية، التعليمية، أو الصحية</p>
+
+      <h2>ملاحظة</h2>
+      <p>هذه الدورة لا تضمن تأهيلًا كاملاً لمزاولة العمل الاجتماعي كاختصاص دقيق، لكنها تمنح المتدرب أساسًا قويًا ومهارات يمكن تطويرها من خلال التدريب العملي أو الدراسة الأكاديمية لاحقًا.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20العمل%20الاجتماعي" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>القانون والمجتمع</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo {
+      width: 80px;
+      height: auto;
+      animation: logoZoom 1s ease-in-out;
+    }
+
+    @keyframes logoZoom {
+      0% {
+        transform: scale(0.3);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      margin: 10px 0 0 0;
+      font-size: 24px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .courses-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .course {
+      width: 48%;
+      text-align: center;
+      border: 1px solid #000;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    .course img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 5px;
+    }
+
+    .course h3 {
+      font-size: 14px;
+      margin: 5px 0 0 0;
+      color: black;
+    }
+
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInUp {
+      from {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInDown {
+      from {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .img-left { animation: slideInLeft 1.2s ease; }
+    .img-right { animation: slideInRight 1.2s ease; }
+    .img-up { animation: slideInUp 1.2s ease; }
+    .img-down { animation: slideInDown 1.2s ease; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img class="logo" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/Picsart_25-04-13_02-17-26-498.png?v=1744499882658" alt="Logo" />
+    <h1>القانون والمجتمع</h1>
+  </header>
+
+  <div class="courses-container">
+    <div class="course">
+      <a href="القانون_التجاري.html">
+        <img class="img-left" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/c915a440b0cb1fb9b8dce4ca093460e6.jpg?v=1744569252788" alt="القانون التجاري">
+        <h3>القانون التجاري</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="القانون_الجنائي.html">
+        <img class="img-right" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/1b2ee0e6476476ac88a569a70097f9d8.jpg?v=1744569262927" alt="القانون الجنائي">
+        <h3>القانون الجنائي</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="Madane.html">
+        <img class="img-up" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/e9d18f4aad712059ab61b2afcecc65b5.jpg?v=1744569271853" alt="القانون المدني">
+        <h3>القانون المدني</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="Ensan.html">
+        <img class="img-down" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/1a74f674ff368cf0224fd23bcc0bec5a.jpg?v=1744569279565" alt="حقوق الإنسان">
+        <h3>حقوق الإنسان</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="Duwali.html">
+        <img class="img-left" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/2f7482827e7d1d763585f33c26f2bbd0.jpg?v=1744569288718" alt="القانون الدولي">
+        <h3>القانون الدولي</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="Tanmia.html">
+        <img class="img-right" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/0898b59d416f2a458a754c445fcd48ae.jpg?v=1744569296286" alt="التنمية البشرية">
+        <h3>التنمية البشرية</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="Ejtima3i.html">
+        <img class="img-up" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/f4918dddf7d8f59ba7ba7be29d9f0f9b.jpg?v=1744569301066" alt="العمل الاجتماعي">
+        <h3>العمل الاجتماعي</h3>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

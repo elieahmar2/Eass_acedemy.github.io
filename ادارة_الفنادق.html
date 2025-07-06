@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دورة إدارة الفنادق</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2;
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">دورة إدارة الفنادق</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدّمة في إدارة الفنادق</h2>
+      <p>تعريف صناعة الفنادق وأهميتها في قطاع السياحة</p>
+      <p>الهيكل التنظيمي للفندق والأدوار المختلفة (المدير العام، المدير المالي، مدير العمليات...)</p>
+      <p>أنواع الفنادق (الفنادق الفاخرة، الاقتصادية، المنتجع السياحي...)</p>
+
+      <h2>2. إدارة العمليات اليومية للفندق</h2>
+      <p>تنظيم وتنفيذ العمليات اليومية مثل إجراءات الحجز، استقبال الضيوف، وتقديم الخدمات</p>
+      <p>إدارة الأقسام الرئيسية (الاستقبال، الغرف، الطعام والشراب، الصيانة)</p>
+      <p>كيفية تحسين الأداء التشغيلي في كل قسم</p>
+
+      <h2>3. تسويق الفنادق</h2>
+      <p>استراتيجيات التسويق الفعّالة لزيادة الحجز والإشغال</p>
+      <p>أهمية التسويق الرقمي (الحملات الإعلانية، وسائل التواصل الاجتماعي، المواقع الإلكترونية)</p>
+      <p>تحديد السوق المستهدف وطرق استقطاب الضيوف الجدد</p>
+
+      <h2>4. إدارة الجودة وخدمة العملاء</h2>
+      <p>مبادئ خدمة العملاء الممتازة وتطبيقها في الفندق</p>
+      <p>كيفية التعامل مع الشكاوى والمشاكل لتوفير تجربة إيجابية</p>
+      <p>معايير الجودة في خدمات الضيافة وكيفية تحقيقها</p>
+
+      <h2>5. إدارة الموارد البشرية في الفنادق</h2>
+      <p>استراتيجيات التوظيف والتدريب في صناعة الضيافة</p>
+      <p>كيفية بناء فريق عمل فعّال في الفندق</p>
+      <p>إدارة الجدولة والرواتب والمزايا للموظفين</p>
+
+      <h2>6. إدارة الطعام والشراب في الفنادق</h2>
+      <p>تنظيم وتشغيل أقسام الطعام والشراب (المطاعم، البارات، الغرف)</p>
+      <p>استراتيجيات تقديم الطعام والخدمة في المطاعم والفنادق</p>
+      <p>تنسيق قوائم الطعام وأسعارها والتعامل مع الموردين</p>
+
+      <h2>7. إدارة الشؤون المالية للفندق</h2>
+      <p>مراقبة الإيرادات والمصروفات لتحقيق الربحية</p>
+      <p>إعداد الميزانيات وإدارة التكاليف</p>
+      <p>التحليل المالي لقياس الأداء وتحديد نقاط التحسين</p>
+
+      <h2>8. التعامل مع التقنيات الحديثة في إدارة الفنادق</h2>
+      <p>استخدام برامج إدارة الفنادق (PMS) لتسهيل العمليات</p>
+      <p>دمج الأنظمة التكنولوجية في خدمة العملاء (مثل الحجز عبر الإنترنت، الدفع الرقمي)</p>
+      <p>كيفية تحسين تجربة النزلاء باستخدام التقنيات الذكية (مثل الأنظمة الذاتية لإجراءات الوصول والمغادرة)</p>
+
+      <h2>9. استدامة الفنادق والممارسات البيئية</h2>
+      <p>أهمية الاستدامة في صناعة الضيافة</p>
+      <p>كيفية تقليل الأثر البيئي للفندق (إدارة الطاقة، المياه، والنفايات)</p>
+      <p>تطبيقات الاستدامة في التصميم والخدمات</p>
+
+      <h2>مخرجات الدورة</h2>
+      <p>القدرة على إدارة العمليات اليومية لفندق بكفاءة وفعالية</p>
+      <p>تطوير استراتيجيات تسويقية لزيادة الحجوزات وجذب الزوار</p>
+      <p>تحسين جودة الخدمة وتقديم تجربة استثنائية للعملاء</p>
+      <p>إدارة الموارد البشرية والمالية بشكل يساهم في نجاح الفندق</p>
+      <p>تطبيق التقنيات الحديثة والممارسات المستدامة في إدارة الفنادق</p>
+
+      <h2>ملاحظة</h2>
+      <p>الدورة لا تعتبر دراسة أكاديمية شاملة في إدارة الفنادق، لكنها تقدم مدخلًا عمليًا ومهنيًا للمهتمين بالعمل في هذا المجال أو التخصص فيه.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20إدارة%20الفنادق" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

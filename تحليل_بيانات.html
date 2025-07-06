@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تحليل البيانات</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">تحليل البيانات</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة في تحليل البيانات</h2>
+      <p>التعريف بتحليل البيانات وأهميته في اتخاذ القرارات.</p>
+      <p>فهم العلاقة بين البيانات والمعلومات وكيفية تحويل البيانات الخام إلى رؤى قابلة للتطبيق.</p>
+      <p>التعرف على أنواع البيانات: البيانات الكمية و البيانات النوعية.</p>
+      <p>التعرف على دور تحليل البيانات في تحسين الأداء وتحقيق أهداف الأعمال.</p>
+
+      <h2>2. جمع وتنظيف البيانات</h2>
+      <p>تعلم كيفية جمع البيانات من مصادر متعددة مثل قواعد البيانات، الملفات، أو البيانات المستخلصة من الإنترنت.</p>
+      <p>استكشاف أدوات وتقنيات تنظيف البيانات لإزالة الأخطاء والتناقضات.</p>
+      <p>تعلم كيفية التعامل مع القيم المفقودة، البيانات غير المكتملة، والتكرارات في البيانات.</p>
+      <p>تطبيق تقنيات التصفية والتقليص لضمان جودة البيانات قبل استخدامها في التحليل.</p>
+
+      <h2>3. تحليل البيانات باستخدام أدوات مختلفة</h2>
+      <p>تعلم استخدام البرامج والأدوات الشائعة لتحليل البيانات مثل Excel، SQL، R، و Python.</p>
+      <p>استكشاف أدوات متقدمة مثل Tableau و Power BI لتصور البيانات بشكل مرئي.</p>
+      <p>تعلم كيفية استخدام تحليل البيانات الوصفي لفهم الاتجاهات الأساسية والأنماط.</p>
+
+      <h2>4. التحليل الاستكشافي للبيانات (EDA)</h2>
+      <p>تعلم كيفية إجراء تحليل استكشافي للبيانات لاكتشاف الأنماط والاتجاهات في البيانات.</p>
+      <p>استخدام الرسوم البيانية مثل الرسوم البيانية الشريطية و المخططات الصندوقية لفحص التوزيع.</p>
+      <p>استكشاف العلاقات بين المتغيرات باستخدام المصفوفات البيانية.</p>
+      <p>تعلم تقنيات التصنيف و التجميع لتحليل البيانات الكبيرة.</p>
+
+      <h2>5. النمذجة الإحصائية</h2>
+      <p>فهم أساسيات النمذجة الإحصائية واستخدامها لاستخراج الأنماط والتنبؤات من البيانات.</p>
+      <p>تعلم كيفية بناء النماذج التنبؤية باستخدام تقنيات مثل الانحدار الخطي و الانحدار اللوجستي.</p>
+      <p>استكشاف استخدام التحليل التنبؤي لفهم الاتجاهات المستقبلية بناءً على البيانات الحالية.</p>
+
+      <h2>6. التحليل المتقدم باستخدام الذكاء الاصطناعي والتعلم الآلي</h2>
+      <p>تعلم كيفية تطبيق تقنيات التعلم الآلي لتحليل البيانات واستخراج رؤى معقدة.</p>
+      <p>استكشاف نماذج مثل الشبكات العصبية الاصطناعية و الغابات العشوائية لتحليل البيانات.</p>
+      <p>تطبيق تقنيات التعلم العميق في معالجة البيانات غير الهيكلية مثل النصوص والصور.</p>
+
+      <h2>7. تصور البيانات</h2>
+      <p>تعلم كيفية تصوير البيانات باستخدام الأدوات المناسبة مثل Power BI و Tableau.</p>
+      <p>استكشاف أنواع مختلفة من الرسوم البيانية مثل المخططات الخطية، المخططات الدائرية، و الخرائط الحرارية.</p>
+      <p>فهم كيفية تصميم التقارير التفاعلية التي تسمح للمستخدمين بالتفاعل مع البيانات بشكل مرن.</p>
+
+      <h2>8. استخلاص الرؤى واتخاذ القرارات</h2>
+      <p>تعلم كيفية تحويل البيانات المعقدة إلى رؤى قابلة للتطبيق لدعم اتخاذ القرارات.</p>
+      <p>استكشاف كيفية تحليل البيانات التجارية لتوجيه استراتيجيات النمو وتحسين الأداء.</p>
+      <p>استخدام الأدوات والنتائج المستخلصة من تحليل البيانات لدعم التخطيط الاستراتيجي.</p>
+
+      <h2>9. الأخلاقيات وحماية البيانات في تحليل البيانات</h2>
+      <p>فهم القوانين واللوائح المتعلقة بحماية البيانات مثل قانون حماية البيانات العام (GDPR).</p>
+      <p>تعلم أهمية الأخلاقيات في تحليل البيانات وضمان احترام الخصوصية أثناء التعامل مع المعلومات الحساسة.</p>
+      <p>استكشاف كيفية التعامل مع البيانات الشخصية بطريقة قانونية وآمنة.</p>
+
+      <h2>10. التطبيقات العملية وتحليل دراسات الحالة</h2>
+      <p>تطبيق جميع المهارات المكتسبة من خلال تحليل بيانات حقيقية ودراسات حالة.</p>
+      <p>العمل على مشاريع عملية لتحليل بيانات من مجالات مختلفة مثل التسويق، الصحة، التمويل، والمبيعات.</p>
+      <p>تعلم كيفية تقديم التقارير وتحليل البيانات بشكل احترافي للعملاء أو فرق العمل.</p>
+
+      <h2>خلاصة الدورة</h2>
+      <p>دورة "تحليل البيانات" تزوّدك بالمعرفة والمهارات اللازمة لتحليل البيانات وتحويلها إلى معلومات قيمة تدعم اتخاذ القرارات الاستراتيجية. من خلال تعلم الأدوات والتقنيات الأساسية والمتقدمة، مثل Excel، R، Python، و Power BI، ستكون قادرًا على فهم البيانات بشكل أعمق، تطوير نماذج تحليلية، وتصميم تقارير مهنية تساعد في تحسين الأداء واتخاذ قرارات مبنية على الأدلة.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20تحليل%20البيانات" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

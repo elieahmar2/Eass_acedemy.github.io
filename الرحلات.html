@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دورة تنظيم الرحلات</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2;
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">دورة تنظيم الرحلات</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة في تنظيم الرحلات</h2>
+      <p>مفهوم تنظيم الرحلات وأنواعه (الرحلات السياحية، الثقافية، المغامرات، الرياضية، الخ)</p>
+      <p>الفرق بين الرحلات الجماعية والفردية وأهمية تحديد أهداف الرحلة</p>
+      <p>دور منظم الرحلات في تقديم تجربة سياحية فريدة للزوار</p>
+      <p>أهمية البحث والتحليل للسوق المستهدف والوجهات السياحية</p>
+
+      <h2>2. تخطيط الرحلة</h2>
+      <p>كيفية اختيار الوجهات السياحية بناءً على اهتمامات العملاء</p>
+      <p>تخطيط مسار الرحلة بشكل منطقي يتناسب مع الوقت والميزانية</p>
+      <p>اختيار الأنشطة المناسبة والمرافق التي تناسب احتياجات المشاركين</p>
+      <p>تحديد تكاليف الرحلة والعوامل المالية (المواصلات، الإقامة، الوجبات، الأنشطة)</p>
+
+      <h2>3. التنسيق مع الموردين والمرافق</h2>
+      <p>كيفية التعامل مع شركات السياحة، الفنادق، وسائل النقل، والمطاعم</p>
+      <p>مهارات التفاوض للحصول على أفضل العروض والخصومات</p>
+      <p>التنسيق مع الدليل السياحي ومرشدي الرحلات لتحقيق تجربة سياحية متميزة</p>
+      <p>استراتيجيات التأكد من جودة الخدمات المقدمة طوال الرحلة</p>
+
+      <h2>4. إدارة الجداول الزمنية واللوجستيات</h2>
+      <p>كيفية إعداد جدول زمني للرحلة بشكل مناسب ومريح للمشاركين</p>
+      <p>التعامل مع التأخيرات أو التغيرات في الجدول الزمني</p>
+      <p>تنظيم وسائل النقل (حجز الطيران، الحافلات، سيارات الأجرة، إلخ)</p>
+      <p>إدارة الاحتياجات اللوجستية مثل الطعام والشراب أثناء الرحلة</p>
+
+      <h2>5. التعامل مع العملاء والضيوف</h2>
+      <p>مهارات التعامل مع العملاء وتلبية احتياجاتهم الخاصة</p>
+      <p>كيفية إدارة التوقعات وضمان رضا العملاء طوال الرحلة</p>
+      <p>استراتيجيات التعامل مع الشكاوى والمواقف الطارئة أثناء الرحلة</p>
+      <p>التفاعل مع مختلف الشخصيات والثقافات لتعزيز التجربة الشخصية للمشاركين</p>
+
+      <h2>6. التسويق والترويج للرحلات</h2>
+      <p>كيفية بناء خطط تسويقية فعالة للرحلات السياحية</p>
+      <p>استراتيجيات استخدام وسائل التواصل الاجتماعي لجذب المشاركين</p>
+      <p>أهمية تقديم عروض خاصة وخصومات لجذب العملاء الجدد</p>
+      <p>استخدام التسويق الإلكتروني (مواقع الإنترنت، التطبيقات، الرسائل الإخبارية) للترويج للرحلات</p>
+
+      <h2>7. التأمين والسلامة أثناء الرحلة</h2>
+      <p>أهمية تأمين الرحلات السياحية وكيفية اختيار التأمين المناسب</p>
+      <p>استراتيجيات تعزيز الأمان والسلامة للمشاركين خلال الرحلة</p>
+      <p>كيفية التعامل مع الطوارئ والحالات الصحية أثناء الرحلات</p>
+      <p>تقديم إرشادات وإجراءات طارئة قبل وأثناء الرحلة</p>
+
+      <h2>8. تحليل وتقييم الرحلة بعد التنفيذ</h2>
+      <p>كيفية جمع الملاحظات من المشاركين وتحليل تجربتهم</p>
+      <p>تقييم الأداء والخدمات المقدمة أثناء الرحلة</p>
+      <p>أهمية تقارير ما بعد الرحلة لتحسين الرحلات المستقبلية</p>
+      <p>تعلم من الأخطاء والتحديات لتحسين خدمة العملاء في الرحلات القادمة</p>
+
+      <h2>مخرجات الدورة</h2>
+      <p>القدرة على تخطيط وتنظيم الرحلات السياحية بفعالية</p>
+      <p>مهارات التعامل مع الموردين وضمان جودة الخدمات</p>
+      <p>القدرة على إدارة الوقت واللوجستيات أثناء الرحلة</p>
+      <p>اكتساب مهارات التواصل مع العملاء والضيوف</p>
+      <p>استراتيجيات تسويقية لزيادة المشاركة في الرحلات</p>
+      <p>فهم أهمية تأمين الرحلات وتعزيز الأمان والسلامة</p>
+
+      <h2>ملاحظة</h2>
+      <p>هذه الدورة توفر مزيجاً من المعرفة النظرية والتطبيقية في مجال تنظيم الرحلات، وتساعد المشاركين في تحسين مهاراتهم لتقديم رحلات سياحية متميزة ومناسبة لجميع العملاء.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20تنظيم%20الرحلات" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

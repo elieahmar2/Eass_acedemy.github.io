@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>الأمن السيبراني</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">الأمن السيبراني</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة في الأمن السيبراني</h2>
+      <p>التعريف بالأمن السيبراني وأهمية حماية المعلومات.</p>
+      <p>الفرق بين الأمن السيبراني والأمن المعلوماتي.</p>
+      <p>استعراض التهديدات الأمنية الإلكترونية الشائعة مثل الفيروسات، الهجمات الإلكترونية، والبرمجيات الخبيثة.</p>
+      <p>أهمية الأمن السيبراني في عصر التحول الرقمي.</p>
+
+      <h2>2. أنواع التهديدات والهجمات السيبرانية</h2>
+      <p>التعرف على الأنواع المختلفة للهجمات مثل هجمات الحرمان من الخدمة (DDoS)، الهجمات على الشبكات، هجمات الاحتيال الإلكتروني (Phishing).</p>
+      <p>فهم كيفية عمل البرمجيات الخبيثة مثل الفيروسات، الديدان، والتروجان.</p>
+      <p>التعرف على الهجمات المتقدمة مثل الهجمات الهندسية الاجتماعية و التهديدات الداخلية.</p>
+      <p>استكشاف تقنيات الهجوم على المواقع الإلكترونية وقواعد البيانات.</p>
+
+      <h2>3. مبادئ الأمن السيبراني</h2>
+      <p>تعلم المبادئ الأساسية للأمن السيبراني مثل السرية (Confidentiality)، النزاهة (Integrity)، و إتاحة الوصول (Availability).</p>
+      <p>فهم أهمية التشفير وكيفية تأمين البيانات باستخدام تقنيات مثل التشفير المتماثل و التشفير غير المتماثل.</p>
+      <p>أهمية التحقق من الهوية من خلال تقنيات مثل المصادقة متعددة العوامل (MFA).</p>
+
+      <h2>4. حماية الشبكات والأنظمة</h2>
+      <p>تعلم كيفية تأمين الشبكات باستخدام الجدران النارية (Firewalls) و أنظمة كشف التسلل (IDS).</p>
+      <p>استكشاف كيفية تأمين الشبكات اللاسلكية و VPN (الشبكة الخاصة الافتراضية).</p>
+      <p>تطبيق تدابير الأمان لتأمين الخوادم وأنظمة التشغيل المختلفة مثل Windows و Linux.</p>
+      <p>تعلم كيفية بناء الشبكات الآمنة وتحليل حركة المرور الشبكي لاكتشاف الهجمات.</p>
+
+      <h2>5. إدارة الثغرات الأمنية</h2>
+      <p>تعلم كيفية تحديد الثغرات الأمنية باستخدام أدوات الفحص مثل Nessus و OpenVAS.</p>
+      <p>فهم أهمية تحديث الأنظمة والبرامج بشكل دوري لحماية الأنظمة من الهجمات.</p>
+      <p>استكشاف تقنيات اختبار الاختراق (Penetration Testing) وكيفية محاكاة الهجمات لاكتشاف الثغرات.</p>
+
+      <h2>6. حماية البيانات والخصوصية</h2>
+      <p>تعلم كيفية حماية البيانات الحساسة وتأمين المعلومات الشخصية.</p>
+      <p>فهم اللوائح القانونية المتعلقة بحماية البيانات مثل قانون حماية البيانات العام (GDPR).</p>
+      <p>استكشاف تقنيات التخزين الآمن وحماية البيانات المخبأة في النسخ الاحتياطي.</p>
+      <p>تعلم كيفية التعامل مع انتهاكات البيانات وكيفية استعادة الأنظمة بعد الحوادث.</p>
+
+      <h2>7. أمن التطبيقات البرمجية</h2>
+      <p>تعلم كيفية تأمين التطبيقات باستخدام أفضل الممارسات في تطوير البرمجيات.</p>
+      <p>استكشاف تقنيات الاختبار الآمن و تحليل الشيفرة المصدرية للكشف عن الثغرات الأمنية.</p>
+      <p>تعلم كيفية حماية تطبيقات الويب من الهجمات الشائعة مثل SQL Injection و Cross-Site Scripting (XSS).</p>
+      <p>تطبيق تدابير الأمان في دورة حياة تطوير التطبيقات (SDLC).</p>
+
+      <h2>8. استجابة للحوادث والتعافي من الكوارث</h2>
+      <p>تعلم كيفية إعداد خطة استجابة للحوادث والتعامل مع الهجمات الإلكترونية بشكل سريع وفعال.</p>
+      <p>استكشاف كيفية التعامل مع الاختراقات الأمنية واستعادة الأنظمة من الهجمات.</p>
+      <p>تعلم كيفية إعداد خطط التعافي من الكوارث لضمان استمرارية الأعمال بعد الهجمات.</p>
+
+      <h2>9. الأدوات والتقنيات الحديثة في الأمن السيبراني</h2>
+      <p>التعرف على الأدوات الحديثة في الأمن السيبراني مثل Wireshark لتحليل الشبكات و Metasploit لاختبار الاختراق.</p>
+      <p>تعلم كيفية استخدام الذكاء الاصطناعي وتقنيات التعلم الآلي في اكتشاف الهجمات والتنبؤ بها.</p>
+      <p>استكشاف تقنيات البلوك تشين واستخداماتها في تأمين البيانات والمعاملات.</p>
+
+      <h2>10. الاتجاهات المستقبلية في الأمن السيبراني</h2>
+      <p>استكشاف التحديات المستقبلية في مواجهة التهديدات السيبرانية مثل التهديدات الناتجة عن الذكاء الاصطناعي.</p>
+      <p>فهم كيفية حماية الهواتف الذكية والأجهزة المحمولة من الهجمات.</p>
+      <p>استكشاف كيفية تأمين الأنظمة في ظل تطور الإنترنت من الأشياء (IoT).</p>
+
+      <h2>خلاصة الدورة</h2>
+      <p>دورة "الأمن السيبراني" تزوّدك بالمعرفة والمهارات اللازمة لحماية الأنظمة والشبكات من الهجمات الإلكترونية. من خلال تعلم تقنيات الأمان الأساسية، طرق اكتشاف الهجمات، كيفية إدارة الثغرات الأمنية، وأحدث الأدوات لحماية البيانات، ستتمكن من تنفيذ تدابير أمنية فعّالة. في نهاية الدورة، ستكون قادرًا على حماية المعلومات الحساسة، تطوير الأنظمة الآمنة، والاستجابة بسرعة وكفاءة لأية حوادث أمنية.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20الأمن%20السيبراني" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

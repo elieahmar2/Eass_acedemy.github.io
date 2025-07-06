@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>إعداد الحلويات</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">إعداد الحلويات</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة عن إعداد الحلويات</h2>
+      <p>التعريف بمفهوم الحلويات وأهمية دورها في الثقافة الغذائية.</p>
+      <p>استكشاف تاريخ الحلويات وأنواعها المتنوعة حول العالم.</p>
+      <p>التعرف على أدوات ومعدات تحضير الحلويات الأساسية.</p>
+
+      <h2>2. أساسيات تحضير العجائن والمكونات</h2>
+      <p>تعلم كيفية تحضير عجائن الحلويات الأساسية مثل عجينة البسكويت، الكيك، التارت، والعجائن الخفيفة.</p>
+      <p>دراسة كيفية اختيار المكونات المناسبة مثل الدقيق، الزبدة، السكر، البيض، والمكسرات.</p>
+      <p>تعلم أسرار العجن والخلط للحصول على قوام مثالي.</p>
+
+      <h2>3. أنواع الحلويات التقليدية</h2>
+      <p>تحضير الحلويات التقليدية مثل الكنافة، البقلاوة، الكعك، والقطايف.</p>
+      <p>تعلم تقنيات الطهي المناسبة لهذه الحلويات لضمان الحصول على النتيجة المثالية.</p>
+      <p>تزيين الحلويات باستخدام المكونات التقليدية مثل الفستق الحلبي، الجوز، والشوكولاتة.</p>
+
+      <h2>4. إعداد الحلويات الغربية والعصرية</h2>
+      <p>تعلم كيفية تحضير الحلويات الغربية مثل الكيكات، الكب كيك، الماكرون، والتيراميسو.</p>
+      <p>اكتساب مهارات تحضير الحلويات الحديثة مثل الموس، الفوندانت، والدونات.</p>
+      <p>تعلم تقنيات تحضير الشوكولاتة بأنواعها المختلفة مثل الشوكولاتة البيضاء والداكنة.</p>
+
+      <h2>5. طرق تزيين الحلويات</h2>
+      <p>تعلم فنون تزيين الحلويات باستخدام الزهور الصالحة للأكل، الفواكه، الكريمة المخفوقة، والشوكولاتة.</p>
+      <p>استكشاف تقنيات تزيين الكيكات مثل تغطية الكيك بالفوندانت، استخدام أدوات التزيين مثل الأقماع والحقن.</p>
+      <p>تعلم كيفية إضافة لمسات فنية على الحلويات مثل الألوان الغذائية والزخارف الجذابة.</p>
+
+      <h2>6. إعداد الحلويات المميزة للمناسبات</h2>
+      <p>تعلم كيفية تحضير الحلويات الخاصة بالمناسبات مثل حفلات الزفاف، أعياد الميلاد، والمناسبات الرسمية.</p>
+      <p>استكشاف كيفية تصميم وتقديم الحلويات في شكل مبتكر وجذاب يلائم الأجواء.</p>
+      <p>تحضير الحلويات الفردية مثل الكؤوس الصغيرة التي تحتوي على الموس أو الكريمات.</p>
+
+      <h2>7. حلويات صحية وخالية من الغلوتين</h2>
+      <p>تعلم كيفية إعداد الحلويات الصحية باستخدام مكونات طبيعية مثل العسل، السكر البني، والشوكولاتة الداكنة.</p>
+      <p>تعلم كيفية تحضير الحلويات الخالية من الغلوتين أو الحلويات المخصصة للنباتيين.</p>
+
+      <h2>8. إعداد الحلويات المجمدة</h2>
+      <p>تعلم كيفية تحضير أنواع الحلويات المجمدة مثل الآيس كريم، السوربيه، والمثلجات.</p>
+      <p>استكشاف تقنيات التجميد والتحضير في المنزل باستخدام أدوات بسيطة.</p>
+
+      <h2>9. تنظيم وتقديم الحلويات في المناسبات</h2>
+      <p>تعلم كيفية تقديم الحلويات في المناسبات المختلفة بطريقة أنيقة وجذابة.</p>
+      <p>استكشاف طرق تقديم الحلويات مثل بوفيه الحلويات أو تقديمها في أكواب صغيرة أو صواني.</p>
+      <p>دراسة كيفية تنسيق الحلويات مع المأكولات الأخرى في الحفلات والمناسبات الخاصة.</p>
+
+      <h2>10. إعداد الحلويات للضيافة</h2>
+      <p>تعلم كيفية تحضير الحلويات المميزة التي تقدم للضيوف مثل البسكويت والشوكولاتة المحشوة.</p>
+      <p>استكشاف كيفية تحضير الحلويات المناسبة للأوقات اليومية مثل الشاي أو القهوة.</p>
+
+      <h2>خلاصة الدورة</h2>
+      <p>دورة "إعداد الحلويات" تقدم لك المهارات اللازمة لتصبح خبيرًا في إعداد الحلويات بشكل احترافي، من الحلويات التقليدية إلى الحلويات الحديثة والمتطورة. سيتعلم المشاركون كيفية تحضير الحلويات، تزيينها، وتنظيم تقديمها للمناسبات الخاصة والعامة. سواء كنت مبتدئًا أو لديك خبرة سابقة، ستحصل على معرفة عميقة تساعدك في إتقان فن إعداد الحلويات وتقديمها بطريقة مميزة.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20إعداد%20الحلويات" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

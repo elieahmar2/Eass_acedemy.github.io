@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>إنتاج الفيديو</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">إنتاج الفيديو</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة في إنتاج الفيديو</h2>
+      <p>التعريف بأساسيات إنتاج الفيديو وأهميته في الإعلام والتسويق.</p>
+      <p>فهم الدورة الكاملة لإنتاج الفيديو من الفكرة إلى التنفيذ.</p>
+      <p>التعرف على أنواع الفيديو المختلفة (مثل التسويقي، التعليمي، الإبداعي، و الوثائقي).</p>
+
+      <h2>2. التخطيط والإعداد لإنتاج الفيديو</h2>
+      <p>تعلم كيفية كتابة النصوص وتطوير السيناريو بناءً على فكرة الفيديو.</p>
+      <p>استكشاف أساليب البحث والتخطيط لتحديد هدف الفيديو والجمهور المستهدف.</p>
+      <p>إعداد الميزانية وتحديد الموارد اللازمة للإنتاج.</p>
+      <p>تعلم كيفية إعداد الجدول الزمني والإنتاج في وقت مناسب.</p>
+
+      <h2>3. التحضير للتصوير</h2>
+      <p>تعلم كيفية اختيار الموقع المناسب للتصوير والتأكد من الإضاءة والظروف المحيطة.</p>
+      <p>اختيار واستخدام المعدات اللازمة مثل الكاميرات، الميكروفونات، العدسات، و الإضاءة.</p>
+      <p>استكشاف أدوات التصوير مثل الحوامل و المثبتات لتحسين جودة الفيديو.</p>
+      <p>فهم إعدادات الكاميرا الأساسية مثل التركيز، الفتحة، والـ ISO.</p>
+
+      <h2>4. التصوير والإخراج</h2>
+      <p>تعلم تقنيات التصوير مثل الإضاءة، التركيب، و زاوية الكاميرا.</p>
+      <p>استخدام تقنيات التحريك و التعديل على المشهد أثناء التصوير للحصول على أفضل النتائج.</p>
+      <p>تعلم كيفية التعامل مع التصوير المتعدد و التقاط اللقطات المتعددة من زوايا مختلفة.</p>
+      <p>فهم أساسيات التحكم في الصوت وضبط مستويات الصوت.</p>
+
+      <h2>5. التحرير والمونتاج</h2>
+      <p>تعلم كيفية استخدام برامج المونتاج الشهيرة مثل Adobe Premiere Pro و Final Cut Pro.</p>
+      <p>تعلم كيفية قص وترتيب اللقطات بشكل متناسق مع النصوص والصوت.</p>
+      <p>إضافة المؤثرات الخاصة، الانتقالات، و المرشحات لتحسين جودة الفيديو.</p>
+      <p>تعلم كيفية إضافة الموسيقى التصويرية والمؤثرات الصوتية لتحقيق التوازن بين الصوت والصورة.</p>
+
+      <h2>6. تصميم الرسوم المتحركة والتأثيرات البصرية</h2>
+      <p>تعلم كيفية استخدام After Effects أو برامج الرسوم المتحركة لإضافة تأثيرات بصرية مميزة.</p>
+      <p>استكشاف كيفية إضافة النصوص المتحركة، الشعارات المتحركة، و الرسوم البيانية التوضيحية داخل الفيديو.</p>
+      <p>تطبيق تقنيات التأثيرات المتقدمة مثل الإضاءة و التلاعب في الألوان.</p>
+
+      <h2>7. التصحيح اللوني</h2>
+      <p>فهم مفهوم التصحيح اللوني وأهميته في تحسين جودة الصورة.</p>
+      <p>تعلم كيفية تصحيح الألوان باستخدام برامج مثل DaVinci Resolve لتحسين مظهر الفيديو.</p>
+      <p>تطبيق تقنيات مثل التباين، السطوع، و الظلال للحصول على مظهر متناسق.</p>
+
+      <h2>8. التحسين الصوتي</h2>
+      <p>تعلم كيفية ضبط الصوت واستخدام تقنيات لتحسين جودته مثل إزالة الضوضاء وزيادة الوضوح.</p>
+      <p>استكشاف كيفية إضافة مؤثرات صوتية مثل الموسيقى الخلفية، الصوت المعزز، و التعليق الصوتي.</p>
+
+      <h2>9. التصدير والنشر</h2>
+      <p>تعلم كيفية تصدير الفيديو بجودة عالية وحجم مناسب للمنصات المختلفة مثل YouTube، Instagram، و Vimeo.</p>
+      <p>استكشاف أفضل إعدادات التصدير لضمان جودة الفيديو وتوافقه مع معايير النشر.</p>
+      <p>تعلم كيفية إضافة العناوين و العلامات المائية قبل نشر الفيديو.</p>
+
+      <h2>10. تحليل الأداء والمراجعة</h2>
+      <p>تعلم كيفية تحليل أداء الفيديو عبر أدوات تحليلية مثل YouTube Analytics.</p>
+      <p>استكشاف كيفية مراجعة ردود الفعل وتحديد المجالات التي يمكن تحسينها في الفيديوهات القادمة.</p>
+
+      <h2>خلاصة الدورة</h2>
+      <p>دورة "إنتاج الفيديو" توفر لك المعرفة والمهارات التي تحتاجها لإنشاء فيديوهات احترافية بدءًا من مرحلة الفكرة وحتى مرحلة النشر. ستتعلم كيفية إعداد الفيديو، تصويره بشكل احترافي، تحريره وتطبيق التأثيرات البصرية، إضافة المؤثرات الصوتية، وأخيرًا تصديره بأعلى جودة. بفضل هذه الدورة، ستكون قادرًا على إنتاج فيديوهات تلبي احتياجاتك الإعلامية أو التسويقية بطريقة مبتكرة وفعّالة.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20إنتاج%20الفيديو" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

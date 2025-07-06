@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دورة "تقنيات الليزر"</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2;
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">دورة "تقنيات الليزر"</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>مقدمة عن الليزر</h2>
+      <p>شرح أساسي لتقنية الليزر، وكيفية عمل الأجهزة المختلفة، وما هي الأنواع المتاحة من الليزر في مجال التجميل والعلاج.</p>
+
+      <h2>إزالة الشعر بالليزر</h2>
+      <p>تعلم كيفية استخدام جهاز الليزر لإزالة الشعر بشكل فعال وآمن، وكيفية تحديد المناطق المستهدفة والضبط المناسب للطاقة ومدة العلاج.</p>
+
+      <h2>العلاج بالليزر للبشرة</h2>
+      <p>تعليم تقنيات استخدام الليزر لتحسين صحة البشرة، مثل علاج حب الشباب، التجاعيد، التصبغات الجلدية، وعلاج الندبات.</p>
+
+      <h2>إزالة الوشم بالليزر</h2>
+      <p>تعلم تقنيات إزالة الوشم باستخدام الليزر، من خلال كيفية اختيار الجهاز المناسب وتقنيات التخلص من الحبر على البشرة بسلام.</p>
+
+      <h2>العلاج بالليزر للعلامات الجلدية</h2>
+      <p>كيفية استخدام الليزر في إزالة علامات الجلد المختلفة مثل البثور، الشامات، والخطوط الدقيقة، بالإضافة إلى تقنيات علاج البشرة المتضررة.</p>
+
+      <h2>الليزر في شد الجلد</h2>
+      <p>تعلم كيفية استخدام الليزر في إجراءات شد الجلد، بما في ذلك علاج الترهل، الترهلات الجفنية، وعلاج التجاعيد.</p>
+
+      <h2>مخاطر السلامة والاحتياطات</h2>
+      <p>تعليم المتدربين إجراءات السلامة التي يجب اتباعها عند استخدام أجهزة الليزر، بما في ذلك كيفية تجنب الحروق أو إصابات العين، وتطبيق التقنية بشكل آمن.</p>
+
+      <h2>تأثير الليزر على أنواع البشرة المختلفة</h2>
+      <p>شرح كيفية تعديل تقنية الليزر حسب نوع البشرة (دهنية، جافة، حساسة، أو مختلطة) وأفضل الممارسات لتحقيق أفضل النتائج.</p>
+
+      <p>تهدف الدورة إلى تدريب المتخصصين في مجال التجميل والعناية بالبشرة على استخدام تقنيات الليزر بشكل احترافي وآمن لعلاج مشاكل البشرة المختلفة وإزالة الشعر.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20%22تقنيات%20الليزر%22" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

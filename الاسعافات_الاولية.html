@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>الإسعافات الأولية</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">الإسعافات الأولية</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة في الإسعافات الأولية</h2>
+      <p>تعريف الإسعافات الأولية وأهميتها في إنقاذ الحياة</p>
+      <p>الفرق بين الإسعافات الأولية والعلاج الطبي، ووقت وكيفية طلب المساعدة الطبية</p>
+      <p>القوانين والمبادئ الأساسية للإسعافات الأولية، مثل تقديم الإسعافات بشكل آمن وصحيح</p>
+
+      <h2>2. التعامل مع الحوادث الطارئة</h2>
+      <p>كيفية التفاعل مع الحوادث البسيطة مثل السقوط، الحروق، والجروح</p>
+      <p>التعامل مع الإصابات الحادة مثل الكسور والتمزقات</p>
+      <p>التعامل مع الإصابات الداخلية والتهديدات لحياة المصاب مثل النزيف الحاد، توقف التنفس، والتسمم</p>
+      <p>أولويات الإسعافات الأولية عند حدوث الطوارئ</p>
+
+      <h2>3. الإسعافات الأولية للحروق</h2>
+      <p>فهم أنواع الحروق (الحروق من الدرجة الأولى، الثانية، والثالثة)</p>
+      <p>كيفية التعامل مع الحروق باستخدام الماء البارد أو الأدوية المناسبة</p>
+      <p>التعامل مع الحروق الناتجة عن المواد الكيميائية أو الحروق الكهربائية</p>
+      <p>خطوات تجنب العدوى في حالات الحروق الشديدة</p>
+
+      <h2>4. الإسعافات الأولية للنزيف</h2>
+      <p>كيفية التعرف على النزيف الخارجي والداخلي</p>
+      <p>تعلم الطرق الصحيحة لوقف النزيف باستخدام الضغط المباشر أو الضمادات</p>
+      <p>التعامل مع النزيف الحاد ورفع الأجزاء المصابة لتقليل تدفق الدم</p>
+      <p>التعامل مع النزيف الداخلي: علامات وأعراض النزيف الداخلي وكيفية التعامل معها</p>
+
+      <h2>5. الإنعاش القلبي الرئوي (CPR)</h2>
+      <p>تعلم كيفية إجراء الإنعاش القلبي الرئوي على البالغين والأطفال حديثي الولادة</p>
+      <p>تعلم طريقة الضغط على الصدر وتقديم التنفس الصناعي</p>
+      <p>فهم متى وأين يتم إجراء الإنعاش القلبي الرئوي</p>
+      <p>الفرق بين الإنعاش القلبي الرئوي في الحالات البسيطة والحالات المعقدة</p>
+
+      <h2>6. التعامل مع التسمم</h2>
+      <p>التعرف على أنواع التسمم: التسمم الغذائي، التسمم الكيميائي، التسمم من الأدوية</p>
+      <p>طرق التعامل مع التسمم باستخدام المواد الطبيعية مثل الماء أو الفحم المنشط</p>
+      <p>الإسعافات الأولية في حالات التسمم الحاد وتسمم المبيدات والمواد الكيميائية</p>
+      <p>كيفية تحفيز القيء (في الحالات الضرورية) ومتى لا يجب القيام بذلك</p>
+
+      <h2>7. التعامل مع الحوادث والكسور</h2>
+      <p>كيفية التعامل مع الكسور والتمزقات في العظام: تثبيت العظم المصاب وتجنب الحركات الزائدة</p>
+      <p>تعلم كيفية استخدام الدعامات أو العصابات لتثبيت العظام المكسورة</p>
+      <p>التعامل مع الإصابات المعقدة مثل الالتواءات والتمزقات</p>
+      <p>معرفة متى يجب نقل المصاب إلى المستشفى للحالات الأكثر تعقيدًا</p>
+
+      <h2>8. الإسعافات الأولية في حالات الاختناق</h2>
+      <p>كيفية تقديم الإسعافات الأولية في حالة الاختناق سواء من الأطعمة أو المواد الصغيرة</p>
+      <p>تعلم طريقة Heimlich (التقنية المستخدمة لإنقاذ شخص مختنق)</p>
+      <p>التعامل مع الاختناق لدى الأطفال والأشخاص البالغين بشكل صحيح</p>
+
+      <h2>9. التعامل مع الصدمات والوعي</h2>
+      <p>كيفية التعامل مع الأشخاص الذين يعانون من صدمات جسدية أو نفسية</p>
+      <p>استراتيجيات الحفاظ على الهدوء وتقييم الوضع بشكل دقيق</p>
+      <p>كيفية الحفاظ على راحة المصاب ونقله إلى مكان آمن</p>
+      <p>التعامل مع الغيبوبة وفقدان الوعي: تحديد السبب وكيفية مساعدة المصاب</p>
+
+      <h2>10. الإسعافات الأولية في حالات الطوارئ الطبيعية</h2>
+      <p>التعامل مع الحوادث الناتجة عن الزلازل، الفيضانات، والحوادث الطبيعية الأخرى</p>
+      <p>كيفية توفير الإسعافات الأولية في الأماكن التي يصعب الوصول إليها</p>
+      <p>تعليم الإسعافات الأولية للناجين من الكوارث الطبيعية أو الهجمات</p>
+
+      <h2>أنشطة تطبيقية خلال الدورة</h2>
+      <p>تدريب عملي على كيفية تقديم الإسعافات الأولية في الحالات المختلفة</p>
+      <p>تعلم كيفية استخدام أدوات الإسعافات الأولية مثل الضمادات، الجبائر، وأدوات الإسعافات الأخرى</p>
+      <p>إجراء محاكاة حية للحالات الطارئة واختبار المهارات المكتسبة</p>
+      <p>تطبيق تقنيات الإنعاش القلبي الرئوي (CPR) على دمى تدريبية</p>
+      <p>تدريب عملي على التعامل مع الحروق والجروح والنزيف والإصابات</p>
+
+      <h2>ملاحظة</h2>
+      <p>هذه الدورة لا تهدف فقط إلى تقديم معرفة نظرية، بل تركز بشكل كبير على التدريب العملي للمشاركين على كيفية تطبيق الإسعافات الأولية في المواقف الحقيقية، مما يعزز الثقة والكفاءة في التعامل مع الطوارئ.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20الإسعافات%20الأولية" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

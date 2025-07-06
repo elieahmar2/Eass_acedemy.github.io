@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دورة تنسيق الحدائق</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2;
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">دورة تنسيق الحدائق</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدّمة في تنسيق الحدائق</h2>
+      <p>أهمية تنسيق الحدائق على البيئة والمزاج العام</p>
+      <p>أنواع الحدائق (المنزلية، العامة، الرأسية، اليابانية، الصخرية...)</p>
+      <p>أسس التصميم الجمالي والمساحات الخضراء</p>
+
+      <h2>2. تحليل الموقع وتخطيط المساحة</h2>
+      <p>دراسة الأرض ومساحتها</p>
+      <p>تقسيم الحديقة إلى مناطق (جلوس، زراعة، ممرات...)</p>
+      <p>اختيار التصميم المناسب حسب المساحة (دائري، مستطيل، عضوي...)</p>
+
+      <h2>3. اختيار النباتات</h2>
+      <p>النباتات المناسبة حسب المناخ والإضاءة</p>
+      <p>النباتات الموسمية والدائمة</p>
+      <p>التناسق بين الألوان والارتفاعات</p>
+
+      <h2>4. تنسيق الأشجار والشجيرات والزهور</h2>
+      <p>ترتيب النباتات حسب الحجم واللون</p>
+      <p>توزيع الزهور بطريقة جذابة</p>
+      <p>تنسيق أحواض النباتات والمساحات الخضراء</p>
+
+      <h2>5. إضافة العناصر التجميلية</h2>
+      <p>النافورات، الممرات، الإضاءة، المقاعد، والديكورات الحجرية</p>
+      <p>تصميم الزوايا الجمالية في الحديقة</p>
+      <p>تنسيق الحدائق المائية والصخرية</p>
+
+      <h2>6. الري والصيانة</h2>
+      <p>أنظمة الري اليدوي والتلقائي</p>
+      <p>مواعيد الري حسب نوع النبات</p>
+      <p>تقليم النباتات وتنظيف الحديقة بطرق صحيحة</p>
+
+      <h2>7. مشاريع تطبيقية</h2>
+      <p>تصميم حديقة منزلية صغيرة</p>
+      <p>تنسيق حديقة سطح أو شرفة</p>
+      <p>مشروع متكامل لتنسيق حديقة من البداية للنهاية</p>
+
+      <h2>مخرجات الدورة</h2>
+      <p>القدرة على تصميم وتنسيق حدائق بمختلف أنواعها</p>
+      <p>معرفة بأساسيات زراعة النباتات وتوزيعها الجمالي</p>
+      <p>إتقان تقنيات الري، التقليم، وتوزيع الإضاءة والديكور الخارجي</p>
+      <p>إمكانية العمل في مجال تنسيق الحدائق أو تطوير مشروع خاص</p>
+
+      <h2>ملاحظة</h2>
+      <p>الدورة لا تعتبر دراسة أكاديمية شاملة للهندسة الزراعية، لكنها مدخل تطبيقي ومهني ممتاز يساعدك على البدء أو التخصص أكثر في هذا المجال.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20تنسيق%20الحدائق" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

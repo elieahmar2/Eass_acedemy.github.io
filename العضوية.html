@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دورة الزراعة العضوية</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2;
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">دورة الزراعة العضوية</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدّمة في الزراعة العضوية</h2>
+      <p>الفرق بين الزراعة العضوية والتقليدية</p>
+      <p>أهمية الزراعة العضوية على الصحة والبيئة</p>
+      <p>المبادئ الأساسية للزراعة العضوية (التدوير، التوازن الطبيعي، التنوع البيولوجي)</p>
+
+      <h2>2. تحضير التربة العضوية</h2>
+      <p>كيفية اختيار التربة المناسبة</p>
+      <p>تعديل التربة بطرق طبيعية</p>
+      <p>استخدام الكومبوست والسماد العضوي</p>
+
+      <h2>3. التسميد الطبيعي</h2>
+      <p>أنواع الأسمدة العضوية (الكمبوست، السماد الحيواني، الديدان الحمراء...)</p>
+      <p>كيفية تصنيع السماد العضوي في المنزل</p>
+      <p>توقيت وطرق التسميد الصحيحة</p>
+
+      <h2>4. مكافحة الآفات بطرق طبيعية</h2>
+      <p>التعرف على الآفات والأمراض الشائعة</p>
+      <p>تحضير مبيدات طبيعية (مثل الثوم، الفلفل، زيت النيم)</p>
+      <p>استخدام النباتات الطاردة للآفات</p>
+
+      <h2>5. الري والتسميد الحيوي</h2>
+      <p>أنظمة الري المناسبة للزراعة العضوية</p>
+      <p>استخدام مياه الأمطار والمياه الرمادية</p>
+      <p>التسميد الحيوي باستخدام الكائنات المجهرية النافعة</p>
+
+      <h2>6. اختيار المحاصيل والبذور</h2>
+      <p>استخدام بذور عضوية غير معدّلة وراثيًا</p>
+      <p>تدوير المحاصيل وتناسقها</p>
+      <p>زراعة الخضروات، الأعشاب، والنباتات الطبية</p>
+
+      <h2>7. الزراعة في المساحات الصغيرة</h2>
+      <p>الزراعة في الأسطح، الشرفات، والحدائق المنزلية</p>
+      <p>استخدام الأحواض والأكياس الزراعية</p>
+      <p>مشاريع زراعة عضوية صغيرة للمبتدئين</p>
+
+      <h2>مخرجات الدورة</h2>
+      <p>القدرة على بدء مشروع زراعي عضوي من الصفر</p>
+      <p>التعرف على تقنيات الزراعة النظيفة والمستدامة</p>
+      <p>تقليل الاعتماد على الكيماويات وتحقيق إنتاج صحي</p>
+      <p>فهم طرق تحضير السماد والمبيدات الطبيعية في المنزل</p>
+
+      <h2>ملاحظة</h2>
+      <p>لا تهدف الدورة لأن تكون بديلاً عن التخصص الأكاديمي في الزراعة، لكنها تُعتبر مدخلًا عمليًا وفعّالًا لأي شخص يرغب في الزراعة العضوية أو بيع منتجات صحية وطبيعية.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20الزراعة%20العضوية" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

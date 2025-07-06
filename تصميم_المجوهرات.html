@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تصميم المجوهرات</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">تصميم المجوهرات</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة عن تصميم المجوهرات</h2>
+      <p>التعريف بمفهوم تصميم المجوهرات وأهميته في عالم الموضة والفن.</p>
+      <p>استعراض تاريخ المجوهرات وتطورها عبر العصور المختلفة.</p>
+      <p>فهم دور مصمم المجوهرات في عملية التصميم والإنتاج، بما في ذلك البحث عن الإلهام واختيار المواد.</p>
+
+      <h2>2. أساسيات تصميم المجوهرات</h2>
+      <p>تعلم كيفية تحديد فكرة التصميم واختيار الأسلوب الذي يتناسب مع الرؤية الفنية.</p>
+      <p>استكشاف العناصر الأساسية في تصميم المجوهرات مثل الشكل، الحجم، والألوان.</p>
+      <p>فهم كيفية تنسيق الأشكال الهندسية مع الألوان والمواد لتكوين قطع مجوهرات متوازنة وجميلة.</p>
+
+      <h2>3. اختيار المواد والأحجار الكريمة</h2>
+      <p>تعلم كيفية اختيار المواد المختلفة لصناعة المجوهرات مثل الذهب، الفضة، البلاتين، النحاس، والأحجار الكريمة.</p>
+      <p>استعراض أنواع الأحجار الكريمة المستخدمة في المجوهرات مثل الألماس، الزمرد، الياقوت، واللؤلؤ.</p>
+      <p>فهم تأثير المواد المختلفة على شكل المجوهرات وجودتها، بالإضافة إلى تأثير التكلفة والمظهر العام.</p>
+
+      <h2>4. تقنيات الرسم والتصميم</h2>
+      <p>تعلم كيفية رسم وتصميم المجوهرات باستخدام التقنيات التقليدية مثل الرسم اليدوي على الورق.</p>
+      <p>استكشاف برامج التصميم الرقمية (CAD) المستخدمة لتصميم المجوهرات بشكل دقيق واحترافي.</p>
+      <p>تعلم كيفية رسم التصاميم بدقة لإظهار التفاصيل مثل الفتحات، الأبعاد، ومواضع الأحجار الكريمة.</p>
+
+      <h2>5. العمل اليدوي في تصنيع المجوهرات</h2>
+      <p>تعلم تقنيات العمل اليدوي لتشكيل وتصنيع المجوهرات، مثل اللحام، التشكيل بالصقل، والتقويس.</p>
+      <p>استعراض طرق تشكيل المعادن مثل البرشمة والطلاء بالذهب أو الفضة.</p>
+      <p>تعلم تقنيات إضافة الأحجار الكريمة باستخدام الأساليب المختلفة مثل التثبيت أو التركيب.</p>
+
+      <h2>6. التصنيع باستخدام الأدوات</h2>
+      <p>التعرف على الأدوات الأساسية في ورش تصميم المجوهرات مثل الملاقط، المطرقة، المنشار، وأجهزة اللحام.</p>
+      <p>تعلم كيفية استخدام أدوات متقدمة مثل الفراغات الكهربائية ومخارط المجوهرات لتحقيق دقة عالية في التصنيع.</p>
+      <p>استكشاف طرق الصب والطباعة ثلاثية الأبعاد لتصنيع القطع بدقة وتفاصيل معقدة.</p>
+
+      <h2>7. الألوان والتنسيق في المجوهرات</h2>
+      <p>تعلم كيفية تنسيق الألوان بين المعدن والأحجار الكريمة لخلق تباين جذاب أو تدرجات لونية ناعمة.</p>
+      <p>استكشاف تأثير الألوان على نفسية الشخص وتأثير المجوهرات في تحسين المظهر الشخصي.</p>
+      <p>تعلم كيفية اختيار الأحجار المناسبة لكل تصميم للحصول على أقصى تأثير بصري.</p>
+
+      <h2>8. تقنيات التشطيب والتلميع</h2>
+      <p>تعلم كيفية التشطيب النهائي للمجوهرات باستخدام أدوات التلميع لإعطاء القطع لمسة لامعة وجمالية.</p>
+      <p>استعراض طرق التنظيف والحفاظ على جودة المجوهرات بعد تصنيعها.</p>
+      <p>تعلم كيفية إضافة التفاصيل الدقيقة مثل النقوش أو الحفر على المجوهرات لإضفاء لمسة فنية شخصية.</p>
+
+      <h2>9. تصميم المجوهرات حسب الطلب</h2>
+      <p>تعلم كيفية تصميم مجوهرات مخصصة للعملاء حسب طلباتهم الخاصة، مثل الخواتم الخطوبة أو قلائد الزفاف.</p>
+      <p>استكشاف كيفية فهم احتياجات العميل وتحويل أفكارهم إلى تصميم مجوهرات فريدة.</p>
+      <p>تعلم كيفية إضافة لمسة شخصية أو ثقافية للمجوهرات لتتناسب مع ذوق العميل.</p>
+
+      <h2>10. مفهوم التسويق والمبيعات في مجال المجوهرات</h2>
+      <p>استعراض استراتيجيات تسويق المجوهرات، بما في ذلك بناء العلامة التجارية، الترويج للمنتجات، والتعاون مع المحلات والمتاجر.</p>
+      <p>تعلم كيفية تصوير المجوهرات بشكل احترافي لعرضها على الإنترنت أو في معارض بيع.</p>
+      <p>فهم كيفية تحديد الأسعار بناءً على المواد المستخدمة، الوقت المستغرق في التصميم، ومدى تعقيد القطع.</p>
+
+      <h2>11. الابتكار والإبداع في تصميم المجوهرات</h2>
+      <p>تعلم كيفية ابتكار تصاميم جديدة وابتكار أساليب جديدة لصناعة المجوهرات.</p>
+      <p>استكشاف اتجاهات الموضة الحالية في مجال المجوهرات وكيفية دمجها مع التصاميم التقليدية.</p>
+      <p>تعلم كيفية استلهام الأفكار من الطبيعة والفن والثقافة لتصميم قطع مجوهرات مميزة.</p>
+
+      <h2>12. مشاريع عملية وتصميم قطع مجوهرات</h2>
+      <p>تطبيق ما تعلمته في الدورة من خلال مشاريع عملية حيث تقوم بتصميم وتصنيع قطع مجوهرات حقيقية.</p>
+      <p>تلقي تقييمات من المدرب لتحسين مهاراتك التقنية والفنية في تصنيع المجوهرات.</p>
+      <p>تعلم كيفية تقديم المجوهرات بشكل احترافي، بما في ذلك التعبئة والتغليف والعرض في المعارض أو المحلات.</p>
+
+      <h2>خلاصة الدورة</h2>
+      <p>دورة "تصميم المجوهرات" توفر لك المهارات الأساسية لصناعة وتصميم المجوهرات بشكل احترافي، من تعلم تقنيات التصميم والرسم، اختيار المواد والأحجار، وحتى تصنيع القطع باستخدام الأدوات المتخصصة. ستتمكن من تطوير مهاراتك لتصميم مجوهرات فريدة وجميلة تعكس ذوقك الشخصي أو احتياجات العميل. الدورة مثالية للأشخاص الذين يرغبون في الدخول إلى عالم تصميم المجوهرات أو أولئك الذين لديهم بعض الخبرة ويرغبون في تحسين مهاراتهم.</p>
+      
+      <a href="https://wa.me/96181566203?text=انا%20مهتم%20بدورة%20تصميم%20المجوهرات" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

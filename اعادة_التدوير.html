@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>إعادة التدوير</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">إعادة التدوير</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة عن إعادة التدوير وأهميته</h2>
+      <p>التعريف بمفهوم إعادة التدوير وأهدافها في الحفاظ على البيئة وتقليل النفايات.</p>
+      <p>استعراض أهمية إعادة التدوير في الحد من التلوث والحفاظ على الموارد الطبيعية.</p>
+      <p>التوعية حول التأثيرات الإيجابية لإعادة التدوير على المجتمع والاقتصاد المحلي.</p>
+
+      <h2>2. أنواع المواد القابلة لإعادة التدوير</h2>
+      <p>التعرف على المواد التي يمكن إعادة تدويرها مثل البلاستيك، الورق، الزجاج، المعادن، والنفايات العضوية.</p>
+      <p>تعلم كيفية فرز النفايات المنزلية لتحديد المواد القابلة لإعادة التدوير.</p>
+      <p>التعرف على كيفية جمع وتخزين المواد القابلة للتدوير بشكل صحيح.</p>
+
+      <h2>3. طرق وأساليب إعادة التدوير</h2>
+      <p>تعلم الطرق الأساسية لإعادة التدوير مثل التجميع، التنظيف، التحويل إلى مواد خام، وتشكيل المنتجات الجديدة.</p>
+      <p>استعراض العمليات الصناعية لإعادة التدوير مثل تحطيم البلاستيك، صهر المعادن، أو طحن الورق.</p>
+      <p>تعلم كيفية تحويل المواد القديمة إلى منتجات جديدة باستخدام تقنيات متنوعة مثل القص، التشكيل، اللحام، والتلوين.</p>
+
+      <h2>4. إعادة التدوير في المنزل</h2>
+      <p>تعلم كيفية إعادة تدوير المواد المنزلية بشكل فعال، مثل استخدام العلب المعدنية القديمة لتحويلها إلى فوانيس أو حوامل.</p>
+      <p>مشاريع منزلية بسيطة باستخدام مواد مثل الورق القديم، الأقمشة المستعملة، والزجاجات البلاستيكية.</p>
+      <p>تعلم كيفية صنع قطع ديكور منزلية أو أثاث باستخدام مواد معاد تدويرها، مثل الأرفف الخشبية أو إطارات الصور.</p>
+
+      <h2>5. إعادة التدوير في مجال الفن والإبداع</h2>
+      <p>تعلم كيفية استخدام المواد المعاد تدويرها في الأعمال الفنية مثل اللوحات أو التماثيل.</p>
+      <p>استكشاف مشاريع فنية مبتكرة باستخدام المواد القابلة لإعادة التدوير مثل الأقمشة القديمة، الزجاجات، والأغطية المعدنية.</p>
+      <p>تعلم كيفية تصميم مشاريع فنية لتزيين المنازل أو الأماكن العامة باستخدام المواد المعاد تدويرها.</p>
+
+      <h2>6. إعادة التدوير في الأعمال التجارية</h2>
+      <p>التعرف على كيفية استغلال إعادة التدوير كفرصة تجارية، مثل إنشاء منتجات قابلة للبيع مصنوعة من المواد المعاد تدويرها.</p>
+      <p>تعلم كيفية التسويق للمنتجات المعاد تدويرها وزيادة الوعي بين المستهلكين حول أهمية استخدامها.</p>
+      <p>استعراض بعض المشاريع التجارية الناجحة في مجال إعادة التدوير مثل صناعة الحقائب من القماش المعاد تدويره أو الأثاث المصنوع من الأخشاب المعاد تدويرها.</p>
+
+      <h2>7. إعادة التدوير البيئي</h2>
+      <p>استعراض كيفية استخدام تقنيات إعادة التدوير في الحفاظ على البيئة مثل تقليل انبعاثات الكربون واستهلاك الطاقة.</p>
+      <p>تعلم كيفية الحد من التلوث المائي والهوائي من خلال إعادة تدوير المواد بدلًا من التخلص منها.</p>
+      <p>كيفية تقليل حجم النفايات التي يتم إرسالها إلى مكبات النفايات.</p>
+
+      <h2>8. ابتكار أفكار جديدة في إعادة التدوير</h2>
+      <p>تعلم كيفية التفكير بطريقة مبتكرة في كيفية استخدام المواد المعاد تدويرها لابتكار منتجات جديدة.</p>
+      <p>مشاركة أفكار مبتكرة في استخدام المواد المعاد تدويرها لخلق حلول جديدة للمشاكل البيئية.</p>
+      <p>كيف يمكن تطوير مشاريع إعادة التدوير الخاصة بك في المستقبل وتحقيق النجاح من خلالها.</p>
+
+      <h2>9. الاحتياطات والممارسات الآمنة في إعادة التدوير</h2>
+      <p>نصائح حول كيفية التعامل مع المواد الخطرة أثناء إعادة التدوير مثل البطاريات القديمة أو الأجهزة الإلكترونية.</p>
+      <p>كيفية الحفاظ على سلامتك أثناء العمل مع المواد المعاد تدويرها، واستخدام الأدوات المناسبة.</p>
+
+      <h2>10. التسويق للمشاريع البيئية</h2>
+      <p>تعلم كيفية تسويق مشاريع إعادة التدوير كمشاريع صديقة للبيئة.</p>
+      <p>تعلم كيفية بناء علامة تجارية تركز على الاستدامة واستخدام المنتجات المعاد تدويرها.</p>
+      <p>نصائح حول كيفية جذب العملاء المهتمين بالبيئة والمستدامة.</p>
+
+      <h2>خلاصة الدورة</h2>
+      <p>دورة "إعادة التدوير" تعلمك كيفية تحويل المواد القديمة إلى منتجات جديدة مبتكرة وصديقة للبيئة. سيتعلم المشاركون طرق وأفكارًا عملية لإعادة تدوير المواد في المنزل أو في الأعمال التجارية، بالإضافة إلى استكشاف المشاريع الفنية والبيئية التي يمكن إنشاؤها باستخدام المواد المعاد تدويرها. الدورة مثالية لأولئك الذين يرغبون في تعلم كيفية تقليل النفايات والمساهمة في حماية البيئة من خلال مشاريع مبتكرة وآمنة.</p>
+      
+      <a href="https://wa.me/96181566203?text=انا%20مهتم%20بإعادة%20التدوير" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

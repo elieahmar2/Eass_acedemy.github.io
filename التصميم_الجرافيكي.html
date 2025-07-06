@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>التصميم الجرافيكي</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">التصميم الجرافيكي</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة عن التصميم الغرافيكي</h2>
+      <p>التعريف بتاريخ التصميم الغرافيكي وأهميته في العصر الحديث.</p>
+      <p>استعراض المجالات المختلفة التي يعتمد فيها التصميم الغرافيكي مثل الإعلان، التسويق، الإعلام، الشركات التجارية، وتطوير العلامات التجارية.</p>
+      <p>فهم المبادئ الأساسية للتصميم مثل التوازن، التباين، التناسق، التوجيه البصري، واستخدام المساحات بشكل فعال.</p>
+
+      <h2>2. أدوات التصميم الغرافيكي</h2>
+      <p>تعلم استخدام برامج التصميم الأساسية مثل Adobe Photoshop، Illustrator، وInDesign.</p>
+      <p>استعراض أدوات الرسم والتعديل، وكيفية استخدام الفرش، الطبقات، الفلاتر، والأدوات المتقدمة في هذه البرامج.</p>
+      <p>تعلم كيفية استخدام الأدوات المجانية مثل GIMP وCanva لتصميم المواد الغرافيكية.</p>
+
+      <h2>3. نظرية اللون في التصميم الغرافيكي</h2>
+      <p>استعراض قواعد اختيار الألوان وكيفية تنسيقها بشكل يتناسب مع رسالة التصميم.</p>
+      <p>تعلم استخدام عجلة الألوان، نظرية الألوان الدافئة والباردة، وكيفية استكشاف تدرجات الألوان للحصول على أفضل تأثير بصري.</p>
+      <p>فهم تأثيرات الألوان على عواطف الجمهور وكيفية استخدام الألوان بشكل مدروس في تصميمات العلامات التجارية.</p>
+
+      <h2>4. تصميم الشعارات (Logo Design)</h2>
+      <p>تعلم كيفية تصميم شعارات مبتكرة تعكس هوية العلامة التجارية.</p>
+      <p>استعراض الخطوات التي يتم اتباعها لتصميم الشعار، من البحث الأولي عن العلامة التجارية إلى تطوير الأفكار وتنفيذ الشعار.</p>
+      <p>تعلم كيفية استخدام الخطوط والألوان والأشكال في تصميم الشعار بما يتناسب مع الرسالة التي تود العلامة التجارية نقلها.</p>
+
+      <h2>5. تصميم الإعلانات والملصقات</h2>
+      <p>تعلم كيفية تصميم إعلانات جذابة عبر الإنترنت أو في المطابع.</p>
+      <p>استعراض تقنيات دمج النصوص والصور لجذب الانتباه وتحقيق الهدف التسويقي.</p>
+      <p>تعلم أسس تصميم الملصقات التي تروج للمنتجات أو الفعاليات بطريقة فعالة وجذابة.</p>
+
+      <h2>6. تصميم المواقع الإلكترونية (Web Design)</h2>
+      <p>تعلم أساسيات تصميم واجهات المستخدم (UI) وتجربة المستخدم (UX) للمواقع الإلكترونية.</p>
+      <p>استعراض الأدوات المستخدمة لتصميم المواقع، مثل Sketch وAdobe XD.</p>
+      <p>تعلم كيفية استخدام الرسومات والعناصر الغرافيكية بشكل يتناسب مع تصميم الموقع وتجربة المستخدم.</p>
+
+      <h2>7. تصميم المحتوى لوسائل التواصل الاجتماعي</h2>
+      <p>تعلم كيفية تصميم الصور والفيديوهات للمحتوى على منصات التواصل الاجتماعي مثل Instagram، Facebook، Twitter، وLinkedIn.</p>
+      <p>استعراض تقنيات إنشاء تصميمات جذابة للقصص والمنشورات والفيديوهات التي تثير تفاعل الجمهور.</p>
+      <p>تعلم كيفية استخدام النصوص والصور لجذب الانتباه وتحقيق نتائج جيدة في الحملات الإعلانية.</p>
+
+      <h2>8. الخطوط والطباعة في التصميم</h2>
+      <p>تعلم كيفية اختيار الخطوط المناسبة لكل تصميم واستخدامها بفعالية.</p>
+      <p>استعراض أنواع الخطوط المختلفة مثل الخطوط المستقيمة، المائلة، أو الخطوط اليدوية، وكيفية دمجها في تصميم واحد.</p>
+      <p>تعلم المبادئ الأساسية للطباعة، مثل محاذاة النصوص وتباين الخطوط، وكيفية تحسين وضوح النصوص في التصميمات.</p>
+
+      <h2>9. التصميم للطباعة (Print Design)</h2>
+      <p>تعلم كيفية تصميم مواد للطباعة مثل الكتيبات، البروشورات، المجلات، والبطاقات.</p>
+      <p>استعراض تقنيات التعامل مع الأبعاد، الألوان، وتهيئة الملفات للطباعة بشكل احترافي.</p>
+      <p>فهم مراحل إعداد الملفات للطباعة وضمان الحصول على نتيجة مثالية.</p>
+
+      <h2>10. الموارد والإلهام في التصميم</h2>
+      <p>تعلم كيفية البحث عن الإلهام من خلال المواقع، الكتب، المعارض الفنية، والأعمال الأخرى.</p>
+      <p>استعراض مواقع الموارد المجانية والمدفوعة للحصول على صور، أيقونات، وأشكال جاهزة.</p>
+      <p>تعلم كيفية تحسين مهارات التصميم من خلال التعلم المستمر وتجربة مشاريع متنوعة.</p>
+
+      <h2>11. التسويق الشخصي للمصممين</h2>
+      <p>تعلم كيفية بناء محفظة عمل شخصية (Portfolio) تعرض أفضل أعمالك كمصمم غرافيكي.</p>
+      <p>استعراض طرق تسويق نفسك كمصمم غرافيكي على الإنترنت، مثل استخدام منصات مثل Behance، Dribbble، أو إنشاء موقع شخصي.</p>
+      <p>تعلم كيفية التفاعل مع العملاء وتحقيق النجاح في العمل كمصمم غرافيكي مستقل.</p>
+
+      <h2>12. مشاريع عملية</h2>
+      <p>تطبيق ما تعلمته في الدورة من خلال مشاريع عملية مثل تصميم شعار، ملصق، أو إعلان.</p>
+      <p>العمل على مشاريع تصميم حقيقية من البداية حتى النهاية للحصول على خبرة عملية.</p>
+      <p>تلقي تقييمات وتعليقات من مدرب الدورة لتحسين المهارات.</p>
+
+      <h2>خلاصة الدورة</h2>
+      <p>دورة "التصميم الغرافيكي" ستساعدك في تعلم المهارات الأساسية والمتقدمة في هذا المجال، مثل تصميم الشعارات، الإعلانات، المحتوى الرقمي، والتصميم للطباعة. ستتمكن من استخدام أدوات وبرامج التصميم بشكل احترافي، وستتعلم كيفية دمج الألوان، الخطوط، والصور لخلق تصميمات جذابة ومؤثرة. الدورة مثالية لأي شخص يرغب في تطوير مهاراته في التصميم الغرافيكي سواء كان مبتدئًا أو لديه بعض الخبرة.</p>
+      
+      <a href="https://wa.me/96181566203?text=انا%20مهتم%20بدورة%20التصميم%20الغرافي" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>المحادثة اليومية</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">المحادثة اليومية</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة عن أهمية المحادثة اليومية</h2>
+      <p>أهمية تطوير مهارات المحادثة اليومية في تحسين التفاعل الاجتماعي والشخصي</p>
+      <p>كيف يمكن أن تسهم المحادثات اليومية في تحسين العلاقات الشخصية والمهنية</p>
+      <p>الفرق بين المحادثات الرسمية وغير الرسمية</p>
+
+      <h2>2. مفردات العبارات الأساسية</h2>
+      <p>تعلم المفردات والعبارات المستخدمة بشكل شائع في الحياة اليومية (مثل: التحيات، التعارف، المواعيد)</p>
+      <p>تمارين لتوسيع المفردات اللغوية المتعلقة بالمواقف اليومية</p>
+      <p>كيفية التحدث عن الأنشطة اليومية (مثل: التسوق، العمل، الترفيه)</p>
+
+      <h2>3. التواصل في أماكن العمل</h2>
+      <p>العبارات والمفردات المتعلقة بالتواصل في بيئة العمل (مثل: الاجتماعات، تحديد المواعيد، التواصل مع الزملاء)</p>
+      <p>كيفية التعبير عن الطلبات والنصائح أو الشكاوى في مواقف العمل</p>
+      <p>تمارين حوارية حول كيفية التحدث مع المدير أو الزملاء بشكل محترف</p>
+
+      <h2>4. المحادثات في الأماكن العامة</h2>
+      <p>تعلم كيفية التعامل مع مواقف الحياة اليومية مثل طلب الطعام في المطاعم، الشراء في الأسواق، أو الاستفسار عن الاتجاهات</p>
+      <p>العبارات الشائعة في وسائل النقل العامة والفنادق والمطارات</p>
+      <p>تدريبات محاكاة حوارية مثل: كيف تسأل عن المعلومات، تطلب المساعدة، أو تشتري شيئًا</p>
+
+      <h2>5. المحادثات العائلية والاجتماعية</h2>
+      <p>تعلم كيفية التفاعل في المناسبات الاجتماعية مثل اللقاءات العائلية أو لقاءات الأصدقاء</p>
+      <p>العبارات المتعلقة بالحديث عن العائلة، الهوايات، السفر، والمناسبات</p>
+      <p>محاكاة لأسئلة وأجوبة تدور حول المواضيع الاجتماعية اليومية</p>
+
+      <h2>6. تحسين النطق واللكنة</h2>
+      <p>تدريبات نطق تهدف إلى تحسين وضوح الصوت واللفظ</p>
+      <p>كيفية التحدث بشكل واضح ومتسق، مع التركيز على الحروف والمقاطع التي قد تكون صعبة</p>
+      <p>تمارين لتطوير التوازي بين النطق والكتابة لتجنب الأخطاء</p>
+
+      <h2>7. تحسين الطلاقة في المحادثة</h2>
+      <p>تقنيات لزيادة سرعة رد الفعل أثناء المحادثات</p>
+      <p>كيفية الحفاظ على المحادثة مستمرة والتفاعل بشكل طبيعي مع المتحدث الآخر</p>
+      <p>تدريبات حوارية تركز على جعل التفاعل أكثر طلاقة، دون توقفات طويلة أو تردد</p>
+
+      <h2>8. الأسئلة الشائعة في المحادثات اليومية</h2>
+      <p>تعلم كيفية الإجابة على الأسئلة الشائعة في الحياة اليومية مثل: "كيف حالك؟"، "ماذا تفعل؟"، "أين تعيش؟"</p>
+      <p>تمارين لتقديم الإجابات بطريقة بسيطة وسلسة</p>
+      <p>كيفية طرح أسئلة لفتح محادثة وتوسيع النقاش</p>
+
+      <h2>9. المحادثات الثقافية والعادات الاجتماعية</h2>
+      <p>التعرف على العادات الثقافية المختلفة وأسلوب المحادثة في بعض البلدان أو المجتمعات</p>
+      <p>كيفية احترام القيم الاجتماعية في المحادثات، مثل كيفية التعامل مع كبار السن أو التحدث مع الغرباء</p>
+      <p>أهمية الاستماع الجيد والتفاعل بأدب أثناء المحادثات</p>
+
+      <h2>10. تدريبات تفاعلية ومواقف محاكاة</h2>
+      <p>تدريبات محاكاة للمواقف اليومية التي قد تواجهها (مثل: زيارة الطبيب، مقابلة صديق قديم، إجراء مكالمة هاتفية)</p>
+      <p>جلسات حوارية مع زملاء الدورة لتحفيز الممارسة الفعلية</p>
+      <p>ملاحظات وتحليل أداء المحادثات لتحسين المهارات بشكل مستمر</p>
+
+      <h2>11. التعامل مع المواقف الصعبة</h2>
+      <p>كيفية التعامل مع المواقف التي قد تكون محط خلاف أو صعوبة في فهم الآخر، مثل عندما تكون غير متأكد من ما يقال أو عندما لا تفهم شيئًا</p>
+      <p>استراتيجيات للمساعدة في استعادة التواصل بسرعة في حال فقدت الاتصال مع المتحدث الآخر</p>
+
+      <h2>12. المراجعة النهائية</h2>
+      <p>مراجعة شاملة للعبارات والمواقف التي تم تعلمها</p>
+      <p>تحديد المجالات التي تحتاج إلى تحسين إضافي</p>
+      <p>نصائح عملية للاستمرار في تحسين مهارات المحادثة اليومية بعد الدورة</p>
+
+      <h2>ملاحظة</h2>
+      <p>الدورة مصممة لتكون شاملة لجميع جوانب المحادثة اليومية، وتستهدف المشاركين الذين يرغبون في تحسين قدرتهم على التفاعل بثقة وبطلاقة في مختلف المواقف الاجتماعية والمهنية.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20المحادثة%20اليومية" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

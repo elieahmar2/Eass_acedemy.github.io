@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دورة إعداد العروض التقديمية</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2;
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">دورة إعداد العروض التقديمية</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة حول العروض التقديمية</h2>
+      <p>ما هي العروض التقديمية وأين تُستخدم؟</p>
+      <p>أهمية العرض التقديمي الناجح في التأثير والإقناع</p>
+      <p>أنواع العروض (أكاديمية، تعليمية، تسويقية، مشاريع...)</p>
+
+      <h2>2. تنظيم المحتوى</h2>
+      <p>كيفية جمع وترتيب المعلومات</p>
+      <p>كتابة الهيكل المنطقي للعرض (مقدمة – مضمون – خاتمة)</p>
+      <p>تحديد الهدف الأساسي للعرض وتوجيه الرسائل للجمهور المناسب</p>
+
+      <h2>3. التصميم البصري</h2>
+      <p>استخدام أدوات مثل PowerPoint، Canva، Google Slides...</p>
+      <p>اختيار القوالب المناسبة لطبيعة العرض</p>
+      <p>تنسيق النصوص، الألوان، الصور، والأيقونات</p>
+      <p>مبادئ التصميم المرئي الجيد (بساطة، وضوح، جاذبية)</p>
+
+      <h2>4. استخدام الوسائط المتعددة</h2>
+      <p>دمج الصور، الفيديوهات، الرسوم البيانية، الصوتيات</p>
+      <p>متى وكيف تستخدم الوسائط لدعم المحتوى؟</p>
+      <p>تجنب الإكثار الذي قد يُشتت الجمهور</p>
+
+      <h2>5. فن الإلقاء والتقديم</h2>
+      <p>التحضير النفسي والعملي للعرض</p>
+      <p>لغة الجسد، نبرة الصوت، إدارة الوقت</p>
+      <p>التفاعل مع الجمهور، الإجابة على الأسئلة، التعامل مع المواقف المفاجئة</p>
+
+      <h2>6. التدريب العملي</h2>
+      <p>تقديم عروض مصغّرة أمام المجموعة</p>
+      <p>الحصول على تقييم فردي لتحسين الأداء</p>
+      <p>تطبيق ملاحظات المدرب لتحسين التصميم والإلقاء</p>
+
+      <h2>مخرجات الدورة</h2>
+      <p>إتقان إعداد عرض تقديمي من الفكرة إلى العرض النهائي</p>
+      <p>مهارة تصميم شرائح جذابة ومتناسقة</p>
+      <p>القدرة على إيصال الأفكار بثقة وتأثير</p>
+      <p>جاهزية لتقديم العروض في أي بيئة مهنية أو أكاديمية</p>
+
+      <h2>ملاحظة</h2>
+      <p>هذه الدورة تُفيد كل من يرغب في تحسين مهاراته في التواصل المرئي والشفهي، سواء كان طالبًا، موظفًا، مدربًا، أو رائد أعمال، مع إمكانية تطويرها لاحقًا لتشمل العروض الاحترافية عالية المستوى.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20إعداد%20العروض%20التقديمية" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دورة الضيافة</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2;
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">دورة الضيافة</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة في صناعة الضيافة</h2>
+      <p>تعريف صناعة الضيافة وأهمية تقديم خدمات عالية الجودة</p>
+      <p>تاريخ الضيافة وأساسيات تطورها عبر العصور</p>
+      <p>الفرق بين قطاعات الضيافة المختلفة (الفنادق، المطاعم، الأماكن الترفيهية، وغيرها)</p>
+      <p>تأثير الضيافة على الاقتصاد المحلي والعالمي</p>
+
+      <h2>2. إدارة الفنادق وقطاعات الضيافة المختلفة</h2>
+      <p>كيف يتم تشغيل وإدارة الفندق بكفاءة</p>
+      <p>استراتيجيات تحسين جودة الخدمة في الفنادق</p>
+      <p>إدارة الموارد البشرية في قطاع الضيافة (التوظيف، التدريب، والقيادة)</p>
+      <p>أهمية التنسيق بين الأقسام المختلفة (الاستقبال، خدمات الغرف، الطعام والشراب، وغيرها)</p>
+
+      <h2>3. خدمة العملاء والتفاعل مع الضيوف</h2>
+      <p>أساليب التفاعل الفعّال مع الضيوف وتلبية احتياجاتهم</p>
+      <p>كيفية التعامل مع الشكاوى والمشاكل أثناء إقامة الضيوف</p>
+      <p>فنون التواصل الجيد والاحترافية في التعامل مع الزوار</p>
+      <p>استراتيجيات توفير تجربة استثنائية للضيوف</p>
+
+      <h2>4. إدارة الطعام والشراب في قطاع الضيافة</h2>
+      <p>أسس إدارة المطاعم والبارات في الفنادق والمنتجعات</p>
+      <p>تنسيق تقديم الطعام والشراب والخدمات المصاحبة لها</p>
+      <p>القوائم الغذائية وتصميم تجربة الطعام المميزة</p>
+      <p>التعامل مع الخدمات المخصصة مثل حفلات الزفاف، الحفلات الخاصة، والمؤتمرات</p>
+
+      <h2>5. تنظيم الفعاليات والمناسبات</h2>
+      <p>كيفية تخطيط وتنظيم الفعاليات المختلفة مثل المؤتمرات، الحفلات، والمعارض</p>
+      <p>التنسيق بين مختلف الأطراف في الحدث (الفندق، الموردين، المرافق، إلخ)</p>
+      <p>إدارة الاحتياجات اللوجستية للفعاليات والمناسبات</p>
+      <p>التعامل مع الضيوف المهمين وتقديم خدمات مخصصة</p>
+
+      <h2>6. التميز في خدمة الضيافة</h2>
+      <p>المبادئ الأساسية للتميز في خدمة الضيافة</p>
+      <p>تطبيق معايير الجودة وتقييم الأداء في قطاع الضيافة</p>
+      <p>استخدام التكنولوجيات الحديثة لتحسين الخدمة (أنظمة الحجوزات، تطبيقات الهاتف المحمول، وغيرها)</p>
+      <p>كيفية بناء علاقات طويلة الأمد مع العملاء ورفع مستوى رضاهم</p>
+
+      <h2>7. السياحة المستدامة في الضيافة</h2>
+      <p>تطبيق مبادئ الاستدامة في قطاع الضيافة</p>
+      <p>الحفاظ على البيئة في الفنادق والمنتجعات (إدارة النفايات، استهلاك الطاقة والمياه)</p>
+      <p>استراتيجيات لتقليل الأثر البيئي وتعزيز السياحة المسؤولة</p>
+
+      <h2>8. التحديات والفرص في صناعة الضيافة</h2>
+      <p>التعامل مع الأزمات مثل جائحة كورونا وتغيرات الاقتصاد العالمي</p>
+      <p>الابتكارات المستقبلية في صناعة الضيافة (الذكاء الاصطناعي، الخدمات الذاتية، السفر الافتراضي)</p>
+      <p>كيفية التعامل مع توقعات العملاء المتزايدة والابتكار في تقديم الخدمات</p>
+
+      <h2>مخرجات الدورة</h2>
+      <p>القدرة على إدارة مختلف أقسام الضيافة بكفاءة</p>
+      <p>مهارات التعامل مع العملاء وتقديم خدمة استثنائية</p>
+      <p>القدرة على تنظيم وإدارة الفعاليات والمناسبات</p>
+      <p>تطبيق معايير الجودة والابتكار في صناعة الضيافة</p>
+      <p>القدرة على تطوير سياسات الاستدامة في المؤسسات الفندقية</p>
+      <p>فهم التحديات المستقبلية وكيفية مواجهة المتغيرات في صناعة الضيافة</p>
+
+      <h2>ملاحظة</h2>
+      <p>الدورة تهدف إلى تدريب الأفراد على المهارات الأساسية في صناعة الضيافة، لكنها ليست مقتصرة على فندق أو قطاع واحد، بل تشمل كل ما يتعلق بتقديم الخدمة الممتازة للضيوف عبر مختلف القنوات.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20الضيافة" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

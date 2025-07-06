@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>الطهي العربي التقليدي</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">الطهي العربي التقليدي</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة عن الطهي العربي التقليدي</h2>
+      <p>التعريف بتاريخ الطهي العربي وأهميته في الموروث الثقافي والتقاليد العربية.</p>
+      <p>التعرف على المكونات الأساسية المستخدمة في المطبخ العربي مثل الزعتر، الطحينة، اللبن، الأرز، التوابل، والزيوت.</p>
+      <p>استكشاف التأثيرات المختلفة التي شهدها المطبخ العربي من خلال العصور والحضارات المتنوعة، وكيف تطورت الأطباق عبر الزمن.</p>
+
+      <h2>2. المكونات الأساسية في المطبخ العربي</h2>
+      <p>دراسة أنواع اللحوم والدواجن التي تستخدم في الطهي العربي مثل لحم الضأن، الدجاج، والسمك.</p>
+      <p>التعرف على البقوليات مثل الفول، العدس، الحمص، والتي تعد أساسًا للكثير من الأطباق.</p>
+      <p>استكشاف الخضروات الطازجة والتوابل التقليدية مثل الكمون، الكزبرة، القرفة، والهال.</p>
+      <p>تعلم كيفية استخدام المكونات الطبيعية مثل الزيتون، الطماطم، واللبن في الطهي العربي.</p>
+
+      <h2>3. أساسيات الطهي العربي</h2>
+      <p>تعلم كيفية تحضير المرق والشوربات العربية الشهيرة مثل الشوربة العدس وشوربة الدجاج مع الأرز.</p>
+      <p>استكشاف تقنيات الطهي المختلفة مثل القلي، الطهي على البخار، والشوي.</p>
+      <p>تعلم طرق تحضير الأطباق الرئيسية مثل الكبسة، المندي، المسخن، الكفتة، والمشاوي.</p>
+      <p>دراسة طرق تحضير الأطباق الجانبية مثل التبولة، الفتوش، والمقبلات المختلفة.</p>
+
+      <h2>4. الخبز العربي التقليدي</h2>
+      <p>تعلم كيفية صنع أنواع الخبز العربي التقليدي مثل الخبز اللبناني، الخبز السوري، والمناقيش.</p>
+      <p>استكشاف كيفية تحضير الخبز في الفرن التقليدي أو باستخدام الأفران الحديثة.</p>
+      <p>تعلم طرق تحضير المخبوزات الشعبية مثل الصاج، التوست العربي، والخبز المسطح.</p>
+
+      <h2>5. الأطباق العربية الحلوة</h2>
+      <p>تعلم كيفية تحضير الحلويات العربية مثل الكنافة، البقلاوة، المهلبية، والرز باللبن.</p>
+      <p>استكشاف تقنيات تحضير الحلوى العربية وتزيينها بطرق مبتكرة.</p>
+      <p>تعلم كيفية تحضير المشروبات التقليدية مثل العصائر العربية والمشروبات الرمضانية.</p>
+
+      <h2>6. الطهي العربي في المناسبات والاحتفالات</h2>
+      <p>دراسة كيفية تحضير الأطباق التقليدية التي يتم تقديمها في الأعياد والمناسبات مثل عيد الأضحى، رمضان، وحفلات الزفاف.</p>
+      <p>استكشاف العادات والتقاليد المرتبطة بالطهي في مختلف البلدان العربية مثل فلسطين، لبنان، مصر، ودول الخليج.</p>
+      <p>تعلم كيفية تحضير المأكولات التي تتناسب مع العادات الاحتفالية مثل القهوة العربية، السحور، ووجبات الإفطار في رمضان.</p>
+
+      <h2>7. تقنيات التقديم والتزيين</h2>
+      <p>تعلم كيفية تقديم الطعام العربي بشكل جميل وأنيق باستخدام الأطباق التقليدية.</p>
+      <p>استكشاف طرق تزيين الأطباق باستخدام الأعشاب الطازجة، المكسرات، والتوابل.</p>
+      <p>تعلم كيفية تنظيم المائدة العربية وتقديم الأطعمة بطريقة احترافية.</p>
+
+      <h2>8. التخزين والمحافظة على المأكولات العربية</h2>
+      <p>استكشاف طرق تخزين المكونات الطازجة والمطبوخة مثل تخزين الخضروات، اللحوم، والدواجن.</p>
+      <p>تعلم كيفية تحضير الوجبات مسبقًا وحفظها لاستخدامها في وقت لاحق.</p>
+
+      <h2>9. المأكولات العربية المعاصرة</h2>
+      <p>تعلم كيفية دمج المكونات التقليدية مع الأساليب الحديثة للطهي وتحضير الأطباق بطريقة عصرية.</p>
+      <p>استكشاف كيفية تكييف الأطباق العربية مع الأنظمة الغذائية الصحية مثل الكيتو، نباتي، أو خالي من الجلوتين.</p>
+
+      <h2>10. مشروع طهي فردي</h2>
+      <p>العمل على مشروع طهي فردي يتضمن تحضير وجبة كاملة تتضمن طبق رئيسي، جانبي، وحلوى.</p>
+      <p>تقديم الملاحظات من المدرب حول أسلوب الطهي، الطعم، والتقديم لضمان الاحترافية في تحضير الأطباق.</p>
+
+      <h2>خلاصة الدورة</h2>
+      <p>دورة "الطهي العربي التقليدي" توفر لك المهارات اللازمة لتعلم تحضير الأطباق العربية الأصيلة بطريقة احترافية. ستتمكن من اكتساب معرفة واسعة بمكونات المطبخ العربي وطرق تحضيرها بشكل تقليدي، مما يمنحك القدرة على تحضير وتقديم وجبات شهية تلبي جميع الأذواق. سواء كنت مهتمًا بالطهي كهواية أو كمهارة مهنية، هذه الدورة ستساعدك على إتقان فن الطهي العربي بشكل متكامل.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20الطهي%20العربي%20التقليدي" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دورة حقوق الإنسان</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2;
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">دورة حقوق الإنسان</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة في حقوق الإنسان</h2>
+      <p>ما هي حقوق الإنسان؟</p>
+      <p>تطور مفهوم الحقوق عبر العصور</p>
+      <p>الفرق بين الحقوق الفردية والجماعية</p>
+
+      <h2>2. الإعلان العالمي لحقوق الإنسان</h2>
+      <p>نبذة عن صدوره عام 1948</p>
+      <p>المبادئ الأساسية التي ينص عليها</p>
+      <p>أهم المواد والمحاور الرئيسية</p>
+
+      <h2>3. المواثيق والمعاهدات الدولية</h2>
+      <p>العهد الدولي للحقوق المدنية والسياسية</p>
+      <p>العهد الدولي للحقوق الاقتصادية والاجتماعية والثقافية</p>
+      <p>اتفاقيات حقوق الطفل، المرأة، اللاجئين، ذوي الإعاقة...</p>
+
+      <h2>4. الحقوق الأساسية للإنسان</h2>
+      <p>الحق في الحياة</p>
+      <p>حرية التعبير والمعتقد والدين</p>
+      <p>الحق في التعليم، الصحة، والعمل</p>
+      <p>المساواة وعدم التمييز</p>
+
+      <h2>5. منظمات حقوق الإنسان</h2>
+      <p>الأمم المتحدة ومجلس حقوق الإنسان</p>
+      <p>منظمات دولية غير حكومية مثل "هيومن رايتس ووتش" و"العفو الدولية"</p>
+      <p>دور المجتمع المدني في حماية الحقوق</p>
+
+      <h2>6. انتهاكات حقوق الإنسان</h2>
+      <p>أنواع الانتهاكات وأسبابها</p>
+      <p>كيف يتم توثيقها ومعالجتها؟</p>
+      <p>أمثلة من الواقع وتحليل حالات</p>
+
+      <h2>7. حقوق الإنسان في السياق المحلي</h2>
+      <p>لمحة عن القوانين المحلية في بعض البلدان</p>
+      <p>التحديات والصراعات التي تواجه حقوق الإنسان</p>
+      <p>دور المواطن في الدفاع عن حقوقه وحقوق الآخرين</p>
+
+      <h2>مخرجات الدورة</h2>
+      <p>فهم عميق وشامل لحقوق الإنسان</p>
+      <p>التعرف على الأدوات القانونية لحماية الحقوق</p>
+      <p>القدرة على التمييز بين الحقوق الأساسية والانتهاكات</p>
+      <p>تعزيز حس المسؤولية الاجتماعية والدفاع عن العدالة</p>
+
+      <h2>ملاحظة</h2>
+      <p>الدورة لا تؤهّل المتدرب ليكون خبيرًا قانونيًا في حقوق الإنسان بشكل مباشر، لكنها تمنحه أساسًا قويًا للتخصص لاحقًا في هذا المجال أو الانخراط في أنشطة حقوقية ومجتمعية.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20حقوق%20الإنسان" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

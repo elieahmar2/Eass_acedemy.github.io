@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>ديبلوم: الدعم النفسي للأطفال</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2;
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">ديبلوم: الدعم النفسي للأطفال</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>ديبلوم: الدعم النفسي للأطفال</h2>
+      <p>تهدف هذه الديبلوم إلى تزويد المشاركين بالمعرفة والمهارات العملية لمساندة الأطفال نفسيًا، خاصة في الظروف الصعبة مثل التوتر، القلق، التغيرات العائلية، أو الصدمات النفسية. تركز الديبلوم على فهم نفسية الطفل وطرق التعامل الإيجابي معه لبناء بيئة آمنة وداعمة.</p>
+
+      <h2>محاور الديبلوم</h2>
+      <p><b>1. فهم نفسية الطفل:</b></p>
+      <p>مراحل النمو النفسي والانفعالي للأطفال</p>
+      <p>الاحتياجات النفسية الأساسية حسب كل مرحلة عمرية</p>
+      <p>الفروق الفردية في التعبير عن المشاعر</p>
+
+      <p><b>2. أساسيات الدعم النفسي:</b></p>
+      <p>تعريف الدعم النفسي وأنواعه (أولي – مستمر)</p>
+      <p>أهمية الدعم في تعزيز صحة الطفل النفسية</p>
+      <p>دور الأهل والمربين في تقديم الدعم</p>
+
+      <p><b>3. مهارات التعامل مع الطفل:</b></p>
+      <p>الإصغاء الفعّال والتفاعل الإيجابي</p>
+      <p>استخدام اللعب كوسيلة للتعبير والمساعدة</p>
+      <p>خلق بيئة آمنة وثقة بين الطفل والمحيطين به</p>
+
+      <p><b>4. قراءة إشارات القلق أو الاضطراب:</b></p>
+      <p>كيف نلاحظ تغير سلوك الطفل؟</p>
+      <p>علامات الحزن، الخوف، التوتر، الانعزال</p>
+      <p>متى نلجأ لمختص نفسي؟</p>
+
+      <p><b>5. التعامل مع المشكلات النفسية الشائعة:</b></p>
+      <p>الخوف والكوابيس</p>
+      <p>مشاكل الانفصال عن الأهل</p>
+      <p>العدوانية أو الانطواء</p>
+      <p>الغضب والبكاء المتكرر</p>
+
+      <p><b>6. أنشطة وتمارين للدعم النفسي:</b></p>
+      <p>أنشطة فنية وتعبيرية (الرسم، الحكاية، اللعب الرمزي)</p>
+      <p>تمارين التنفس والاسترخاء المناسبة للأطفال</p>
+      <p>إنشاء روتين يومي داعم لصحة الطفل النفسية</p>
+
+      <p><b>7. دور الأسرة والمجتمع:</b></p>
+      <p>العلاقة بين الطفل ووالديه وتأثيرها النفسي</p>
+      <p>التنمر في المدرسة وكيفية دعمه</p>
+      <p>دعم الطفل في ظروف النزاعات أو الأزمات (مثل الطلاق أو الكوارث)</p>
+
+      <p><b>8. تطبيقات عملية:</b></p>
+      <p>سيناريوهات وتمثيل أدوار للتعامل مع مواقف واقعية</p>
+      <p>تحليل حالات</p>
+      <p>تصميم خطة دعم نفسي مبسطة لطفل يعاني من مشكلة</p>
+
+      <h2>مخرجات الديبلوم</h2>
+      <p>فهم أساسيات الصحة النفسية للطفل</p>
+      <p>القدرة على التعرف على احتياجات الأطفال النفسية</p>
+      <p>اكتساب مهارات لدعم الأطفال بشكل فعال</p>
+      <p>التمكن من استخدام أدوات وأنشطة تعبيرية بسيطة</p>
+      <p>تعزيز ثقة الطفل بنفسه ومساعدته في تجاوز التحديات</p>
+
+      <h2>الفئة المستهدفة</h2>
+      <p>الأهالي</p>
+      <p>المعلمات والمشرفات التربويات</p>
+      <p>المرشدون التربويون والنفسيون</p>
+      <p>العاملون في منظمات تعنى بالأطفال</p>
+      <p>كل من يتعامل مع الأطفال بشكل مباشر</p>
+
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20ديبلوم%20الدعم%20النفسي%20للأطفال" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

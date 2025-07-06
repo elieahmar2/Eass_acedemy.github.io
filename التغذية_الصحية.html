@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>التدليك والعلاج الطبيعي</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">التغذية الصحية</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة في التغذية الصحية</h2>
+      <p>تعريف التغذية الصحية وأثرها على الجسم والصحة العامة</p>
+      <p>الفرق بين الأطعمة الصحية وغير الصحية وكيفية تمييزها</p>
+      <p>أهمية التغذية السليمة في الوقاية من الأمراض المزمنة مثل السمنة، السكري، وأمراض القلب</p>
+      <p>كيفية اتباع أسلوب حياة صحي يشمل التغذية والنشاط البدني</p>
+
+      <h2>2. العناصر الغذائية الأساسية</h2>
+      <p>الكربوهيدرات: أنواع الكربوهيدرات (البسيطة والمعقدة) ومصادرها في الطعام وكيفية استخدامها كمصدر طاقة للجسم</p>
+      <p>البروتينات: دور البروتين في بناء وإصلاح الأنسجة، وأهميته في نمو العضلات والأنسجة</p>
+      <p>الدهون الصحية: الفرق بين الدهون المشبعة وغير المشبعة وأهمية الدهون الصحية مثل الأوميغا-3</p>
+      <p>الفيتامينات والمعادن: دور الفيتامينات (مثل فيتامين C وD) والمعادن (مثل الحديد والكالسيوم) في تقوية الجهاز المناعي وتعزيز الصحة العامة</p>
+      <p>الألياف: أهمية الألياف في تحسين الهضم والوقاية من الأمراض المزمنة مثل أمراض القلب</p>
+
+      <h2>3. المبادئ الأساسية للتغذية المتوازنة</h2>
+      <p>كيفية إنشاء خطة غذائية متوازنة تشمل جميع المجموعات الغذائية</p>
+      <p>تحديد الحصص الغذائية المناسبة لكل فئة عمرية وجنس</p>
+      <p>أهمية التنوع في النظام الغذائي وضمان تناول مجموعة واسعة من الأطعمة للحصول على جميع العناصر الغذائية اللازمة</p>
+      <p>كيفية تناول الطعام في فترات مختلفة من اليوم (الفطور، الغداء، العشاء) للحصول على الطاقة طوال اليوم</p>
+
+      <h2>4. تقنيات إعداد الوجبات الصحية</h2>
+      <p>كيفية تخطيط الوجبات اليومية بشكل صحي ومتوازن</p>
+      <p>استراتيجيات لطبخ الطعام بطرق صحية مثل الشوي، السلق، والطبخ بالبخار</p>
+      <p>أفكار لوجبات سريعة وصحية للأشخاص الذين لديهم وقت محدود</p>
+      <p>تعلم كيفية تحضير وجبات خفيفة صحية بين الوجبات الرئيسية</p>
+      <p>تقنيات التحضير المسبق للوجبات لتوفير الوقت وضمان الأطعمة الصحية في أي وقت</p>
+
+      <h2>5. التغذية الخاصة بالحالات الصحية</h2>
+      <p>التغذية السليمة للأشخاص الذين يعانون من حالات صحية معينة مثل السكري، السمنة، أو مشاكل هضمية</p>
+      <p>التغذية خلال الحمل والرضاعة الطبيعية وأهمية تناول الأطعمة المغذية في هذه الفترات</p>
+      <p>كيفية التعامل مع حساسية الطعام أو الأنظمة الغذائية الخاصة مثل الأطعمة الخالية من الجلوتين أو منتجات الألبان</p>
+
+      <h2>6. استراتيجيات لاتباع نظام غذائي صحي على المدى الطويل</h2>
+      <p>كيفية تعديل العادات الغذائية لتحقيق نتائج مستدامة</p>
+      <p>نصائح لتجنب الإفراط في تناول الأطعمة غير الصحية أو المأكولات السريعة</p>
+      <p>كيفية التعامل مع الضغوط الغذائية مثل العزومات أو تناول الطعام خارج المنزل</p>
+      <p>استراتيجيات للتحكم في الشهية واختيار الأطعمة الصحية عند الشعور بالجوع</p>
+
+      <h2>7. التغذية والنشاط البدني</h2>
+      <p>العلاقة بين التغذية والنشاط البدني وأهمية تناول الأطعمة المناسبة قبل وبعد التمرين</p>
+      <p>أفضل الأطعمة لدعم التمرينات الرياضية وتحقيق أقصى استفادة منها</p>
+      <p>كيفية الحفاظ على مستويات طاقة عالية طوال اليوم مع التغذية السليمة</p>
+
+      <h2>أنشطة تطبيقية خلال الدورة</h2>
+      <p>تصميم خطة غذائية متوازنة لفئة معينة (مثل خطة غذائية لخفض الوزن أو بناء العضلات)</p>
+      <p>تحضير وجبات صحية في الدورة بمشاركة الطلاب، مثل السلطات الصحية، وعصائر فواكه طبيعية، ووجبات خفيفة صحية</p>
+      <p>تقييم الأنظمة الغذائية الخاصة بالمشاركين ومساعدتهم في تعديل عاداتهم الغذائية لتحسين صحتهم</p>
+
+      <h2>ملاحظة</h2>
+      <p>تهدف الدورة إلى تزويد المشاركين بالمعرفة الشاملة حول التغذية الصحية وكيفية اتباع نمط حياة غذائي يعزز من صحتهم الجسدية والعقلية. في النهاية، سيكون المشاركون قادرين على وضع خطة غذائية صحية مستدامة تساعدهم في تحقيق أهدافهم الصحية والوقاية من الأمراض.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20التغذية%20الصحية" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

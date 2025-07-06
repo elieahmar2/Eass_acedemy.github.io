@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دورة "العناية بالجسد"</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2;
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">دورة "العناية بالجسد"</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>مقدمة عن العناية بالجسد</h2>
+      <p>التعريف بأهمية العناية بالجسد كجزء من العناية الشخصية الشاملة. كيف تؤثر العناية المستمرة على صحة البشرة، الشعر، الجسم بشكل عام، وكيف تساعد في الشعور بالراحة والثقة بالنفس.</p>
+
+      <h2>العناية بالبشرة</h2>
+      <p>
+        <b>أنواع البشرة:</b> التعرف على أنواع البشرة (دهنية، جافة، مختلطة، حساسة) وطرق العناية بها.<br>
+        <b>الروتين اليومي:</b> تعلم كيفية إعداد روتين يومي يتضمن التنظيف، الترطيب، والحماية من الشمس.<br>
+        <b>العلاج بالأقنعة:</b> استخدام أقنعة الوجه المناسبة لنوع البشرة، والفوائد التي تقدمها.<br>
+        <b>مستحضرات العناية بالبشرة:</b> فهم استخدام المستحضرات المختلفة مثل السيروم، الزيوت، الكريمات المضادة للتجاعيد، والمرطبات.
+      </p>
+
+      <h2>العناية بالشعر</h2>
+      <p>
+        <b>أنواع الشعر:</b> كيفية التعرف على نوع الشعر (دهنّي، جاف، عادي، تالف) واختيار المنتجات المناسبة.<br>
+        <b>العناية بالشعر التالف:</b> تعلم طرق العناية بالشعر الجاف والتالف باستخدام الماسكات الطبيعية والكيميائية.<br>
+        <b>التصفيف والعلاج:</b> استراتيجيات تصفيف الشعر بشكل صحي، واستخدام الأجهزة مثل مجفف الشعر ومكواة الشعر.
+      </p>
+
+      <h2>العناية بالجسم</h2>
+      <p>
+        <b>التقشير والتخلص من الخلايا الميتة:</b> تعلم أهمية تقشير الجسم باستخدام المستحضرات المختلفة أو المكونات الطبيعية.<br>
+        <b>الترطيب والعناية بالجلد:</b> كيفية استخدام الكريمات والزيوت الخاصة بالترطيب للحفاظ على نعومة البشرة وصحتها.<br>
+        <b>العناية بالأظافر:</b> تقنيات الحفاظ على أظافر صحية، وطرق العناية باليدين والقدمين.<br>
+        <b>العناية بالجسم من الداخل:</b> التأكيد على دور التغذية المتوازنة، شرب الماء، والنوم الكافي في الحفاظ على صحة الجسم.
+      </p>
+
+      <h2>العلاج الطبيعي للجسم</h2>
+      <p><b>التدليك:</b> التعرف على تقنيات التدليك المختلفة لتحفيز الدورة الدموية وتخفيف التوتر.<br>
+         <b>العلاج بالماء:</b> تعلم فوائد العلاج بالحمامات الساخنة، الباردة، أو العلاج بالماء المالح للجلد.
+      </p>
+
+      <h2>العناية بالجسم بعد ممارسة الرياضة</h2>
+      <p><b>الإحماء والتمارين الرياضية:</b> تعلم كيفية الإحماء بشكل صحيح قبل التمرين وأهمية التمارين بعد التمرين للعناية بالجسم.<br>
+         <b>التعافي:</b> استراتيجيات تعافي العضلات واستخدام المنتجات المناسبة مثل الجل أو الكريمات المريحة.
+      </p>
+
+      <h2>التغذية الجسدية والصحية</h2>
+      <p>تعلم كيفية اتباع نظام غذائي متوازن يدعم صحة الجسم.<br>
+         التأكيد على أهمية الفيتامينات والمعادن في العناية بالبشرة والشعر والجسم بشكل عام.
+      </p>
+
+      <h2>الوقاية والعناية بالجلد من أشعة الشمس</h2>
+      <p>تعلم كيفية استخدام واقيات الشمس بشكل صحيح.<br>
+         أهمية الحماية من الأشعة فوق البنفسجية للحفاظ على صحة الجلد.
+      </p>
+
+      <p>تهدف الدورة إلى توفير المعلومات اللازمة للأفراد للتعرف على طرق العناية بالجسد بشكل شامل، مع التركيز على أهمية الروتين اليومي والمنتجات المناسبة للعناية بالبشرة والشعر والجسم بشكل عام.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20%22العناية%20بالجسد%22" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

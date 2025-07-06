@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تصميم الأزياء</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">تصميم الأزياء</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة عن تصميم الأزياء</h2>
+      <p>التعريف بتاريخ تصميم الأزياء وأهميته في صناعة الموضة.</p>
+      <p>استعراض التطور التاريخي للأزياء عبر العصور المختلفة وأثرها على الموضة المعاصرة.</p>
+      <p>استكشاف دور المصمم في صناعة الأزياء وتفاصيل عملية التصميم من الفكرة إلى الإنتاج.</p>
+
+      <h2>2. المبادئ الأساسية لتصميم الأزياء</h2>
+      <p>تعلم أساسيات تصميم الأزياء مثل البنية الأساسية للملابس، الأنماط، والخطوط.</p>
+      <p>فهم العلاقات بين التصميم، الألوان، الأقمشة، والتفاصيل الإضافية مثل الأزرار، السحابات، والديكورات.</p>
+      <p>تعلم كيفية اختيار الأسلوب الذي يتناسب مع الجمهور المستهدف والتوجهات الموضوية.</p>
+
+      <h2>3. رسم التصاميم (Fashion Sketching)</h2>
+      <p>تعلم كيفية رسم التصاميم باستخدام تقنيات الرسم اليدوي أو الرقمي.</p>
+      <p>استعراض أدوات الرسم الأساسية مثل الأقلام، الألوان المائية، وأقلام التحديد.</p>
+      <p>تعلم كيفية رسم الأشكال الأساسية لجسم الإنسان لخلق تصاميم أزياء دقيقة وجذابة.</p>
+      <p>تعلم كيفية إضافة التفاصيل مثل الأقمشة، الأزرار، والطبقات لزيادة وضوح التصميم.</p>
+
+      <h2>4. اختيار الأقمشة والمواد</h2>
+      <p>دراسة أنواع الأقمشة المختلفة مثل القطن، الحرير، الصوف، والجلد، وكيفية اختيار النسيج المناسب لكل تصميم.</p>
+      <p>تعلم تقنيات التعامل مع الأقمشة المختلفة وكيفية تحضيرها قبل الخياطة (التنظيف، القياس، القص).</p>
+      <p>استكشاف كيفية تأثير الأقمشة على الشكل النهائي للملابس.</p>
+
+      <h2>5. نظرية اللون في تصميم الأزياء</h2>
+      <p>تعلم كيفية استخدام عجلة الألوان لاختيار ألوان الملابس وتنسيقها بشكل متناسق.</p>
+      <p>استكشاف تأثير الألوان على مظهر الملابس وكيفية اختيار ألوان تتناسب مع الفصول والمناسبات المختلفة.</p>
+      <p>تعلم تقنيات مزج الألوان والتدرجات اللونية لإضفاء الحيوية والتميز على التصاميم.</p>
+
+      <h2>6. تصميم الملابس الرجالية والنسائية</h2>
+      <p>تعلم أساسيات تصميم الأزياء لكل من الرجال والنساء، مع فهم الاختلافات في الأنماط والأشكال.</p>
+      <p>استعراض الأنماط التقليدية والعصرية للملابس، مثل الملابس الرسمية، الكاجوال، والأزياء الراقية.</p>
+      <p>تعلم كيفية تحديد القياسات المناسبة وتصميم الملابس التي تناسب أنواع الجسم المختلفة.</p>
+
+      <h2>7. خياطة وتصنيع الأزياء</h2>
+      <p>تعلم أساسيات الخياطة باستخدام ماكينة الخياطة اليدوية أو الكهربائية.</p>
+      <p>استعراض تقنيات الخياطة المختلفة مثل الخياطة باليد، التطريز، واللحام.</p>
+      <p>تعلم كيفية قطع الأقمشة وتخطيط الأجزاء المختلفة من التصميم، مثل الأكمام، الأزرار، والتفاصيل الإضافية.</p>
+
+      <h2>8. تطوير مجموعة أزياء (Fashion Collection)</h2>
+      <p>تعلم كيفية تطوير مجموعة أزياء متكاملة تعكس أسلوب المصمم وتوجهاته.</p>
+      <p>استعراض كيفية اختيار مجموعة متنوعة من الأقمشة، الألوان، والتصاميم لإظهار رؤية المصمم.</p>
+      <p>تعلم كيفية تنسيق المجموعة لتشمل ملابس متنوعة تناسب جميع الأوقات والمناسبات.</p>
+
+      <h2>9. الاتجاهات الحديثة في تصميم الأزياء</h2>
+      <p>استعراض آخر اتجاهات الموضة وأحدث الابتكارات في عالم الأزياء.</p>
+      <p>تعلم كيفية تطبيق هذه الاتجاهات في التصاميم الخاصة بك وتحديثها لتتناسب مع الذوق العام.</p>
+      <p>استكشاف تقنيات جديدة مثل الأزياء المستدامة واستخدام المواد البيئية في التصميم.</p>
+
+      <h2>10. عرض الأزياء (Fashion Show)</h2>
+      <p>تعلم كيفية تنظيم عرض أزياء لعرض التصاميم بشكل احترافي.</p>
+      <p>استعراض خطوات تنظيم العرض من اختيار المكان، الملابس، العارضين، والإضاءة.</p>
+      <p>تعلم كيفية التنسيق بين التصاميم والعرض لتحقيق أفضل تأثير بصري.</p>
+
+      <h2>11. التسويق للعلامة التجارية للأزياء</h2>
+      <p>تعلم كيفية تسويق تصاميم الأزياء وبناء علامة تجارية قوية.</p>
+      <p>استعراض استراتيجيات التسويق باستخدام وسائل التواصل الاجتماعي، عروض الأزياء، والتعاون مع المشاهير.</p>
+      <p>تعلم كيفية التفاوض مع المتاجر والموزعين لتوسيع نطاق العلامة التجارية.</p>
+
+      <h2>12. إعداد ملف عمل للمصمم (Portfolio)</h2>
+      <p>تعلم كيفية بناء محفظة أعمال قوية تضم أفضل التصاميم والملابس التي قمت بتصميمها.</p>
+      <p>استكشاف طرق عرض أعمالك بطريقة احترافية لتجذب انتباه العملاء أو الشركات.</p>
+      <p>تعلم كيفية تقديم نفسك كمصمم أزياء مبدع واحترافي.</p>
+
+      <h2>خلاصة الدورة</h2>
+      <p>دورة "تصميم الأزياء" توفر لك المهارات اللازمة للابتكار والتصميم في عالم الأزياء. من تعلم أساسيات رسم التصاميم، اختيار الأقمشة، وفهم الألوان، إلى الخياطة وتصميم مجموعة أزياء متكاملة، ستحصل على المعرفة الضرورية لتطوير مهاراتك كمصمم أزياء محترف. الدورة مناسبة للمبتدئين أو أولئك الذين لديهم بعض الخبرة في التصميم ويرغبون في تحسين مهاراتهم وتعلم تقنيات جديدة في عالم الموضة.</p>
+      
+      <a href="https://wa.me/96181566203?text=انا%20مهتم%20بدورة%20تصميم%20الأزياء" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

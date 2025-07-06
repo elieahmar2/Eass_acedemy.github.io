@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>الصحة واللياقة والعناية الشخصية</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo {
+      width: 80px;
+      height: auto;
+      animation: logoZoom 1s ease-in-out;
+    }
+
+    @keyframes logoZoom {
+      0% {
+        transform: scale(0.3);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      margin: 10px 0 0 0;
+      font-size: 24px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .courses-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .course {
+      width: 48%;
+      text-align: center;
+      border: 1px solid #000;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    .course img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 5px;
+    }
+
+    .course h3 {
+      font-size: 14px;
+      margin: 5px 0 0 0;
+      color: black;
+    }
+
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInUp {
+      from {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInDown {
+      from {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .img-left {
+      animation: slideInLeft 1.2s ease;
+    }
+
+    .img-right {
+      animation: slideInRight 1.2s ease;
+    }
+
+    .img-up {
+      animation: slideInUp 1.2s ease;
+    }
+
+    .img-down {
+      animation: slideInDown 1.2s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img class="logo" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/Picsart_25-04-13_02-17-26-498.png?v=1744499882658" alt="Logo" />
+    <h1>الصحة واللياقة والعناية الشخصية</h1>
+  </header>
+
+  <div class="courses-container">
+    <div class="course">
+      <a href="العناية_بالبشرة.html">
+        <img class="img-left" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/766414e252f8847f500ce3e83e4204cf.jpg?v=1744513951138" alt="العناية بالبشرة والشعر">
+        <h3>العناية بالبشرة والشعر</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="اللياقة_البدنية.html">
+        <img class="img-right" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/578b68af50bf29235a16e48135aa6f8c.jpg?v=1744513951500" alt="اللياقة البدنية">
+        <h3>اللياقة البدنية</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="التغذية_الصحية.html">
+        <img class="img-up" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/8484c26606cbfbe46a65a9dc7220fc67.jpg?v=1744513961406" alt="التغذية الصحية">
+        <h3>التغذية الصحية</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="التدليك.html">
+        <img class="img-down" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/061448d8e98e4470f6332dd7e4cd53e6.jpg?v=1744513965952" alt="التدليك والعلاج الطبيعي">
+        <h3>التدليك والعلاج الطبيعي</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="الطب_البديل.html">
+        <img class="img-left" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/fe288f07bf0f41cd6f62c13a1d015dbd.jpg?v=1744513973144" alt="الطب البديل">
+        <h3>الطب البديل</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="الاسعافات_الاولية.html">
+        <img class="img-right" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/1b47be4a85d215003146c0a2a8b6d941.jpg?v=1744513979607" alt="الإسعافات الأولية">
+        <h3>الإسعافات الأولية</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="الوقاية_الصحية.html">
+        <img class="img-up" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/5ce2fee390879d3014f78bfccaa95ae8.jpg?v=1744513986991" alt="الوقاية الصحية">
+        <h3>الوقاية الصحية</h3>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

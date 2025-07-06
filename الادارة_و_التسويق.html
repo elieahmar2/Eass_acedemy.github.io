@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>الإدارة والتسويق</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo {
+      width: 80px;
+      height: auto;
+      animation: logoZoom 1s ease-in-out;
+    }
+
+    @keyframes logoZoom {
+      0% {
+        transform: scale(0.3);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      margin: 10px 0 0 0;
+      font-size: 24px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .courses-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .course {
+      width: 48%;
+      text-align: center;
+      border: 1px solid #000;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    .course img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 5px;
+    }
+
+    .course h3 {
+      font-size: 14px;
+      margin: 5px 0 0 0;
+      color: black;
+    }
+
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInUp {
+      from {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInDown {
+      from {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .img-left {
+      animation: slideInLeft 1.2s ease;
+    }
+
+    .img-right {
+      animation: slideInRight 1.2s ease;
+    }
+
+    .img-up {
+      animation: slideInUp 1.2s ease;
+    }
+
+    .img-down {
+      animation: slideInDown 1.2s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img class="logo" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/Picsart_25-04-13_02-17-26-498.png?v=1744499882658" alt="Logo" />
+    <h1>الإدارة والتسويق</h1>
+  </header>
+
+  <div class="courses-container">
+    <div class="course">
+      <a href="ادارة_مشاريع.html">
+        <img class="img-left" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/fed384bf87aa536f37ab0380d0e6ee5c.jpg?v=1744510501787" alt="إدارة المشاريع">
+        <h3>إدارة المشاريع</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="التسويق_الرقمي.html">
+        <img class="img-right" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/510c79890ec49301e25743c73cdad98c.jpg?v=1744510508781" alt="التسويق الرقمي">
+        <h3>التسويق الرقمي</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="الموارد.html">
+        <img class="img-up" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/7ba66d3870e2a06bcbf7bdae5fe2ce9a.jpg?v=1744510513813" alt="الموارد البشرية">
+        <h3>الموارد البشرية</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="الاعلانية.html">
+        <img class="img-down" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/3667f0f1778aa5cded6ee2b031bab294.jpg?v=1744510518978" alt="الحملات الإعلانية">
+        <h3>الحملات الإعلانية</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="التخطيط_المالي.html">
+        <img class="img-left" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/07a2d8da423b1da8a546bdb77ad6358c.jpg?v=1744510525505" alt="التخطيط المالي">
+        <h3>التخطيط المالي</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="التحليل_المالي.html">
+        <img class="img-right" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/25487e85aec0a258964c86463114c6a8.jpg?v=1744510529833" alt="التحليل المالي">
+        <h3>التحليل المالي</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="التطوير_ااشخصي.html">
+        <img class="img-up" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/a630a01e8293654e6e1c98c2ca5b7032.jpg?v=1744510535532" alt="التطوير الشخصي والقيادة">
+        <h3>التطوير الشخصي والقيادة</h3>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

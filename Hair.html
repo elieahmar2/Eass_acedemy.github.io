@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دورة "كل ما يخص الشعر النسائي"</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2;
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">دورة "كل ما يخص الشعر النسائي"</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>تلوين الشعر (Coloring)</h2>
+      <p>تعلم كيفية صبغ الشعر بأنواعه المختلفة، من الصبغات الدائمة إلى الصبغات المؤقتة، مع التركيز على اختيار الألوان المناسبة للبشرة وكيفية الحفاظ على اللون لفترات طويلة.</p>
+
+      <h2>قص الشعر (Hair Cut)</h2>
+      <p>تدريب شامل على تقنيات قص الشعر المختلفة سواء للقصات الكلاسيكية أو العصرية، وتعلم كيفية تقليم الأطراف بشكل احترافي.</p>
+
+      <h2>تصفيف الشعر (Hair Styling)</h2>
+      <p>تعلم فنون تصفيف الشعر بأنماط مختلفة مثل التجعيد، التسريحات المرفوعة، والتسريحات المفرودة، مع كيفية استخدام الأدوات المناسبة مثل مكواة الشعر والمجفف.</p>
+
+      <h2>العناية بالشعر (Hair Care)</h2>
+      <p>تعلم كيفية العناية بالشعر التالف والجاف باستخدام المنتجات المناسبة وكيفية تحضير وصفات طبيعية للشعر.</p>
+
+      <h2>تمليس الشعر (Hair Straightening)</h2>
+      <p>تعلم تقنيات تمليس الشعر باستخدام المكواة أو طرق أخرى مثل العلاج بالبروتين أو الكيراتين.</p>
+
+      <h2>مكياج الشعر (Hair Makeup)</h2>
+      <p>تعلم كيفية تزيين الشعر بالإكسسوارات أو الصبغات المؤقتة لإعطاء لمسة جمالية مميزة.</p>
+
+      <h2>علاج الشعر (Hair Treatment)</h2>
+      <p>تعلم كيفية معالجة مشاكل الشعر مثل التساقط، القشرة، والتلف باستخدام العلاجات المنزلية أو الاحترافية.</p>
+
+      <p>تهدف هذه الدورة إلى تغطية كافة جوانب العناية بالشعر النسائي، بدءًا من الأساسيات إلى التقنيات المتقدمة، وتقديم المهارات اللازمة للعمل في هذا المجال بكفاءة عالية.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20%22كل%20ما%20يخص%20الشعر%20النسائي%22" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

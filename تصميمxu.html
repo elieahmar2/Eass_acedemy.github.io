@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تصميم UX/UI</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">تصميم UX/UI</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة في تصميم UX/UI</h2>
+      <p>التعريف بتصميم تجربة المستخدم (UX) و تصميم واجهة المستخدم (UI).</p>
+      <p>فهم الفرق بين UX و UI وكيفية تكاملها في عملية التصميم.</p>
+      <p>أهمية تصميم UX/UI في تحسين تفاعل المستخدم وزيادة رضا العملاء.</p>
+      <p>نظرة عامة على المبادئ الأساسية لتصميم UX/UI مثل البساطة، التناسق، والوصولية.</p>
+
+      <h2>2. البحث عن المستخدم واحتياجاته</h2>
+      <p>تعلم كيفية إجراء أبحاث المستخدم لتحديد احتياجات الجمهور المستهدف.</p>
+      <p>فهم كيفية استخدام الاستبيانات، المقابلات، و الملاحظة لفهم سلوك المستخدمين.</p>
+      <p>تعلم كيفية تحليل البيانات المستخلصة من البحث لتوجيه قرارات التصميم.</p>
+      <p>تطوير الشخصيات (Personas) لتحديد الخصائص والأهداف الخاصة بالمستخدمين.</p>
+
+      <h2>3. تصميم تجربة المستخدم (UX)</h2>
+      <p>تعلم كيفية تصميم رحلة المستخدم (User Journey) لفهم كيفية تنقل المستخدم في التطبيق أو الموقع.</p>
+      <p>استكشاف خريطة الموقع (Site Map) و الأسلاك (Wireframes) لتخطيط الهيكل العام للموقع أو التطبيق.</p>
+      <p>تعلم كيفية إنشاء نموذج أولي (Prototype) لاختبار فكرة التصميم قبل التنفيذ.</p>
+      <p>فهم أهمية اختبار المستخدم (Usability Testing) و التغذية الراجعة لتحسين تجربة المستخدم.</p>
+
+      <h2>4. تصميم واجهة المستخدم (UI)</h2>
+      <p>تعلم كيفية تصميم واجهات مستخدم جذابة وفعّالة باستخدام الألوان، الخطوط، و الأيقونات.</p>
+      <p>فهم أهمية التناسق البصري في التصميم لجعل التجربة أكثر سلاسة ومتعة.</p>
+      <p>استكشاف التصميم المتجاوب (Responsive Design) لضمان توافق التصميم عبر الأجهزة المختلفة (موبايل، تابلت، كمبيوتر).</p>
+      <p>تعلم استخدام أدوات التصميم مثل Figma، Sketch، و Adobe XD لتصميم الواجهات التفاعلية.</p>
+
+      <h2>5. التفاعل والانتقالات</h2>
+      <p>تعلم كيفية إضافة الحركات و الانتقالات بين الصفحات أو العناصر لجعل التفاعل أكثر سلاسة.</p>
+      <p>استكشاف تقنيات الرسوم المتحركة لتحسين تفاعل المستخدم مع واجهات التطبيق أو الموقع.</p>
+      <p>تطبيق المبادئ النفسية في تصميم التفاعلات مثل التعزيز الإيجابي و التغذية الراجعة.</p>
+
+      <h2>6. تصميم لتجربة مستخدم شاملة</h2>
+      <p>تعلم كيفية تصميم تجربة مستخدم متكاملة تلبي احتياجات الأشخاص ذوي الإعاقات أو الاحتياجات الخاصة.</p>
+      <p>فهم مبادئ الوصولية (Accessibility) وضمان توافر الموقع أو التطبيق للجميع.</p>
+      <p>تعلم كيفية استخدام الاختبارات متعددة الأجهزة للتأكد من أن التصميم يعمل بشكل مثالي عبر منصات مختلفة.</p>
+
+      <h2>7. اختبار UX/UI وتحليل النتائج</h2>
+      <p>تعلم كيفية إجراء اختبارات التحقق من سهولة الاستخدام لجمع ردود الفعل من المستخدمين الفعليين.</p>
+      <p>تحليل نتائج الاختبارات لتحديد نقاط القوة والضعف في التصميم.</p>
+      <p>تعلم كيفية تعديل التصميم بناءً على الملاحظات لتحسين تجربة المستخدم و واجهة المستخدم.</p>
+
+      <h2>8. التصميم التعاوني والعمل الجماعي</h2>
+      <p>تعلم كيفية التعاون مع فرق التطوير و فرق التسويق لضمان تنفيذ التصميم بشكل متناسق.</p>
+      <p>استكشاف أدوات إدارة المشاريع مثل Trello و Asana لتنظيم سير العمل بين الفرق.</p>
+      <p>فهم أدوار الفريق المختلفة وكيفية التواصل الفعّال أثناء عملية التصميم.</p>
+
+      <h2>9. مواكبة أحدث الاتجاهات في تصميم UX/UI</h2>
+      <p>استكشاف أحدث الاتجاهات في التصميم مثل التصميم المسطح (Flat Design)، التصميم المتحرك (Motion Design) و التصميم السائل (Liquid Design).</p>
+      <p>تعلم كيفية تطبيق التقنيات الجديدة مثل الذكاء الاصطناعي و التفاعل الصوتي في تصميم واجهات المستخدم.</p>
+
+      <h2>10. إعداد محفظة التصميم (Portfolio)</h2>
+      <p>تعلم كيفية إنشاء محفظة عمل (Portfolio) تعرض مشاريع تصميم UX/UI بشكل احترافي.</p>
+      <p>فهم كيفية عرض العملية التصميمية من البداية إلى النهاية في المحفظة.</p>
+      <p>تعلم كيفية عرض المشاريع بشكل يجذب العملاء أو أصحاب العمل المحتملين.</p>
+
+      <h2>خلاصة الدورة</h2>
+      <p>دورة "تصميم UX/UI" توفر لك المهارات اللازمة لتصميم تجارب وواجهات مستخدم متميزة، مما يضمن تفاعلًا سلسًا وجذابًا للمستخدمين. ستتعلم كيفية البحث عن احتياجات المستخدم، تصميم الهياكل التفاعلية، استخدام الأدوات الاحترافية، إضافة التأثيرات التفاعلية، واختبار التصميمات لتحسين الأداء. في النهاية، ستكون قادرًا على إنشاء تصميمات تلبي احتياجات المستخدمين وتتناسب مع متطلبات السوق الحديثة.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20تصميم%20UX/UI" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>اللغات والثقافات</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo {
+      width: 80px;
+      height: auto;
+      animation: logoZoom 1s ease-in-out;
+    }
+
+    @keyframes logoZoom {
+      0% {
+        transform: scale(0.3);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      margin: 10px 0 0 0;
+      font-size: 24px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .courses-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .course {
+      width: 48%;
+      text-align: center;
+      border: 1px solid #000;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    .course img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 5px;
+    }
+
+    .course h3 {
+      font-size: 14px;
+      margin: 5px 0 0 0;
+      color: black;
+    }
+
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInUp {
+      from {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInDown {
+      from {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .img-left {
+      animation: slideInLeft 1.2s ease;
+    }
+
+    .img-right {
+      animation: slideInRight 1.2s ease;
+    }
+
+    .img-up {
+      animation: slideInUp 1.2s ease;
+    }
+
+    .img-down {
+      animation: slideInDown 1.2s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img class="logo" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/Picsart_25-04-13_02-17-26-498.png?v=1744499882658" alt="Logo" />
+    <h1>اللغات والثقافات</h1>
+  </header>
+
+  <div class="courses-container">
+    <div class="course">
+      <a href="تعليم_اللغات.html">
+        <img class="img-left" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/818d89b89cb307b919ee88b686078c34.jpg?v=1744514347078" alt="تعليم اللغات">
+        <h3>تعليم اللغات (إنغليزي، فرنسي، إسباني)</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="ترجمة.html">
+        <img class="img-right" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/9ac0e7e78692c002302b897f7f3126b3.jpg?v=1744513999170" alt="الترجمة">
+        <h3>الترجمة</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="اللغة_لأعمال.html">
+        <img class="img-up" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/538e067bd111ee4414c10a5d6549c1ba.jpg?v=1744514006014" alt="اللغة للأعمال">
+        <h3>اللغة للأعمال</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="الانصال_الثقافات.html">
+        <img class="img-down" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/f82e192ad55b4d6ca075ade65a9f04f5.jpg?v=1744514021768" alt="الاتصال بين الثقافات">
+        <h3>الاتصال بين الثقافات</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="مهارات_النطق.html">
+        <img class="img-left" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/cdd79684dd9f2f0fb9cd6b5f8fb534e0.jpg?v=1744514026356" alt="مهارات النطق">
+        <h3>مهارات النطق</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="المحادثة_اليومية.html">
+        <img class="img-right" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/15ff78b1c32170cd4ded962befd1bb2d.jpg?v=1744514034676" alt="المحادثة اليومية">
+        <h3>المحادثة اليومية</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="التحضير_لإمتحانات.html">
+        <img class="img-up" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/ae6bf512ceff5355c1a965cbecc28e79.jpg?v=1744514038950" alt="التحضير لامتحانات اللغة">
+        <h3>التحضير لامتحانات اللغة</h3>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

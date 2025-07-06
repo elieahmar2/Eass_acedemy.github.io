@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دورة القانون التجاري</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2;
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">دورة القانون التجاري</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مدخل إلى القانون التجاري</h2>
+      <p>تعريف القانون التجاري وتمييزه عن القانون المدني</p>
+      <p>خصائص القانون التجاري</p>
+      <p>مصادر القانون التجاري (القانون، العرف، القضاء...)</p>
+      <p>معايير التاجر والعمل التجاري</p>
+
+      <h2>2. التاجر والأعمال التجارية</h2>
+      <p>من هو التاجر قانونًا؟</p>
+      <p>التزامات التاجر (مسك الدفاتر، القيد في السجل التجاري...)</p>
+      <p>الأعمال التجارية الأصلية والتبعية</p>
+
+      <h2>3. الشركات التجارية</h2>
+      <p>أنواع الشركات: شركات الأشخاص (مثل التضامن) وشركات الأموال (مثل المساهمة)</p>
+      <p>تأسيس الشركات، النظام الأساسي، الشخصية الاعتبارية</p>
+      <p>الإدارة والمسؤولية القانونية</p>
+      <p>تصفية الشركات وحلّها</p>
+
+      <h2>4. العقود التجارية</h2>
+      <p>البيع التجاري والوكالة التجارية</p>
+      <p>الرهن التجاري</p>
+      <p>عقد التوريد، الامتياز التجاري (الفرانشايز)</p>
+      <p>العقود البحرية والجوية</p>
+
+      <h2>5. الأوراق التجارية</h2>
+      <p>السندات (الشيك – الكمبيالة – السند لأمر)</p>
+      <p>خصائص الأوراق التجارية</p>
+      <p>التداول والوفاء والضمان</p>
+
+      <h2>6. الإفلاس والتصفية</h2>
+      <p>تعريف الإفلاس التجاري</p>
+      <p>شروطه وآثاره على التاجر</p>
+      <p>الإجراءات القانونية والحقوق المترتبة للدائنين</p>
+
+      <h2>مخرجات الدورة</h2>
+      <p>التعرّف على الأسس القانونية للتجارة والأعمال</p>
+      <p>فهم طبيعة الشركات وإدارتها القانونية</p>
+      <p>إلمام أولي بكيفية إعداد العقود التجارية واستخدام الأوراق التجارية</p>
+      <p>أساس قانوني مفيد للراغبين بالعمل التجاري أو التخصص القانوني</p>
+
+      <h2>ملاحظة</h2>
+      <p>لا تؤهّل هذه الدورة المشاركين لممارسة المحاماة، لكنها تشكّل مدخلًا مهمًا لأي شخص يعمل أو يخطط للعمل في قطاع التجارة أو في الإدارة القانونية للشركات.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20القانون%20التجاري" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

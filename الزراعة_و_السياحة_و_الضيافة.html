@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>الزراعة والسياحة والضيافة</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo {
+      width: 80px;
+      height: auto;
+      animation: logoZoom 1s ease-in-out;
+    }
+
+    @keyframes logoZoom {
+      0% {
+        transform: scale(0.3);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      margin: 10px 0 0 0;
+      font-size: 24px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .courses-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .course {
+      width: 48%;
+      text-align: center;
+      border: 1px solid #000;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    .course img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 5px;
+    }
+
+    .course h3 {
+      font-size: 14px;
+      margin: 5px 0 0 0;
+      color: black;
+    }
+
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInUp {
+      from {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInDown {
+      from {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .img-left { animation: slideInLeft 1.2s ease; }
+    .img-right { animation: slideInRight 1.2s ease; }
+    .img-up { animation: slideInUp 1.2s ease; }
+    .img-down { animation: slideInDown 1.2s ease; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img class="logo" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/Picsart_25-04-13_02-17-26-498.png?v=1744499882658" alt="Logo" />
+    <h1>الزراعة والسياحة والضيافة</h1>
+  </header>
+
+  <div class="courses-container">
+    <div class="course">
+      <a href="العضوية.html">
+        <img class="img-left" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/dd63fb5b802d5dc9d8f09ceb4758e790.jpg?v=1744569305474" alt="الزراعة العضوية">
+        <h3>الزراعة العضوية</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="الحدائق.html">
+        <img class="img-right" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/8665d884126b680ba5bbdc0d78a4e812.jpg?v=1744569309801" alt="تنسيق الحدائق">
+        <h3>تنسيق الحدائق</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="الابيئية.html">
+        <img class="img-up" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/09eae2a048a7635ef59d07963c3d2495.jpg?v=1744569314044" alt="الاستدامة البيئية">
+        <h3>الاستدامة البيئية</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="ادارة_الفنادق.html">
+        <img class="img-down" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/95961bd64c51c1d3f14a0f6503110db3.jpg?v=1744569317833" alt="إدارة الفنادق">
+        <h3>إدارة الفنادق</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="السياحة.html">
+        <img class="img-left" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/481845527f95bf06f59f019409d0c418.jpg?v=1744569322063" alt="إدارة السياحة">
+        <h3>إدارة السياحة</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="الضيافة.html">
+        <img class="img-right" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/703aaa735e13c420465095cdd6a4783e.jpg?v=1744569326530" alt="الضيافة">
+        <h3>الضيافة</h3>
+      </a>
+    </div>
+    <div class="course">
+      <a href="الرحلات.html">
+        <img class="img-up" src="https://cdn.glitch.global/83dd2485-3799-4b7c-934a-d9e17ed8bba6/e80389081b431d66d7b5c80c573a0337.jpg?v=1744569339426" alt="تنظيم الرحلات">
+        <h3>تنظيم الرحلات</h3>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

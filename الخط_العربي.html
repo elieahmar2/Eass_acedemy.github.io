@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>الخط العربي</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">الخط العربي</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة عن الخط العربي</h2>
+      <p>التعريف بالخط العربي كفن من فنون الكتابة والتعبير، وأثره في الثقافة العربية والإسلامية.</p>
+      <p>استكشاف تطور الخط العربي عبر العصور وأهميته في الحياة اليومية، من كتابة المخطوطات إلى استخدامها في الفنون المعمارية.</p>
+      <p>التعرف على الأدوات المستخدمة في الكتابة مثل القلم الحبر، الأقلام الخاصة بالخط العربي، والأوراق.</p>
+
+      <h2>2. أنواع الخطوط العربية</h2>
+      <p><b>الخط الكوفي:</b> تعلم كيفية الكتابة بالخط الكوفي وأنماطه المختلفة، واستخدامه في الزخرفة والعمارة الإسلامية.</p>
+      <p><b>الخط الديواني:</b> دراسة تقنيات الخط الديواني وتعلم كيفية تحسين الكتابة بخطوطه المميزة.</p>
+      <p><b>الخط النسخي:</b> فهم كيفية كتابة الحروف في الخط النسخي الذي يستخدم في كتابة القرآن الكريم والمخطوطات.</p>
+      <p><b>الخط الفارسي:</b> تعلم تقنيات الكتابة بالفارسي وأسلوبها المميز.</p>
+      <p><b>الخط الثلث:</b> دراسة الخط الثلث وتقنياته المعقدة والمتقنة، وكيفية كتابته بطريقة فنية ومتقنة.</p>
+      <p><b>الخط الرقعة:</b> تعلم الكتابة السريعة والواضحة باستخدام الخط الرقعة، وأهميته في الكتابات اليومية.</p>
+
+      <h2>3. تعليم الأساسيات</h2>
+      <p>تعلم كيفية التحكم في القلم العربي وطريقة كتابة الحروف العربية بشكل دقيق ومتقن.</p>
+      <p>التركيز على تقنيات الضبط والتنسيق بين الحروف والكلمات لضمان الجمالية والوضوح.</p>
+      <p>دراسة القواعد الأساسية لكتابة الحروف والربط بينها، مع التركيز على النسب الصحيحة بين الحروف.</p>
+
+      <h2>4. تقنيات الزخرفة في الخط العربي</h2>
+      <p>تعلم فنون زخرفة الكلمات والآيات باستخدام الخطوط العربية المختلفة.</p>
+      <p>استكشاف كيفية دمج الخط العربي مع الزخارف الهندسية والنباتية لتطوير أسلوب فني مميز.</p>
+      <p>دراسة تقنيات تزيين الحروف باستخدام الزخارف البسيطة والمعقدة.</p>
+
+      <h2>5. الخط العربي الحديث</h2>
+      <p>التعرف على استخدامات الخط العربي في التصاميم الحديثة مثل الشعارات، الإعلانات، والمطبوعات.</p>
+      <p>دراسة تطبيقات الخط العربي في الفنون الرقمية مثل التصميم الجرافيكي وتصميم مواقع الإنترنت.</p>
+      <p>تعلم كيفية دمج الخط العربي مع أساليب التصميم المعاصرة.</p>
+
+      <h2>6. كيفية تشكيل الحروف والكلمات</h2>
+      <p>تعلم كيفية تشكيل الحروف العربية باستخدام الحركات (الفتحة، الضمة، الكسرة) بشكل صحيح.</p>
+      <p>استكشاف كيفية تشكيل الكلمات والعبارات بشكل يعزز جمالية الخط ويضمن وضوحه.</p>
+      <p>فهم أهمية المسافات بين الحروف والكلمات لتحقيق التوازن في الكتابة.</p>
+
+      <h2>7. مشروع شخصي في الخط العربي</h2>
+      <p>العمل على مشروع خطي شخصي، بدءًا من اختيار النصوص والعبارات وحتى تنسيقها بشكل احترافي.</p>
+      <p>تقديم ملاحظات من المدرب لتحسين الخطوط وتحقيق أقصى قدر من الجمالية.</p>
+      <p>تعلم كيفية تقديم عملك النهائي بأسلوب فني يعكس مهاراتك في الخط العربي.</p>
+
+      <h2>8. التسويق والترويج لفن الخط العربي</h2>
+      <p>تعلم كيفية استخدام مهاراتك في الخط العربي في مجالات مثل التصميم الجرافيكي والإعلانات.</p>
+      <p>استكشاف طرق تسويق أعمالك الفنية باستخدام منصات التواصل الاجتماعي والمعارض الفنية.</p>
+      <p>تعلم كيفية بناء حضور قوي في المجال واستخدام الخط العربي في الأعمال التجارية والفنية.</p>
+
+      <h2>خلاصة الدورة</h2>
+      <p>دورة "الخط العربي" تمنحك المهارات الأساسية والمتقدمة لإتقان فن الكتابة بالخط العربي بكل أنواعه وأساليبه. ستتعلم كيفية التحكم في الأدوات وتنسيق الحروف والكلمات بطرق فنية، مع تطوير أسلوبك الخاص في هذا الفن التقليدي. هذه الدورة ستساعدك على استكشاف جمال الخط العربي وتطبيقه في الحياة اليومية أو في مشاريع فنية وتجارية.</p>
+      
+      <a href="https://wa.me/96181566203?text=انا%20مهتم%20بدورة%20الخط%20العربي" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
