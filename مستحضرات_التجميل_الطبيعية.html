@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>مستحضرات التجميل الطبيعية</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">مستحضرات التجميل الطبيعية</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة عن مستحضرات التجميل الطبيعية</h2>
+      <p>التعريف بمفهوم مستحضرات التجميل الطبيعية وفوائدها على البشرة والشعر مقارنة بالمستحضرات التجارية.</p>
+      <p>التعرف على أهمية استخدام مكونات طبيعية وآمنة وأثرها الإيجابي على صحة البشرة والشعر.</p>
+      <p>استعراض بعض المواد الطبيعية المشهورة المستخدمة في صناعة مستحضرات التجميل مثل الزيوت الطبيعية، الأعشاب، والعسل.</p>
+
+      <h2>2. المكونات الأساسية في مستحضرات التجميل الطبيعية</h2>
+      <p>تعلم كيفية اختيار المكونات الطبيعية ذات الفوائد للبشرة مثل الزيوت النباتية (زيت جوز الهند، زيت الأركان، زيت الزيتون)، الزبدة الطبيعية (زبدة الشيا، زبدة الكاكاو)، والأعشاب مثل اللافندر، الصبار، والبابونج.</p>
+      <p>التعرف على المكونات الإضافية مثل الفيتامينات (فيتامين E، فيتامين C) والعناصر المعدنية (الطين، الفحم النشط) التي تستخدم في تعزيز فعالية المنتجات.</p>
+
+      <h2>3. تحضير مستحضرات التجميل الطبيعية للبشرة</h2>
+      <p>تعلم كيفية تحضير غسولات الوجه والمقشرات الطبيعية باستخدام مكونات مثل السكر البني، الملح، الزيوت الأساسية.</p>
+      <p>صناعة الكريمات والمرطبات الطبيعية للبشرة باستخدام الزيوت النباتية والزبدة الطبيعية.</p>
+      <p>تحضير ماسكات البشرة من مكونات مثل العسل، اللبن، الطين، والخميرة لتعزيز نضارة البشرة وإزالة الشوائب.</p>
+
+      <h2>4. تحضير مستحضرات التجميل الطبيعية للشعر</h2>
+      <p>تعلم كيفية تحضير شامبوهات وبلسم طبيعي باستخدام مكونات مثل زيت جوز الهند، الصبار، وزيت الأرغان.</p>
+      <p>تحضير ماسكات للشعر تساعد في ترطيبه وتغذيته مثل ماسك الأفوكادو وزيت الزيتون.</p>
+      <p>تعلم كيفية تحضير علاجات لمشاكل الشعر مثل القشرة، التساقط، وجفاف الشعر باستخدام الزيوت الطبيعية والعشبية.</p>
+
+      <h2>5. صناعة مستحضرات تجميل أخرى</h2>
+      <p>تعلم كيفية تحضير مستحضرات تجميل أخرى مثل معطرات الجسم، مزيلات العرق الطبيعية، زيت الجسم المعطر، والزيوت المعالجة.</p>
+      <p>تعلم كيفية صنع منتجات تجميل خاصة بالحواجب والرموش مثل زيوت نمو الرموش والحواجب.</p>
+
+      <h2>6. طرق الخلط والتحضير</h2>
+      <p>تعلم الأساليب الصحيحة لخلط المكونات الطبيعية مع بعضها لضمان الحفاظ على خصائصها.</p>
+      <p>تعليم طرق التحضير المختلفة مثل التدفئة، التحريك، والتبريد للحصول على أفضل نتائج.</p>
+
+      <h2>7. الاحتياطات والنصائح عند صناعة مستحضرات التجميل الطبيعية</h2>
+      <p>تعلم كيفية الحفاظ على جودة المنتجات الطبيعية وتخزينها بطريقة صحيحة لضمان عدم تفاعل المكونات أو تلفها.</p>
+      <p>تعلم كيفية اختبار المكونات لضمان عدم حدوث أي تفاعلات حساسية أو مشاكل جلدية.</p>
+      <p>نصائح حول استخدام المكونات الطبيعية بطريقة صحية وآمنة لتحقيق أفضل النتائج.</p>
+
+      <h2>8. التغليف والتسويق</h2>
+      <p>تعلم كيفية تعبئة مستحضرات التجميل الطبيعية في عبوات مناسبة للحفاظ على جودتها.</p>
+      <p>نصائح حول كيفية تسويق هذه المنتجات سواء عبر الإنترنت أو في الأسواق المحلية.</p>
+      <p>تعلم كيفية تحديد الأسعار بناءً على المواد المستخدمة والوقت المستغرق في التحضير.</p>
+
+      <h2>9. إلهام وأفكار لمستحضرات تجميل طبيعية مبتكرة</h2>
+      <p>تعلم كيفية ابتكار تركيبات جديدة بناءً على احتياجات السوق مثل مستحضرات تجميل خاصة بالبشرة الحساسة أو المستحضرات المضادة للشيخوخة.</p>
+      <p>استلهام أفكار لتطوير خط منتجات تجميل طبيعي خاص بك والابتكار في التصاميم.</p>
+
+      <h2>خلاصة الدورة</h2>
+      <p>دورة "مستحضرات التجميل الطبيعية" تمنحك المهارات اللازمة لصناعة مستحضرات تجميل آمنة وفعالة باستخدام مكونات طبيعية. ستتعلم كيفية إعداد مستحضرات تجميل للبشرة والشعر، بالإضافة إلى كيفية ابتكار منتجات فريدة وتصميمها بشكل احترافي. الدورة مثالية للمبتدئين وكذلك لأولئك الذين يرغبون في تعلم مهارات جديدة لصناعة مستحضرات تجميل طبيعية وبيعها كمشروع تجاري.</p>
+      
+      <a href="https://wa.me/96181566203?text=انا%20مهتم%20بمستحضرات%20التجميل%20الطبيعية" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

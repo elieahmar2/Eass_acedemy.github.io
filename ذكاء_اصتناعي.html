@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>الذكاء الاصطناعي</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">الذكاء الاصطناعي</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة في الذكاء الاصطناعي</h2>
+      <p>التعريف بالذكاء الاصطناعي وأهدافه.</p>
+      <p>الفرق بين الذكاء الاصطناعي، التعلم الآلي، والتعلم العميق.</p>
+      <p>تاريخ تطور الذكاء الاصطناعي والمفاهيم الأساسية.</p>
+      <p>استعراض أهم تطبيقات الذكاء الاصطناعي في الحياة اليومية.</p>
+
+      <h2>2. مفاهيم التعلم الآلي (Machine Learning)</h2>
+      <p>فهم الخوارزميات الأساسية للتعلم الآلي مثل الانحدار الخطي، شجرة القرار، الآلات الداعمة.</p>
+      <p>تعلم كيفية بناء نماذج التعلم الآلي واستخدامها لتحليل البيانات.</p>
+      <p>دراسة أنواع التعلم الآلي: التعلم الموجه و التعلم غير الموجه.</p>
+      <p>تطبيق الخوارزميات على مجموعات بيانات حقيقية لاستخلاص الأنماط والتنبؤات.</p>
+
+      <h2>3. التعلم العميق (Deep Learning)</h2>
+      <p>فهم الشبكات العصبية الاصطناعية واستخداماتها.</p>
+      <p>التعرف على الخوارزميات المتقدمة مثل الشبكات العصبية التلافيفية (CNN) و الشبكات العصبية المتكررة (RNN).</p>
+      <p>تطبيق التعلم العميق في تطبيقات مثل التعرف على الصور والنصوص.</p>
+      <p>تعلم كيفية تدريب وتحسين نماذج التعلم العميق باستخدام TensorFlow و Keras.</p>
+
+      <h2>4. معالجة اللغة الطبيعية (Natural Language Processing - NLP)</h2>
+      <p>فهم كيفية تفاعل الآلات مع اللغة البشرية.</p>
+      <p>تعلم تقنيات مثل تحليل النصوص، التصنيف النصي، الترجمة الآلية.</p>
+      <p>تطبيق تقنيات معالجة اللغة الطبيعية في أدوات الذكاء الاصطناعي مثل المساعدين الصوتيين Siri و Alexa.</p>
+      <p>دراسة الأساليب المستخدمة في تحليل وفهم اللغة البشرية.</p>
+
+      <h2>5. الذكاء الاصطناعي في الرؤية الحاسوبية (Computer Vision)</h2>
+      <p>التعرف على أساليب وتقنيات الرؤية الحاسوبية.</p>
+      <p>استخدام التعلم العميق لمعالجة الصور والفيديوهات.</p>
+      <p>تطبيق تقنيات الرؤية الحاسوبية في التعرف على الوجوه، تتبع الأشياء، تحليل الصور الطبية، وغيرها.</p>
+      <p>تعلم استخدام مكتبات مثل OpenCV و TensorFlow في مشاريع الرؤية الحاسوبية.</p>
+
+      <h2>6. الروبوتات والذكاء الاصطناعي</h2>
+      <p>تعلم كيفية تطبيق تقنيات الذكاء الاصطناعي في بناء الروبوتات الذكية.</p>
+      <p>فهم الأنظمة المستقلة والتوجيه الذاتي مثل السيارات ذاتية القيادة.</p>
+      <p>استكشاف كيفية استخدام الذكاء الاصطناعي في الروبوتات الصناعية والروبوتات الشخصية.</p>
+
+      <h2>7. أدوات وتقنيات الذكاء الاصطناعي</h2>
+      <p>التعرف على الأدوات المستخدمة في تطوير تطبيقات الذكاء الاصطناعي مثل Python، TensorFlow، Keras، و PyTorch.</p>
+      <p>تعلم كيفية جمع البيانات وتحليلها باستخدام Pandas و NumPy.</p>
+      <p>تطبيق الأدوات لتطوير وتدريب نماذج الذكاء الاصطناعي.</p>
+
+      <h2>8. الأخلاقيات في الذكاء الاصطناعي</h2>
+      <p>مناقشة القضايا الأخلاقية المرتبطة بتطوير وتطبيق الذكاء الاصطناعي.</p>
+      <p>فهم تأثير الذكاء الاصطناعي على سوق العمل والمجتمع.</p>
+      <p>دراسة التحديات في التعامل مع البيانات الشخصية والخصوصية.</p>
+
+      <h2>9. مشاريع تطبيقية في الذكاء الاصطناعي</h2>
+      <p>تطبيق ما تعلمته في تطوير مشاريع حقيقية باستخدام تقنيات الذكاء الاصطناعي.</p>
+      <p>مشاريع مثل تطوير نموذج للتصنيف، تطبيقات الرؤية الحاسوبية، أو بناء روبوت ذكي.</p>
+      <p>تعلم كيفية تقييم وتحسين النماذج باستخدام أدوات وتقنيات مناسبة.</p>
+
+      <h2>10. مستقبل الذكاء الاصطناعي</h2>
+      <p>استكشاف الاتجاهات المستقبلية في الذكاء الاصطناعي مثل الذكاء الاصطناعي العام و التعلم الآلي القوي.</p>
+      <p>كيف سيؤثر الذكاء الاصطناعي على الصناعات المستقبلية مثل الرعاية الصحية، التعليم، والتمويل.</p>
+
+      <h2>خلاصة الدورة</h2>
+      <p>دورة "الذكاء الاصطناعي" توفر لك فهماً شاملاً للتقنيات المستخدمة في الذكاء الاصطناعي وتطبيقاته المختلفة. من خلال تعلم الخوارزميات الأساسية للتعلم الآلي، التعرف على الأساليب المتقدمة مثل التعلم العميق ومعالجة اللغة الطبيعية، إلى تطوير الروبوتات واستخدام الذكاء الاصطناعي في الصناعات المستقبلية، ستكون لديك القدرة على تصميم وبناء أنظمة ذكية تستطيع معالجة البيانات بشكل مستقل واتخاذ قرارات مستنيرة.</p>
+      
+      <a href="https://wa.me/96181566203?text=أريد%20التسجيل%20في%20دورة%20الذكاء%20الاصطناعي" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

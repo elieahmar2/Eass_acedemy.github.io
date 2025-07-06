@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title> صناعة العطور</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger"> صناعة العطور</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة عن صناعة العطور</h2>
+      <p>التعريف بأنواع العطور المختلفة (العطور الشرقية، الزهرية، الخشبية، الفواكه) وفوائد كل نوع. شرح الفرق بين المكونات العطرية الأساسية والعطور المركبة.</p>
+
+      <h2>2. مكونات العطر الأساسية</h2>
+      <p>التعرف على الزيوت العطرية والنغمات العطرية العليا، الوسطى، والقاعية وكيفية تأثيرها على رائحة العطر النهائي.</p>
+
+      <h2>3. عملية الخلط وصناعة العطر</h2>
+      <p>تعلم كيفية مزج الزيوت العطرية والمواد الأخرى لتحقيق العطر المطلوب، مع مراعاة التوازن بين المكونات المختلفة.</p>
+
+      <h2>4. الاختبار والتعديل</h2>
+      <p>كيفية اختبار العطور وتعديل المكونات للحصول على الرائحة المثالية.</p>
+
+      <h2>5. التعبئة والتغليف</h2>
+      <p>اختيار الزجاجات المناسبة لتعبئة العطر وتعلم تقنيات التغليف الفاخرة التي تحسن من تجربة العميل.</p>
+
+      <h2>6. إضافة لمسات خاصة</h2>
+      <p>إضافة مواد عطرية خاصة مثل الفانيلا، الزهور المجففة، أو التوابل لخلق عطور فريدة.</p>
+
+      <h2>7. حفظ العطور وتخزينها</h2>
+      <p>تعلم طرق حفظ العطور في ظروف مثالية لضمان بقاء رائحتها لأطول فترة ممكنة.</p>
+
+      <h2>8. السلامة والنصائح</h2>
+      <p>إرشادات السلامة أثناء التعامل مع المواد العطرية والمركبات الكيميائية.</p>
+
+      <h2>خلاصة الدورة</h2>
+      <p>دورة شاملة تعلمك كيفية صناعة العطور من الأساس إلى الاحتراف، مع تقنيات ومهارات متقدمة لإنشاء عطور مميزة.</p>
+      
+      <a href="https://wa.me/96181566203?text=اناㅤمهتمㅤبصناعةㅤالعطور" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

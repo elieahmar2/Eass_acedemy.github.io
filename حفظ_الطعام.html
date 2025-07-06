@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>حفظ الطعام</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .bigger {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 800;
+      padding: 20px;
+      text-transform: uppercase;
+      color: color-mix(in oklab, var(--color--main) 40%, black);
+      display: inline-block;
+      position: relative;
+    }
+
+    .text-content {
+      max-width: 800px;
+      width: 100%;
+      text-align: right;
+      color: #202020;
+      padding: 30px;
+      background-color: #fefefe;
+      font-size: 18px;
+      line-height: 1.8;
+      direction: rtl;
+    }
+
+    .text-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .has-animation {
+      position: relative;
+    }
+
+    .has-animation p,
+    .has-animation img,
+    .has-animation a,
+    .has-animation .text-content {
+      opacity: 0;
+    }
+
+    .has-animation.animate-in p,
+    .has-animation.animate-in img,
+    .has-animation.animate-in a,
+    .has-animation.animate-in .text-content {
+      animation: textHidden 0.1s 1.1s forwards;
+    }
+
+    .has-animation.animate-in:before,
+    .has-animation.animate-in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 10;
+    }
+
+    .has-animation.animate-in:before {
+      background-color: var(--color--main);
+    }
+
+    .has-animation.animate-in:after {
+      background-color: color-mix(in oklab, var(--color--main) 40%, black);
+      animation-delay: 0.5s;
+    }
+
+    .has-animation.animation-ltr.animate-in:before {
+      animation: revealLTR 1.8s ease;
+    }
+
+    .has-animation.animation-ltr.animate-in:after {
+      animation: revealLTR 1s 0.6s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:before {
+      animation: revealRTL 1.8s ease;
+    }
+
+    .has-animation.animation-rtl.animate-in:after {
+      animation: revealRTL 1s 0.6s ease;
+    }
+
+    @keyframes revealRTL {
+      0% {
+        width: 0;
+        right: 0;
+      }
+      65% {
+        width: 100%;
+        right: 0;
+      }
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes revealLTR {
+      0% {
+        width: 0;
+        left: 0;
+      }
+      65% {
+        width: 100%;
+        left: 0;
+      }
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes textHidden {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .register-button {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">حفظ الطعام</p>
+  </div>
+
+  <br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <h2>1. مقدمة عن حفظ الطعام</h2>
+      <p>تعريف أهمية حفظ الطعام ودوره في توفير الغذاء بشكل آمن وصحي.</p>
+      <p>استعراض الفوائد الاقتصادية لحفظ الطعام مثل تقليل الهدر وتوفير المال.</p>
+      <p>التعرف على التقنيات المختلفة لحفظ الطعام التي تتناسب مع أنواع الأطعمة المختلفة.</p>
+
+      <h2>2. طرق حفظ الطعام المختلفة</h2>
+      <p>تعلم الطرق التقليدية الحديثة والقديمة لحفظ الطعام مثل التجميد، التعليب، التجفيف، التمليح، والتخليل.</p>
+      <p>استعراض المواد الحافظة الطبيعية وكيفية استخدامها للحفاظ على الأطعمة دون إضافة مواد كيميائية.</p>
+      <p>كيفية اختيار طريقة الحفظ المثلى لكل نوع من الطعام حسب خصائصه (مثل اللحوم، الخضروات، الفواكه، الحبوب).</p>
+
+      <h2>3. التجميد</h2>
+      <p>تعلم كيفية تجميد الأطعمة بشكل صحيح مثل الخضروات، الفواكه، اللحوم، والأسماك.</p>
+      <p>استعراض طرق تحضير الطعام قبل تجميده لضمان جودته بعد فك التجميد.</p>
+      <p>نصائح لتخزين الطعام المجمد بشكل مناسب في الأكياس أو العلب الخاصة.</p>
+
+      <h2>4. التعليب والتخزين</h2>
+      <p>تعلم كيفية تعليب الفواكه، الخضروات، اللحوم، والمعلبات الأخرى مثل المربى والمخللات.</p>
+      <p>استعراض تقنيات تعقيم البرطمانات والعلب للحفاظ على الطعام في ظروف صحية وآمنة.</p>
+      <p>تعلم كيفية تخزين المعلبات بشكل سليم لضمان عدم فساد الطعام.</p>
+
+      <h2>5. التجفيف</h2>
+      <p>تعلم كيفية تجفيف الفواكه والخضروات لتخزينها لفترات طويلة.</p>
+      <p>استعراض تقنيات التجفيف مثل التجفيف باستخدام الهواء، التجفيف في الشمس، أو باستخدام أجهزة التجفيف الكهربائية.</p>
+      <p>كيفية تخزين الأطعمة المجففة بشكل صحيح للحفاظ على قيمتها الغذائية وطعمها.</p>
+
+      <h2>6. التخمير والتمليح</h2>
+      <p>تعلم كيفية استخدام التخمير في حفظ الأطعمة مثل المخللات، الزبادي، والكيمتشي.</p>
+      <p>استعراض طرق التمليح لحفظ اللحوم والأسماك.</p>
+      <p>تعلم أساليب التمليح الطبيعية مثل استخدام الملح البحري أو الأعشاب الطبيعية لتخزين الأطعمة.</p>
+
+      <h2>7. حفظ الأعشاب والتوابل</h2>
+      <p>تعلم كيفية تجفيف الأعشاب والتوابل للحفاظ على نكهتها وجودتها.</p>
+      <p>استعراض طرق تخزين الأعشاب المجففة في أكياس مغلقة أو أوعية محكمة الإغلاق.</p>
+      <p>كيفية استخدام الأعشاب المجففة في الطهي وحفظها لفترة طويلة.</p>
+
+      <h2>8. تقنيات التخزين الحديثة</h2>
+      <p>تعلم كيفية استخدام الأجهزة الحديثة مثل الماكينات المفرغة من الهواء لتخزين الطعام بشكل آمن.</p>
+      <p>استعراض تقنيات التخزين المتقدمة مثل الحفظ باستخدام الغاز المعدني أو الحفظ تحت الفراغ.</p>
+      <p>تعلم كيفية استخدام حاويات التخزين المناسبة للأطعمة مثل العلب الزجاجية أو البلاستيكية الآمنة.</p>
+
+      <h2>9. سلامة الغذاء في عملية الحفظ</h2>
+      <p>تعلم أساليب الحفاظ على سلامة الغذاء أثناء عملية الحفظ لتجنب التلوث البكتيري أو الفطري.</p>
+      <p>استعراض أهمية النظافة الشخصية والعوامل البيئية مثل درجة الحرارة والرطوبة في حفظ الطعام.</p>
+      <p>تعلم كيفية فحص الطعام المخزن للتأكد من جودته وسلامته.</p>
+
+      <h2>10. التخزين طويل الأمد</h2>
+      <p>تعلم كيفية تخزين الطعام لفترات طويلة مثل الحبوب، البقوليات، واللحوم المجففة.</p>
+      <p>استعراض طرق تخزين الطعام في الأماكن الجافة والباردة وتجنب تعرضه للضوء.</p>
+      <p>تعلم كيفية حفظ المواد الغذائية في البيئات المناسبة للحفاظ على جودتها.</p>
+
+      <h2>11. التسويق وبيع المنتجات المحفوظة</h2>
+      <p>تعلم كيفية تسويق الأطعمة المحفوظة مثل المربى، المخللات، والفواكه المجففة.</p>
+      <p>استعراض طرق التعبئة الجذابة والمناسبة لبيع الأطعمة المحفوظة بشكل احترافي.</p>
+      <p>تعلم كيفية بيع الأطعمة المحفوظة بشكل قانوني وآمن في الأسواق المحلية أو عبر الإنترنت.</p>
+
+      <h2>12. الفوائد الصحية لحفظ الطعام</h2>
+      <p>استعراض الفوائد الصحية لحفظ الطعام مثل الحفاظ على العناصر الغذائية وتقليل الفاقد.</p>
+      <p>تعلم كيفية إعداد وجبات صحية باستخدام الأطعمة المحفوظة.</p>
+      <p>استعراض كيفية الاستفادة من الأطعمة المحفوظة لتقوية الجهاز المناعي وتوفير غذاء طبيعي.</p>
+
+      <h2>خلاصة الدورة</h2>
+      <p>دورة "حفظ الطعام" توفر لك المهارات اللازمة لحفظ الأطعمة بشكل آمن وصحي باستخدام تقنيات تقليدية وحديثة. ستتعلم كيفية تجميد وتعليب وتجفيف الطعام بشكل صحيح، بالإضافة إلى أساليب التخزين المثلى للحفاظ على جودته وقيمته الغذائية. الدورة مثالية لمن يرغب في تقليل الهدر الغذائي، توفير المال، وضمان الاستفادة من الطعام طوال العام بشكل صحي وآمن.</p>
+      
+      <a href="https://wa.me/96181566203?text=انا%20مهتم%20بدورة%20حفظ%20الطعام" class="register-button">أريد التسجيل</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

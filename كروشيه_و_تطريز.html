@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>دورة كروشيه وتطريز</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+  <style>
+    :root {
+      --color--main: #9ad6d2; /* لون أزرق سماوي باهت */
+    }body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  background-color: #9ad6d2; /* خلفية زرقاء سماوية باهتة */
+}
+
+div {
+  display: inline-block;
+}
+
+.bigger {
+  margin: 0;
+  font-size: 60px;
+  font-weight: 800;
+  padding: 20px;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--color--main) 40%, black);
+  display: inline-block;
+  position: relative;
+}
+
+.text-content {
+  max-width: 800px;
+  width: 100%;
+  text-align: right;
+  color: #202020;
+  padding: 30px;
+  background-color: #fefefe;
+  font-size: 18px;
+  line-height: 1.8;
+  direction: rtl;
+}
+
+.text-content h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.has-animation {
+  position: relative;
+}
+
+.has-animation p,
+.has-animation img,
+.has-animation a,
+.has-animation .text-content {
+  opacity: 0;
+}
+
+.has-animation.animate-in p,
+.has-animation.animate-in img,
+.has-animation.animate-in a,
+.has-animation.animate-in .text-content {
+  animation: textHidden 0.1s 1.1s forwards;
+}
+
+.has-animation.animate-in:before,
+.has-animation.animate-in:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 10;
+}
+
+.has-animation.animate-in:before {
+  background-color: var(--color--main);
+}
+
+.has-animation.animate-in:after {
+  background-color: color-mix(in oklab, var(--color--main) 40%, black);
+  animation-delay: 0.5s;
+}
+
+.has-animation.animation-ltr.animate-in:before {
+  animation: revealLTR 1.8s ease;
+}
+
+.has-animation.animation-ltr.animate-in:after {
+  animation: revealLTR 1s 0.6s ease;
+}
+
+.has-animation.animation-rtl.animate-in:before {
+  animation: revealRTL 1.8s ease;
+}
+
+.has-animation.animation-rtl.animate-in:after {
+  animation: revealRTL 1s 0.6s ease;
+}
+
+@keyframes revealRTL {
+  0% {
+    width: 0;
+    right: 0;
+  }
+  65% {
+    width: 100%;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    right: 100%;
+  }
+}
+
+@keyframes revealLTR {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  65% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes textHidden {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.register-button {
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  border-radius: 25px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #333;
+}
+
+  </style>
+</head>
+<body>  <br>
+  <div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">دورة كروشيه وتطريز</p>
+  </div><br><br>
+
+  <div class="has-animation animation-rtl" data-delay="1000">
+    <div class="text-content">
+      <p>تستهدف هذه الدورة تعليم المشاركين أساسيات وفنيات فنون الكروشيه والتطريز، حيث يتعلمون كيفية استخدام الخيوط والأدوات المختلفة لتصميم قطع فنية عملية وديكورية. الدورة تشمل دروسًا عملية ونظرية تتيح للمشاركين تطوير مهاراتهم في كلا المجالين بشكل متكامل.</p>
+
+<hr>
+
+<h2>تفاصيل الدورة:</h2>
+
+<h2>1. مقدمة في الكروشيه والتطريز</h2>
+
+<p>التعريف بكروشيه وتطريز: الفرق بينهما وأوجه التشابه</p>
+
+<p>الأدوات الأساسية المستخدمة في الكروشيه والتطريز (الخيوط، الإبر، والمواد الأخرى)</p>
+
+<p>كيفية اختيار الخيوط المناسبة لكل نوع من المشاريع (الخيوط القطنية، الصوفية، وغيرها)</p>
+
+
+<h2>2. تعلم أساسيات الكروشيه</h2>
+
+<p>كيفية إمساك إبرة الكروشيه والتقنيات الأساسية</p>
+
+<p>تعلم الغرز الأساسية في الكروشيه (غرز السلسلة، غرزة الحشو، غرزة العمود، غرزة الحافة)</p>
+
+<p>كيفية تنفيذ المشروعات البسيطة باستخدام الكروشيه (مثل المفارش، الإكسسوارات، والدمى الصغيرة)</p>
+
+<p>تقنيات دمج الألوان في تصاميم الكروشيه</p>
+
+
+<h2>3. تعلم أساسيات التطريز</h2>
+
+<p>أنواع التطريز المختلفة (التطريز اليدوي، تطريز الآلات)</p>
+
+<p>التعرف على الخيوط والأدوات اللازمة للتطريز (إبر التطريز، خيوط النيلون، خيوط القطن)</p>
+
+<p>تعلم الغرز الأساسية للتطريز (غرزة السلسلة، غرزة الحشو، غرزة العقدة)</p>
+
+<p>تقنيات إضافة التفاصيل الدقيقة مثل الورود والنقوش لتزيين الأقمشة</p>
+
+
+<h2>4. المشاريع العملية في الكروشيه والتطريز</h2>
+
+<p>تنفيذ مشاريع عملية باستخدام تقنيات الكروشيه (مثل سجاد صغير، حقائب يدوية، بطانيات)</p>
+
+<p>تطبيق تقنيات التطريز على الأقمشة (مثل تطريز على القماش، تطريز الزهور والنقوش على الملابس)</p>
+
+<p>دمج الكروشيه والتطريز معًا لتصميم مشاريع متعددة الاستخدامات مثل الوسائد، الموديلات الزخرفية، والملابس</p>
+
+
+<h2>5. التعديلات والإبداع في التصاميم</h2>
+
+<p>كيفية تطوير تصاميم جديدة باستخدام تقنيات الكروشيه والتطريز</p>
+
+<p>أساليب تعديل التصاميم الحالية (إضافة تفاصيل، تغيير الألوان، تغيير الأبعاد)</p>
+
+<p>طرق استخدام هذه المهارات في تصميم هدايا مبتكرة وأغراض ديكورية</p>
+
+<p>استكشاف أنواع أخرى من الكروشيه مثل الكروشيه الياباني والكروشيه بالخرز</p>
+
+
+<h2>6. الصيانة والعناية بالمشاريع المنجزة</h2>
+
+<p>كيفية العناية بالمنتجات المصنوعة بالكروشيه والتطريز لضمان استدامتها</p>
+
+<p>طرق غسل وتخزين القطع المنجزة بشكل يحافظ على جودتها</p>
+
+<p>الحفاظ على الألوان والخيوط وعدم تعرضها للتلف</p>
+
+
+<hr>
+
+<h2>مخرجات الدورة:</h2>
+
+<p>القدرة على تنفيذ مشاريع كروشيه وتطريز من البداية للنهاية</p>
+
+<p>تعلم كيفية تطوير تصاميم مبتكرة ومتعددة الاستخدامات</p>
+
+<p>مهارات دمج تقنيات الكروشيه مع التطريز لإنتاج قطع فنية متكاملة</p>
+
+<p>القدرة على تنفيذ مشاريع عملية مثل الحقائب، المفارش، الإكسسوارات، الملابس، والديكورات المنزلية</p>
+
+<p>استراتيجيات العناية بالمنتجات المصنوعة يدوياً للحفاظ على جودتها وسلامتها</p>
+
+
+<hr>
+
+<p>ملاحظة: الدورة مناسبة لجميع الأعمار والمستويات، سواء للمبتدئين أو لأولئك الذين يسعون لتطوير مهاراتهم في الكروشيه والتطريز</p>
+  
+  <a href="https://wa.me/96181566203?text=انا مهتم بتعلم الكروشيه والتطريز" class="register-button">أريد التسجيل</a>
+</div>
+
+  </div>  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  <script>
+    $(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });
+  </script></body>
+</html>
